@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<channelmaps>
+    <channelmap name="ChannelMap1" siteCount="8" comment="">
+        <tester type="S08">
+            <testerslot slot="1" instrument="DIO256" />
+            <testerslot slot="2" instrument="DIO256" />
+            <testerslot slot="3" instrument="EMPTY" />
+            <testerslot slot="4" instrument="DPS128" />
+            <testerslot slot="5" instrument="EMPTY" />
+            <testerslot slot="6" instrument="EMPTY" />
+            <testerslot slot="7" instrument="EMPTY" />
+            <testerslot slot="8" instrument="EMPTY" />
+        </tester>
+        <channelpins>
+            <channelpin enabled="true" pin="BOOST_LX" channel="DPS4.59...DPS4.61,DPS4.123...DPS4.125,DPS4.98...DPS4.100,DPS4.34...DPS4.36,DPS4.91...DPS4.93,DPS4.28...DPS4.30,DPS4.2...DPS4.4,DPS4.66...DPS4.68" />
+            <channelpin enabled="true" pin="PMU_REFBP" channel="DPS4.44,DPS4.108,DPS4.112,DPS4.48,DPS4.76,DPS4.12,DPS4.16,DPS4.80" />
+            <channelpin enabled="true" pin="PMUVCC12" channel="DPS4.55,DPS4.119,DPS4.104,DPS4.40,DPS4.87,DPS4.23,DPS4.8,DPS4.72" />
+            <channelpin enabled="true" pin="PMUVCC3" channel="DPS4.62,DPS4.126,DPS4.97,DPS4.33,DPS4.22,DPS4.94,DPS4.65,DPS4.9" />
+            <channelpin enabled="true" pin="SIMVCC1" channel="DPS4.56,DPS4.120,DPS4.103,DPS4.39,DPS4.24,DPS4.88,DPS4.71,DPS4.7" />
+            <channelpin enabled="true" pin="SIMVCC2" channel="DPS4.58,DPS4.122,DPS4.101,DPS4.37,DPS4.20,DPS4.90,DPS4.69,DPS4.11" />
+            <channelpin enabled="true" pin="SIMVCC3" channel="DPS4.63,DPS4.127,DPS4.96,DPS4.32,DPS4.31,DPS4.95,DPS4.64,DPS4.6" />
+            <channelpin enabled="true" pin="VBAT" channel="DPS4.53,DPS4.117,DPS4.106,DPS4.42,DPS4.21,DPS4.85,DPS4.74,DPS4.10" />
+            <channelpin enabled="true" pin="VDD_PMU_AIOLDO" channel="DPS4.57,DPS4.121,DPS4.102,DPS4.38,DPS4.25,DPS4.89,DPS4.70,DPS4.0" />
+            <channelpin enabled="true" pin="VDD_PMU_CLDO" channel="DPS4.115,DPS4.111,DPS4.79,DPS4.83,DPS4.51,DPS4.47,DPS4.15,DPS4.19" />
+            <channelpin enabled="true" pin="VDD_PMU_SYSLDO" channel="DPS4.52,DPS4.116,DPS4.107,DPS4.43,DPS4.26,DPS4.84,DPS4.75,DPS4.5" />
+            <channelpin enabled="true" pin="VDDBOOST" channel="DPS4.114,DPS4.110,DPS4.78,DPS4.82,DPS4.46,DPS4.50,DPS4.18,DPS4.14" />
+            <channelpin enabled="true" pin="VDDIO" channel="DPS4.54,DPS4.118,DPS4.105,DPS4.41,DPS4.27,DPS4.86,DPS4.73,DPS4.1" />
+            <channelpin enabled="true" pin="VDDPA" channel="DPS4.113,DPS4.109,DPS4.77,DPS4.81,DPS4.45,DPS4.49,DPS4.17,DPS4.13" />
+            <channelpin enabled="true" pin="BOOST_LX_D" channel="DIO2.154,DIO2.172,DIO2.173,DIO2.155,DIO1.148,DIO1.172,DIO1.173,DIO1.155" />
+            <channelpin enabled="true" pin="IC0_TEST" channel="DIO1.159,DIO1.183,DIO2.159,DIO2.183,DIO1.097,DIO1.072,DIO2.097,DIO2.072" />
+            <channelpin enabled="true" pin="IC1_TEST" channel="DIO1.180,DIO1.145,DIO2.180,DIO2.145,DIO1.031,DIO1.001,DIO2.029,DIO2.058" />
+            <channelpin enabled="true" pin="NFC_CLK_REQ" channel="DIO1.169,DIO1.138,DIO2.169,DIO2.138,DIO1.042,DIO1.007,DIO2.016,DIO2.053" />
+            <channelpin enabled="true" pin="NFC_DEV_WKUP_HOST" channel="DIO1.163,DIO1.132,DIO2.163,DIO2.132,DIO1.048,DIO1.013,DIO2.010,DIO2.047" />
+            <channelpin enabled="true" pin="NFC_GPIO0" channel="DIO1.187,DIO1.156,DIO2.187,DIO2.156,DIO1.055,DIO1.024,DIO2.004,DIO2.034" />
+            <channelpin enabled="true" pin="NFC_GPIO1" channel="DIO1.147,DIO1.170,DIO2.147,DIO2.170,DIO1.115,DIO1.090,DIO2.115,DIO2.090" />
+            <channelpin enabled="true" pin="NFC_GPIO4" channel="DIO1.152,DIO1.184,DIO2.152,DIO2.184,DIO1.096,DIO1.067,DIO2.096,DIO2.067" />
+            <channelpin enabled="true" pin="NFC_HOST_WKUP_DEV" channel="DIO1.168,DIO1.133,DIO2.168,DIO2.133,DIO1.043,DIO1.012,DIO2.017,DIO2.046" />
+            <channelpin enabled="true" pin="NFC_IC_ADDR0" channel="DIO1.153,DIO1.176,DIO2.153,DIO2.176,DIO1.109,DIO1.084,DIO2.109,DIO2.084" />
+            <channelpin enabled="true" pin="NFC_IC_ADDR1" channel="DIO1.146,DIO1.177,DIO2.146,DIO2.177,DIO1.114,DIO1.085,DIO2.114,DIO2.085" />
+            <channelpin enabled="true" pin="NFC_IC_SCL" channel="DIO1.192,DIO1.162,DIO2.193,DIO2.162,DIO1.049,DIO1.018,DIO2.011,DIO2.040" />
+            <channelpin enabled="true" pin="NFC_IC_SDA" channel="DIO1.191,DIO1.157,DIO2.192,DIO2.157,DIO1.054,DIO1.019,DIO2.003,DIO2.041" />
+            <channelpin enabled="true" pin="NFC_SIM_SWIO1" channel="DIO1.208,DIO1.204,DIO2.207,DIO2.211,DIO1.201,DIO1.209,DIO2.200,DIO2.216" />
+            <channelpin enabled="true" pin="NFC_SIM_SWIO2" channel="DIO1.214,DIO1.198,DIO2.213,DIO2.205,DIO1.207,DIO1.203,DIO2.206,DIO2.210" />
+            <channelpin enabled="true" pin="NFC_SIM_SWIO3" channel="DIO1.213,DIO1.197,DIO2.212,DIO2.204,DIO1.202,DIO1.210,DIO2.201,DIO2.217" />
+            <channelpin enabled="true" pin="NFC_XTAL1" channel="DIO1.164,DIO1.196,DIO2.164,DIO2.196,DIO1.091,DIO1.066,DIO2.091,DIO2.066" />
+            <channelpin enabled="true" pin="PMU_PWRON" channel="DIO1.186,DIO1.151,DIO2.186,DIO2.151,DIO1.060,DIO1.025,DIO2.005,DIO2.035" />
+            <channelpin enabled="true" pin="RXN_D" channel="DIO1.3,DIO1.4,DIO1.5,DIO1.8,DIO1.9,DIO1.10,DIO1.11,DIO1.14" />
+            <channelpin enabled="true" pin="RXP_D" channel="DIO1.15,DIO1.16,DIO1.17,DIO1.20,DIO1.21,DIO1.22,DIO1.23,DIO1.26" />
+            <channelpin enabled="true" pin="SE_POW_ON" channel="DIO1.158,DIO1.190,DIO2.158,DIO2.190,DIO1.102,DIO1.073,DIO2.102,DIO2.073" />
+            <channelpin enabled="true" pin="SE_UART_RXD" channel="DIO1.175,DIO1.144,DIO2.175,DIO2.144,DIO1.036,DIO1.002,DIO2.022,DIO2.059" />
+            <channelpin enabled="true" pin="SE_UART_TXD" channel="DIO1.165,DIO1.189,DIO2.165,DIO2.189,DIO1.103,DIO1.078,DIO2.103,DIO2.078" />
+            <channelpin enabled="true" pin="SE_WKUP_DEV" channel="DIO1.174,DIO1.139,DIO2.174,DIO2.139,DIO1.037,DIO1.006,DIO2.023,DIO2.052" />
+            <channelpin enabled="true" pin="SIM_IO_PDN_2" channel="DIO1.181,DIO1.150,DIO2.181,DIO2.150,DIO1.030,DIO1.000,DIO2.028,DIO2.065" />
+            <channelpin enabled="true" pin="TX1" channel="DIO1.212,DIO1.222,DIO1.199,DIO2.042,DIO1.188,DIO1.046,DIO1.116,DIO2.119" />
+            <channelpin enabled="true" pin="TX2" channel="DIO1.206,DIO1.221,DIO1.205,DIO2.036,DIO1.182,DIO1.047,DIO1.117,DIO2.125" />
+            <channelpin enabled="true" pin="TXVCASC" channel="DIO2.230,DIO2.248,DIO2.253,DIO2.241,DIO1.241,DIO1.252,DIO1.248,DIO1.230" />
+            <channelpin enabled="true" pin="TXVCM" channel="DIO2.236,DIO2.255,DIO2.252,DIO2.235,DIO1.235,DIO1.253,DIO1.254,DIO1.236" />
+            <channelpin enabled="true" pin="VDD_PMU_SIMLDO" channel="DIO2.242,DIO2.254,DIO2.247,DIO2.229,DIO1.229,DIO1.247,DIO1.255,DIO1.242" />
+            <channelpin enabled="true" pin="VDD_XLDO" channel="DIO2.224,DIO2.243,DIO2.251,DIO2.240,DIO1.240,DIO1.251,DIO1.238,DIO1.226" />
+            <channelpin enabled="true" pin="VDDA" channel="DIO2.231,DIO2.249,DIO2.244,DIO2.234,DIO1.234,DIO1.246,DIO1.244,DIO1.225" />
+            <channelpin enabled="true" pin="VMID" channel="DIO1.171,DIO1.195,DIO2.171,DIO2.195,DIO1.108,DIO1.079,DIO2.108,DIO2.079" />
+            <channelpin enabled="true" pin="RXN" channel="DIO1.220,DIO1.211,DIO1.185,DIO2.049,DIO1.200,DIO1.041,DIO1.120,DIO2.111" />
+            <channelpin enabled="true" pin="RXP" channel="DIO1.219,DIO1.217,DIO1.193,DIO2.048,DIO1.194,DIO1.035,DIO1.126,DIO2.110" />
+            <channelpin enabled="true" pin="NFC_GPIO3_D" channel="DIO1.27,DIO1.28,DIO1.29,DIO1.32,DIO1.33,DIO1.34,DIO1.38,DIO1.39" />
+            <channelpin enabled="true" pin="NFC_GPIO2_D" channel="DIO1.40,DIO1.44,DIO1.45,DIO1.50,DIO1.51,DIO1.52,DIO1.53,DIO1.56" />
+            <channelpin enabled="true" pin="FE*_HF_AWG_*_SYNC" channel="DIO1.57,DIO1.58,DIO1.59,DIO1.61,DIO1.62,DIO1.63,DIO1.64,DIO1.65" />
+            <channelpin enabled="true" pin="FE*_HF_DIG_*_SYNC" channel="DIO1.68,DIO1.69,DIO1.70,DIO1.71,DIO1.74,DIO1.75,DIO1.76,DIO1.77" />
+            <channelpin enabled="true" pin="K*005" channel="U0.148,U0.193,U0.238,U0.251,U0.138,U0.164,U0.192,U0.219" />
+            <channelpin enabled="true" pin="K*001" channel="U0.166,U0.211,U0.248,U0.253,U0.146,U0.174,U0.201,U0.236" />
+            <channelpin enabled="true" pin="K*002" channel="U0.130,U0.175,U0.220,U0.249,U0.147,U0.165,U0.200,U0.228" />
+            <channelpin enabled="true" pin="K*004" channel="U0.157,U0.202,U0.247,U0.252,U0.128,U0.182,U0.210,U0.237" />
+            <channelpin enabled="true" pin="K*003" channel="U0.139,U0.184,U0.229,U0.250,U0.129,U0.156,U0.183,U0.218" />
+            <channelpin enabled="true" pin="U*002" channel="DIO1.80,DIO1.81,DIO1.82,DIO1.83,DIO1.86,DIO1.87,DIO1.88,DIO1.89" />
+            <channelpin enabled="true" pin="U3" channel="DIO1.249,DIO1.249,DIO1.249,DIO1.249,DIO1.249,DIO1.249,DIO1.249,DIO1.249" />
+        </channelpins>
+    </channelmap>
+</channelmaps>

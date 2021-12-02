@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<flow name="INIT">
+    <flowtable>
+        <row opcode="Test" operand="" test="" testnumber="">
+            <limit lowlimit="" highlimit="" />
+            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="" />
+            <action pass="" fail="" />
+            <device sense="" condition="" name="" />
+        </row>
+        <row opcode="Test" operand="" test="" testnumber="">
+            <limit lowlimit="" highlimit="" />
+            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="" />
+            <action pass="" fail="" />
+            <device sense="" condition="" name="" />
+        </row>
+        <row opcode="Test" operand="" test="" testnumber="">
+            <limit lowlimit="" highlimit="" />
+            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="" />
+            <action pass="" fail="" />
+            <device sense="" condition="" name="" />
+        </row>
+        <row opcode="Test" operand="" test="" testnumber="">
+            <limit lowlimit="" highlimit="" />
+            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="" />
+            <action pass="" fail="" />
+            <device sense="" condition="" name="" />
+        </row>
+        <row opcode="Test" operand="" test="" testnumber="">
+            <limit lowlimit="" highlimit="" />
+            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="" />
+            <action pass="" fail="" />
+            <device sense="" condition="" name="" />
+        </row>
+        <row opcode="Test" operand="" test="" testnumber="">
+            <limit lowlimit="" highlimit="" />
+            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="" />
+            <action pass="" fail="" />
+            <device sense="" condition="" name="" />
+        </row>
+    </flowtable>
+    <hardbintable />
+</flow>

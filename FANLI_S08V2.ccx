@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<program name="FANLI_S08V2">
+    <items>
+        <pin>FANLI_S08V2_Pin_pin.pin</pin>
+        <specs>
+            <spec>111.spec</spec>
+        </specs>
+        <setting />
+        <global />
+        <channelmap>FANLI.pm</channelmap>
+        <power>111.pwr</power>
+        <level>111.lvl</level>
+        <timing />
+        <patternburst />
+        <tests>
+            <test>FANLI_S08V2.tst</test>
+        </tests>
+        <flows />
+        <proberhandler />
+    </items>
+    <tdrinfos>
+        <path></path>
+    </tdrinfos>
+</program>

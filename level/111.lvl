@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<levels>
+    <levelblock name="VIHLR_VOJLR_IOHLR" comment="">
+        <level signal="BOOST_LX_D" vil="0V" vih="1.8V" vol="1V" voh="3V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="IC0_TEST" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="IC1_TEST" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="NFC_CLK_REQ" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="NFC_DEV_WKUP_HOST" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="NFC_GPIO0" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="NFC_GPIO1" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="NFC_GPIO4" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="NFC_HOST_WKUP_DEV" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="NFC_IC_ADDR0" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="NFC_IC_ADDR1" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="NFC_IC_SCL" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="NFC_IC_SDA" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="NFC_SIM_SWIO1" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="NFC_SIM_SWIO2" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="NFC_SIM_SWIO3" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="NFC_XTAL1" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="PMU_PWRON" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="RXN_D" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="RXP_D" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="SE_POW_ON" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="SE_UART_RXD" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="SE_UART_TXD" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="SE_WKUP_DEV" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="SIM_IO_PDN_2" vil="0V" vih="1.8V" vol="0.5V" voh="1V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="TX1" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="TX2" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="TXVCASC" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="TXVCM" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="VDD_PMU_SIMLDO" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="VDD_XLDO" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="VDDA" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="VMID" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="RXN" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="RXP" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="NFC_GPIO3_D" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="NFC_GPIO2_D" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="FE*_HF_AWG_*_SYNC" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="FE*_HF_DIG_*_SYNC" vil="0V" vih="1.8V" vol="0.63V" voh="1.17V" vicm="0V" vid="0V" term="Load" vt="0.9V" iol="2mA" ioh="2mA" vcl="-1.0V" vch="2V" vhh="0" />
+        <level signal="U*002" vil="0V" vih="0V" vol="0V" voh="0V" vicm="0V" vid="0V" term="Off" vt="0V" iol="0A" ioh="0A" vcl="0V" vch="0V" vhh="0" />
+    </levelblock>
+</levels>
