@@ -48,10 +48,12 @@
         <pin name="VDD_XLDO" type="InOut" diff="0" />
         <pin name="VDDA" type="InOut" diff="0" />
         <pin name="VMID" type="InOut" diff="0" />
-        <pin name="RXN" type="InOut" diff="0" />
-        <pin name="RXP" type="InOut" diff="0" />
-        <pin name="NFC_GPIO3_D" type="InOut" diff="0" />
-        <pin name="NFC_GPIO2_D" type="InOut" diff="0" />
+        <pin name="RXN_IN" type="AnalogIn" diff="0" />
+        <pin name="RXN_OUT" type="AnalogOut" diff="0" />
+        <pin name="RXP_IN" type="AnalogIn" diff="0" />
+        <pin name="RXP_OUT" type="AnalogOut" diff="0" />
+        <pin name="NFC_GPIO3_D" type="AnalogIn" diff="0" />
+        <pin name="NFC_GPIO2_D" type="AnalogOut" diff="0" />
         <pin name="FE*_HF_AWG_*_SYNC" type="InOut" diff="0" />
         <pin name="FE*_HF_DIG_*_SYNC" type="InOut" diff="0" />
         <pin name="K*005" type="Ubit" diff="0" />
@@ -60,24 +62,36 @@
         <pin name="K*004" type="Ubit" diff="0" />
         <pin name="K*003" type="Ubit" diff="0" />
         <pin name="U*002" type="InOut" diff="0" />
-        <pin name="U3" type="Ubit" diff="0" />
+        <pin name="U3" type="InOut" diff="0" />
     </pins>
     <pingroups>
-        <pingroup name="gRF_D" list="TX1+TX2+RXP_D+RXN_D" />
-        <pingroup name="gUtility" list="K*005+K*001+K*002+K*004+K*003+U3" />
-        <pingroup name="gMIX" list="TX1+TX2+RXN+RXP" />
+        <pingroup name="pDIGITAL" list="BOOST_LX_D+NFC_IC_SDA+NFC_GPIO0+NFC_GPIO4+IC0_TEST+IC1_TEST+NFC_IC_SCL+NFC_GPIO1+NFC_IC_ADDR1+NFC_IC_ADDR0+SE_UART_RXD+SE_WKUP_DEV+SE_UART_TXD+NFC_DEV_WKUP_HOST+NFC_CLK_REQ+NFC_HOST_WKUP_DEV" />
+        <pingroup name="gALLPINS" list="NFC_IC_SDA+NFC_GPIO0+NFC_GPIO4+IC0_TEST+IC1_TEST+NFC_IC_SCL+NFC_GPIO1+NFC_IC_ADDR1+NFC_IC_ADDR0+SE_UART_RXD+SE_WKUP_DEV+SE_POW_ON+SE_UART_TXD+NFC_DEV_WKUP_HOST+NFC_CLK_REQ+NFC_HOST_WKUP_DEV" />
+        <pingroup name="gALL_DIG_PIN" list="BOOST_LX_D" />
+        <pingroup name="gALL_DPS_PIN" list="VDDBOOST+PMUVCC12+VDD_PMU_AIOLDO+VDD_PMU_CLDO+VDD_PMU_SYSLDO+VDDIO+VBAT+VDDPA" />
+        <pingroup name="gALL_PIN_D" list="BOOST_LX_D+IC0_TEST+IC1_TEST+NFC_CLK_REQ+NFC_DEV_WKUP_HOST+NFC_GPIO0+NFC_GPIO1+NFC_GPIO4+NFC_HOST_WKUP_DEV+NFC_IC_ADDR0+NFC_IC_ADDR1+NFC_IC_SCL+NFC_IC_SDA+NFC_SIM_SWIO1+NFC_SIM_SWIO2+NFC_SIM_SWIO3+NFC_XTAL1+PMU_PWRON+RXN_D+RXP_D+SE_POW_ON+SE_UART_RXD+SE_UART_TXD+SE_WKUP_DEV+SIM_IO_PDN_2+TX1+TX2+TXVCASC+TXVCM+VDD_PMU_SIMLDO+VDD_XLDO+VDDA+VMID+FE*_HF_AWG_*_SYNC+FE*_HF_DIG_*_SYNC+U*002+U3" />
+        <pingroup name="gMIX" list="TX1+TX2" />
+        <pingroup name="gOS" list="PMU_PWRON+SIM_IO_PDN_2+NFC_IC_SDA+NFC_GPIO0+NFC_GPIO4+IC0_TEST+IC1_TEST+NFC_IC_SCL+NFC_GPIO1+NFC_IC_ADDR1+NFC_IC_ADDR0+SE_UART_RXD+SE_WKUP_DEV+SE_POW_ON+SE_UART_TXD+NFC_DEV_WKUP_HOST+NFC_CLK_REQ+NFC_HOST_WKUP_DEV" />
+        <pingroup name="gOS_PS" list="VDDBOOST+PMUVCC12+VDD_PMU_SYSLDO+VDD_PMU_CLDO+VDDIO+VBAT+VDD_PMU_AIOLDO+VDDPA" />
+        <pingroup name="gOS_PS_g" list="BOOST_LX" />
+        <pingroup name="gOS_PS_PPMU _P" list="SIMVCC1+SIMVCC2+SIMVCC3" />
+        <pingroup name="gOS_PS_PPMU_D" list="VDD_PMU_SIMLDO+TXVCASC+TXVCM+VDD_XLDO" />
+        <pingroup name="gOS_PS_DIGITAL_PPMU" list="VDD_PMU_SIMLDO+TXVCASC+TXVCM+VDD_XLDO" />
+        <pingroup name="gIIHL_PU_PD" list="TX1" />
+        <pingroup name="gIIHL_NOPUPD" list="NFC_IC_SDA+NFC_IC_ADDR1+NFC_DEV_WKUP_HOST+NFC_CLK_REQ+NFC_IC_ADDR0+NFC_HOST_WKUP_DEV" />
+        <pingroup name="gIIHL" list="TX1" />
+        <pingroup name="gALL_DPS_PINs_NO_PMU_TEST" list="TX1" />
+        <pingroup name="gPS_DISCONNECT" list="TX1" />
+        <pingroup name="gSIMVCCS" list="SIMVCC1+SIMVCC2+SIMVCC3" />
+        <pingroup name="gUtility" list="K*005+K*001+K*002+K*004+K*003" />
+        <pingroup name="gDout" list="NFC_CLK_REQ+SE_UART_TXD+NFC_GPIO1+IC0_TEST" />
         <pingroup name="gSSI" list="NFC_DEV_WKUP_HOST+NFC_HOST_WKUP_DEV" />
         <pingroup name="gSwio" list="NFC_SIM_SWIO1+NFC_SIM_SWIO2+NFC_SIM_SWIO3" />
-        <pingroup name="gDout" list="NFC_CLK_REQ+SE_UART_TXD+NFC_GPIO2_D+NFC_GPIO1+IC0_TEST" />
-        <pingroup name="gSIMVCCS" list="SIMVCC1+SIMVCC2+SIMVCC3" />
-        <pingroup name="gDFTPINS_DC" list="NFC_GPIO0+NFC_GPIO4+IC0_TEST+IC1_TEST+NFC_IC_SCL+SE_UART_RXD+SE_WKUP_DEV+SE_POW_ON+SE_UART_TXD" />
         <pingroup name="gDFTPINS" list="NFC_GPIO0+NFC_GPIO4+IC0_TEST+IC1_TEST+NFC_IC_SCL+NFC_GPIO1+SE_UART_RXD+SE_WKUP_DEV+SE_POW_ON+SE_UART_TXD" />
-        <pingroup name="pDIGITAL" list="BOOST_LX_D+NFC_IC_SDA+NFC_GPIO0+NFC_GPIO4+IC0_TEST+IC1_TEST+NFC_IC_SCL+NFC_GPIO1+NFC_IC_ADDR1+NFC_IC_ADDR0+SE_UART_RXD+SE_WKUP_DEV+SE_UART_TXD+NFC_DEV_WKUP_HOST+NFC_CLK_REQ+NFC_HOST_WKUP_DEV" />
-        <pingroup name="gOS_PS_DIGITAL_PPMU" list="VDD_PMU_SIMLDO+TXVCASC+TXVCM+VDD_XLDO" />
-        <pingroup name="gIIHL_NOPUPD" list="NFC_IC_SDA+NFC_IC_ADDR1+NFC_DEV_WKUP_HOST+NFC_CLK_REQ+NFC_IC_ADDR0+NFC_HOST_WKUP_DEV" />
-        <pingroup name="gALLPINS" list="NFC_IC_SDA+NFC_GPIO0+NFC_GPIO4+IC0_TEST+IC1_TEST+NFC_IC_SCL+NFC_SIM_SWIO1+NFC_IC_ADDR1+NFC_IC_ADDR0+SE_UART_RXD+SE_WKUP_DEV+SE_POW_ON+SE_UART_TXD+NFC_DEV_WKUP_HOST+NFC_CLK_REQ+NFC_HOST_WKUP_DEV" />
-        <pingroup name="gALL_DPS_PIN" list="BOOST_LX+VDDBOOST+PMUVCC12+VDD_PMU_AIOLDO+VDD_PMU_CLDO+VDD_PMU_SYSLDO+VDDIO+VBAT+VDDPA" />
-        <pingroup name="gOS_PS" list="BOOST_LX+VDDBOOST+PMUVCC12+VDD_PMU_SYSLDO+VDD_PMU_CLDO+VDDIO+VBAT+VDD_PMU_AIOLDO+VDDPA" />
-        <pingroup name="gOS" list="PMU_PWRON+SIM_IO_PDN_2+NFC_IC_SDA+NFC_GPIO0+NFC_GPIO4+IC0_TEST+IC1_TEST+NFC_IC_SCL+NFC_GPIO1+NFC_IC_ADDR1+NFC_IC_ADDR0+SE_UART_RXD+SE_WKUP_DEV+NFC_GPIO3_D+NFC_GPIO2_D+SE_POW_ON+SE_UART_TXD+NFC_DEV_WKUP_HOST+NFC_CLK_REQ+NFC_HOST_WKUP_DEV" />
+        <pingroup name="gDFTPINS_DC" list="NFC_GPIO0+NFC_GPIO4+IC0_TEST+IC1_TEST+NFC_IC_SCL+SE_UART_RXD+SE_WKUP_DEV+SE_POW_ON+SE_UART_TXD" />
+        <pingroup name="gRF_D" list="TX1+TX2+RXP_D+RXN_D" />
+        <pingroup name="gALL_PIN_P" list="PMU_REFBP+PMUVCC12+PMUVCC3+SIMVCC1+SIMVCC2+SIMVCC3+VBAT+VDD_PMU_AIOLDO+VDD_PMU_CLDO+VDD_PMU_SYSLDO+VDDBOOST+VDDIO+VDDPA" />
+        <pingroup name="gALL_PIN_M" list="RXN_IN+RXN_OUT+RXP_IN+RXP_OUT+NFC_GPIO3_D+NFC_GPIO2_D" />
+        <pingroup name="gALL_PIN_U" list="K*005+K*001+K*002+K*004+K*003" />
     </pingroups>
 </pinmap>
