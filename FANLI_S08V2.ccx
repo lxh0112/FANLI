@@ -10,12 +10,14 @@
         <channelmap>FANLI.pm</channelmap>
         <power>111.pwr</power>
         <level>111.lvl</level>
-        <timing />
-        <patternburst />
+        <timing>111.tmg</timing>
+        <patternburst>111.bst</patternburst>
         <tests>
             <test>FANLI_S08V2.tst</test>
         </tests>
-        <flows />
+        <flows>
+            <flow>111.fl</flow>
+        </flows>
         <proberhandler />
     </items>
     <tdrinfos>

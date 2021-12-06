@@ -59,12 +59,12 @@
             <channelpin enabled="true" pin="VDD_XLDO" channel="DIO2.224,DIO2.243,DIO2.251,DIO2.240,DIO1.240,DIO1.251,DIO1.238,DIO1.226" />
             <channelpin enabled="true" pin="VDDA" channel="DIO2.231,DIO2.249,DIO2.244,DIO2.234,DIO1.234,DIO1.246,DIO1.244,DIO1.225" />
             <channelpin enabled="true" pin="VMID" channel="DIO1.171,DIO1.195,DIO2.171,DIO2.195,DIO1.108,DIO1.079,DIO2.108,DIO2.079" />
-            <channelpin enabled="false" pin="RXN_IN" channel="AD3.0,AD3.1,AD3.2,AD3.3,AD3.4,AD3.5,AD3.6,AD3.7" />
-            <channelpin enabled="false" pin="RXN_OUT" channel="AD3.8,AD3.9,AD3.10,AD3.11,AD3.12,AD3.13,AD3.14,AD3.15" />
-            <channelpin enabled="false" pin="RXP_IN" channel="AD6.0,AD6.1,AD6.2,AD6.3,AD6.4,AD6.5,AD6.6,AD6.7" />
-            <channelpin enabled="false" pin="RXP_OUT" channel="AD6.8,AD6.9,AD6.10,AD6.11,AD6.12,AD6.13,AD6.14,AD6.15" />
-            <channelpin enabled="true" pin="NFC_GPIO3_D" channel="AD5.0,AD5.1,AD5.2,AD5.3,AD5.4,AD5.5,AD5.6,AD5.7" />
-            <channelpin enabled="true" pin="NFC_GPIO2_D" channel="AD5.8,AD5.9,AD5.10,AD5.11,AD5.12,AD5.13,AD5.14,AD5.15" />
+            <channelpin enabled="false" pin="RXN_IN" channel="AD6.12,AD6.22,AD6.32,AD6.42,AD6.11,AD6.21,AD6.31,AD6.41" />
+            <channelpin enabled="false" pin="RXN_OUT" channel="AD6.12,AD6.22,AD6.32,AD6.42,AD6.11,AD6.21,AD6.31,AD6.41" />
+            <channelpin enabled="false" pin="RXP_IN" channel="AD6.11,AD6.21,AD6.31,AD6.41,AD6.12,AD6.22,AD6.32,AD6.42" />
+            <channelpin enabled="false" pin="RXP_OUT" channel="AD6.11,AD6.21,AD6.31,AD6.41,AD6.12,AD6.22,AD6.32,AD6.42" />
+            <channelpin enabled="true" pin="NFC_GPIO3_D" channel="AD6.11,AD6.21,AD6.31,AD6.41,AD6.12,AD6.22,AD6.32,AD6.42" />
+            <channelpin enabled="true" pin="NFC_GPIO2_D" channel="AD6.11,AD6.21,AD6.31,AD6.41,AD6.12,AD6.22,AD6.32,AD6.42" />
             <channelpin enabled="true" pin="FE*_HF_AWG_*_SYNC" channel="DIO1.57,DIO1.58,DIO1.59,DIO1.61,DIO1.62,DIO1.63,DIO1.64,DIO1.65" />
             <channelpin enabled="true" pin="FE*_HF_DIG_*_SYNC" channel="DIO1.68,DIO1.69,DIO1.70,DIO1.71,DIO1.74,DIO1.75,DIO1.76,DIO1.77" />
             <channelpin enabled="true" pin="K*005" channel="U0.148,U0.193,U0.238,U0.251,U0.138,U0.164,U0.192,U0.219" />
@@ -120,8 +120,8 @@
             <channelpin enabled="true" pin="NFC_SIM_SWIO3" channel="DIO1.213" />
             <channelpin enabled="true" pin="NFC_XTAL1" channel="DIO1.164" />
             <channelpin enabled="true" pin="PMU_PWRON" channel="DIO1.186" />
-            <channelpin enabled="true" pin="RXN_D" channel="DIO1.3" />
-            <channelpin enabled="true" pin="RXP_D" channel="DIO1.15" />
+            <channelpin enabled="true" pin="RXN_D" channel="DIO1.220" />
+            <channelpin enabled="true" pin="RXP_D" channel="DIO1.219" />
             <channelpin enabled="true" pin="SE_POW_ON" channel="DIO1.158" />
             <channelpin enabled="true" pin="SE_UART_RXD" channel="DIO1.175" />
             <channelpin enabled="true" pin="SE_UART_TXD" channel="DIO1.165" />
@@ -135,17 +135,17 @@
             <channelpin enabled="true" pin="VDD_XLDO" channel="DIO2.224" />
             <channelpin enabled="true" pin="VDDA" channel="DIO2.231" />
             <channelpin enabled="true" pin="VMID" channel="DIO1.171" />
-            <channelpin enabled="false" pin="RXN_IN" channel="AD3.0" />
-            <channelpin enabled="false" pin="RXN_OUT" channel="AD3.8" />
-            <channelpin enabled="false" pin="RXP_IN" channel="AD6.0" />
-            <channelpin enabled="false" pin="RXP_OUT" channel="AD6.8" />
-            <channelpin enabled="true" pin="NFC_GPIO3_D" channel="AD5.0" />
-            <channelpin enabled="true" pin="NFC_GPIO2_D" channel="AD5.8" />
-            <channelpin enabled="true" pin="FE*_HF_AWG_*_SYNC" channel="DIO1.57" />
-            <channelpin enabled="true" pin="FE*_HF_DIG_*_SYNC" channel="DIO1.68" />
+            <channelpin enabled="false" pin="RXN_IN" channel="AD6.12" />
+            <channelpin enabled="false" pin="RXN_OUT" channel="AD6.12" />
+            <channelpin enabled="false" pin="RXP_IN" channel="AD6.11" />
+            <channelpin enabled="false" pin="RXP_OUT" channel="AD6.11" />
+            <channelpin enabled="true" pin="NFC_GPIO3_D" channel="AD6.11" />
+            <channelpin enabled="true" pin="NFC_GPIO2_D" channel="AD6.11" />
+            <channelpin enabled="true" pin="FE*_HF_AWG_*_SYNC" channel="DIO2.130" />
+            <channelpin enabled="true" pin="FE*_HF_DIG_*_SYNC" channel="DIO2.131" />
             <channelpin enabled="true" pin="K*005" channel="U0.148" />
             <channelpin enabled="true" pin="K*001" channel="U0.166" />
-            <channelpin enabled="true" pin="K*002" channel="U0.13" />
+            <channelpin enabled="true" pin="K*002" channel="U0.130" />
             <channelpin enabled="true" pin="K*004" channel="U0.157" />
             <channelpin enabled="true" pin="K*003" channel="U0.139" />
             <channelpin enabled="true" pin="U*002" channel="DIO2.160" />

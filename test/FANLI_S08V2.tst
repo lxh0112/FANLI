@@ -115,7 +115,7 @@
             <propvalues />
         </testclass>
     </test>
-    <test name="PMU_IDD_EC0" type="Test" timing="" level="" pattern="" power="" comment="">
+    <test name="PMU_IDD_EC0" type="Test" timing="" level="" pattern="" power="Power_OFF" comment="">
         <testclass name="">
             <propvalues />
         </testclass>
