@@ -1,4 +1,20 @@
-#,FANLI_S08V2,2021.12.04 10:30:12,V1.0
+#,FANLI_S08V2,2021.12.07 11:19:01,V1.0
+Block,PowerBlock,DFT_MODE_VDDN_VIHLR_VOHLR_IOHLR
+#,Signal,State,Mode,Force,Range,Clamp L,Clamp H,Clamp Delay,Decoupling,Resistance,Setup Order,Setup Delay,Trise
+Power,BOOST_LX,Off,RAMP,3.6V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,PMU_REFBP,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,PMUVCC12,On,DFV,3V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,PMUVCC3,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,SIMVCC1,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,SIMVCC2,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,SIMVCC3,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VBAT,On,DFV,3.7V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDD_PMU_AIOLDO,On,DFV,1.8V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDD_PMU_CLDO,On,DFV,1.1V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDD_PMU_SYSLDO,On,DFV,1.1V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDDBOOST,Off,DFV,0V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDDIO,On,DFV,1.8V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDDPA,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Block,PowerBlock,Power_OSD
 #,Signal,State,Mode,Force,Range,Clamp L,Clamp H,Clamp Delay,Decoupling,Resistance,Setup Order,Setup Delay,Trise
 Power,BOOST_LX,On,DFV,0.1V,1A,-1A,1A,0,0nF,0Ohm,0,0,200us
@@ -17,39 +33,39 @@ Power,VDDIO,On,DFV,0.1V,1A,-1A,1A,0,0nF,0Ohm,0,0,200us
 Power,VDDPA,On,DFV,0.1V,1A,-1A,1A,0,0nF,0Ohm,0,0,200us
 Block,PowerBlock,VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC
 #,Signal,State,Mode,Force,Range,Clamp L,Clamp H,Clamp Delay,Decoupling,Resistance,Setup Order,Setup Delay,Trise
-Power,BOOST_LX,On,DFV,3.6V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,BOOST_LX,On,DFV,3.6V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,PMU_REFBP,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
-Power,PMUVCC12,On,DFV,3V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,PMUVCC12,On,DFV,3V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,PMUVCC3,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,SIMVCC1,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,SIMVCC2,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,SIMVCC3,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
-Power,VBAT,On,DFV,3.6V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VBAT,On,DFV,3.6V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,VDD_PMU_AIOLDO,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,VDD_PMU_CLDO,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,VDD_PMU_SYSLDO,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
-Power,VDDBOOST,On,DFV,5V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
-Power,VDDIO,On,DFV,1.8V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDDBOOST,On,DFV,5V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDDIO,On,DFV,1.8V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,VDDPA,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Block,PowerBlock,VDDH_VIHLR_VOHLR_IOHLR_TIM_NFC
 #,Signal,State,Mode,Force,Range,Clamp L,Clamp H,Clamp Delay,Decoupling,Resistance,Setup Order,Setup Delay,Trise
-Power,BOOST_LX,On,DFV,4.8V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,BOOST_LX,On,DFV,4.8V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,PMU_REFBP,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
-Power,PMUVCC12,On,DFV,3V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,PMUVCC12,On,DFV,3V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,PMUVCC3,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,SIMVCC1,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,SIMVCC2,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,SIMVCC3,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
-Power,VBAT,On,DFV,4.8V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VBAT,On,DFV,4.8V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,VDD_PMU_AIOLDO,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,VDD_PMU_CLDO,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,VDD_PMU_SYSLDO,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
-Power,VDDBOOST,On,DFV,5V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
-Power,VDDIO,On,DFV,1.98V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDDBOOST,On,DFV,5V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDDIO,On,DFV,1.98V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,VDDPA,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Block,PowerBlock,power_short
 #,Signal,State,Mode,Force,Range,Clamp L,Clamp H,Clamp Delay,Decoupling,Resistance,Setup Order,Setup Delay,Trise
-Power,BOOST_LX,On,DFV,0.1V,250uA,-100uA,100uA,0,0nF,0Ohm,0,0,200us
+Power,BOOST_LX,On,DFV,0.1V*Vcoef,250uA,-100uA,100uA,0,0nF,0Ohm,0,0,200us
 Power,PMU_REFBP,On,DFV,0.1V,250uA,-100uA,100uA,0,0nF,0Ohm,0,0,200us
 Power,PMUVCC12,On,DFV,0.1V,250uA,-100uA,100uA,0,0nF,0Ohm,0,0,200us
 Power,PMUVCC3,On,DFV,0.1V,250uA,-100uA,100uA,0,0nF,0Ohm,0,0,200us
@@ -65,19 +81,19 @@ Power,VDDIO,On,DFV,0.1V,250uA,-100uA,100uA,0,0nF,0Ohm,0,0,200us
 Power,VDDPA,On,DFV,0.1V,250uA,-100uA,100uA,0,0nF,0Ohm,0,0,200us
 Block,PowerBlock,VDDL_VIHLR_VOHLR_IOHLR_TIM_NFC
 #,Signal,State,Mode,Force,Range,Clamp L,Clamp H,Clamp Delay,Decoupling,Resistance,Setup Order,Setup Delay,Trise
-Power,BOOST_LX,On,DFV,2.8V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,BOOST_LX,On,DFV,2.8V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,PMU_REFBP,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
-Power,PMUVCC12,On,DFV,3V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,PMUVCC12,On,DFV,3V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,PMUVCC3,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,SIMVCC1,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,SIMVCC2,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,SIMVCC3,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
-Power,VBAT,On,DFV,2.8V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VBAT,On,DFV,2.8V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,VDD_PMU_AIOLDO,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,VDD_PMU_CLDO,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,VDD_PMU_SYSLDO,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
-Power,VDDBOOST,On,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
-Power,VDDIO,On,DFV,1.8*0.9V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDDBOOST,On,DFV,0V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDDIO,On,DFV,1.8*0.9V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Power,VDDPA,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
 Block,PowerBlock,Power_OFF
 #,Signal,State,Mode,Force,Range,Clamp L,Clamp H,Clamp Delay,Decoupling,Resistance,Setup Order,Setup Delay,Trise
@@ -95,3 +111,19 @@ Power,VDD_PMU_SYSLDO,Off,DFV,0V,25mA,-25mA,25mA,0,0nF,0Ohm,0,0,200us
 Power,VDDBOOST,Off,DFV,0V,25mA,-25mA,25mA,0,0nF,0Ohm,0,0,200us
 Power,VDDIO,Off,DFV,0V,25mA,-25mA,25mA,0,0nF,0Ohm,0,0,200us
 Power,VDDPA,Off,DFV,0V,25mA,-25mA,25mA,0,0nF,0Ohm,0,0,200us
+Block,PowerBlock,DFT_setup
+#,Signal,State,Mode,Force,Range,Clamp L,Clamp H,Clamp Delay,Decoupling,Resistance,Setup Order,Setup Delay,Trise
+Power,BOOST_LX,On,DFV,3.6V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,PMU_REFBP,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,PMUVCC12,On,DFV,3V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,PMUVCC3,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,SIMVCC1,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,SIMVCC2,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,SIMVCC3,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VBAT,On,DFV,3.6V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDD_PMU_AIOLDO,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDD_PMU_CLDO,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDD_PMU_SYSLDO,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDDBOOST,On,DFV,0V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDDIO,On,DFV,1.8V*Vcoef,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
+Power,VDDPA,Off,DFV,0V,25mA,-25mA,25mA,0ms,0nF,0Ohm,0,5ms,200us
