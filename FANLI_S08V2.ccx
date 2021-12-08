@@ -6,7 +6,7 @@
             <spec>111.spec</spec>
         </specs>
         <setting />
-        <global />
+        <global>111.gl</global>
         <channelmap>FANLI.pm</channelmap>
         <power>111.pwr</power>
         <level>111.lvl</level>

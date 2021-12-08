@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<globals>
+    <global name="VDD_PMU_AIOLDO" value="VDD_PMU_AIOLDO" type="String" comment="" />
+    <global name="VIH" value="" type="String" comment="" />
+    <global name="VIL" value="" type="String" comment="" />
+    <global name="VOH" value="" type="String" comment="" />
+    <global name="VOL" value="" type="String" comment="" />
+    <global name="VT" value="" type="String" comment="" />
+    <global name="IOHL" value="" type="String" comment="" />
+    <global name="BOOST_LX" value="" type="String" comment="" />
+    <global name="VDDPA" value="" type="String" comment="" />
+    <global name="VDDIO" value="" type="String" comment="" />
+    <global name="VBAT" value="" type="String" comment="" />
+</globals>
