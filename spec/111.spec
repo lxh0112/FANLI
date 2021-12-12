@@ -27,4 +27,6 @@
     <spec name="VDD_PMU_AIOLDO" value="0" comment="" />
     <spec name="VDD_PMU_CLDO" value="0" comment="" />
     <spec name="VDD_PMU_SYSLDO" value="0" comment="" />
+    <spec name="SSI_CLK" value="50MHz" comment="" />
+    <spec name="CLK_CAP" value="100MHz" comment="" />
 </specs>

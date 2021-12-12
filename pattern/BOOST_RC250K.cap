@@ -1,0 +1,25 @@
+CAP 1.0;
+
+// CAP pattern converted by WGLCONVERTER Version 1.0.0.8
+// Date:          Nov 30 16:39:05 2021
+// Source WGL:    /data/delivery_pattern3/MTE/Hi1122/S08V2/Ezcnv_S08V2_Hi1122/convert/DC_IDDQ_TIM2_V1/1465592738924670977/workspace/output/temp/IDDQ_R02_HI1122_ONECLK.wgl
+
+Signals {
+    SIM_IO_PDN_2   InOut;  
+}
+
+SignalGroups {
+    ChaGS = SIM_IO_PDN_2;
+}
+ 
+
+TimingBlock {
+		timeplate_1_0      0;
+}
+
+Pattern {
+    (SIM_IO_PDN_2)
+  Repeat 15000   > timeplate_1_0  c; 
+  Repeat 15000   > timeplate_1_0  c;
+  Repeat 2768    > timeplate_1_0  c;
+}

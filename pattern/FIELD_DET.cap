@@ -1,0 +1,27 @@
+CAP 1.0;
+
+// CAP pattern converted by WGLCONVERTER Version 1.0.0.8
+// Date:          Nov 30 16:39:05 2021
+// Source WGL:    /data/delivery_pattern3/MTE/Hi1122/S08V2/Ezcnv_S08V2_Hi1122/convert/DC_IDDQ_TIM2_V1/1465592738924670977/workspace/output/temp/IDDQ_R02_HI1122_ONECLK.wgl
+
+Signals {
+    NFC_GPIO1           InOut;
+  
+}
+
+SignalGroups {
+    ChaGS = NFC_GPIO1;
+}
+ 
+
+TimingBlock {
+	timeplate_1_0      0;	
+}
+
+Pattern {
+    (NFC_GPIO1)
+  Repeat 15000   > timeplate_1_0  C; //V1 S3697 cycle 1  111X11XXXXXXXXXX; //V2 S109 cycle 2-3 | begin:Test io_ctrlport_ctrlr_cfg(00001100) instruction | ++++++++++++++++++++load io_ctrlport_ctrlr_cfg(00001100) instruction begin++++++++++++++++++++ | cycle2:Change TAP state from Idle to SelectDRScan! | cycle3:Change TAP state from Idle to Select DR-Scan/Select IR-Scan! | vector 3      cycle 2-3
+  Repeat 15000   > timeplate_1_0  C; //V2 S3699 cycle 2  101X11XXXXXXXXXX; //V3 S114 cycle 4-5 | cycle4-5:Change TAP state from SelectIRScan to CaptureIR/ShiftIR! | vector 4      cycle 4-5             > timeplate_1_0  C; //V0 S3693 cycle 0 | Pattern 0 Vector 0 TesterCycle 0
+  Repeat 2768    > timeplate_1_0  C; //V1 S3697 cycle 1 | Scan_test | Pattern 0 Vector 1 TesterCycle 1
+
+}    

@@ -1,0 +1,123 @@
+CAP 1.0;
+
+// CAP pattern converted by WGLCONVERTER Version 1.0.0.8
+// Date:          Nov 30 16:39:05 2021
+// Source WGL:    /data/delivery_pattern3/MTE/Hi1122/S08V2/Ezcnv_S08V2_Hi1122/convert/DC_IDDQ_TIM2_V1/1465592738924670977/workspace/output/temp/IDDQ_R02_HI1122_ONECLK.wgl
+
+Signals {
+    PMU_PWRON           InOut;
+    SIM_IO_PDN_2        InOut;
+    NFC_IC_SDA          InOut;
+    NFC_GPIO0           InOut;
+    NFC_GPIO4           InOut;
+    IC0_TEST            InOut;
+    IC1_TEST            InOut;
+    NFC_IC_SCL          InOut;
+    NFC_GPIO1           InOut;
+    NFC_IC_ADDR1        InOut;
+    NFC_IC_ADDR0        InOut;
+    SE_UART_RXD         InOut;
+    SE_WKUP_DEV         InOut;
+	RXN                 AnalogOut;
+	RXP                 AnalogOut; 
+    SE_POW_ON           InOut;
+    SE_UART_TXD         InOut;
+	NFC_DEV_WKUP_HOST   InOut;
+	NFC_CLK_REQ         InOut;
+	NFC_HOST_WKUP_DEV   InOut;
+}
+
+SignalGroups {
+    ChaGS = PMU_PWRON+ SIM_IO_PDN_2+ NFC_IC_SDA+ NFC_GPIO0+ NFC_GPIO4+ IC0_TEST+ IC1_TEST+ NFC_IC_SCL+ NFC_GPIO1+ NFC_IC_ADDR1+ NFC_IC_ADDR0+ SE_UART_RXD+ SE_WKUP_DEV+ RXN+ RXP+SE_POW_ON+SE_UART_TXD+NFC_DEV_WKUP_HOST+NFC_CLK_REQ+NFC_HOST_WKUP_DEV;
+}
+ 
+
+TimingBlock {
+	timeplate_1_0   0;
+    timeplate_1_1   1;
+    timeplate_1_2   2;
+    timeplate_1_3   3;
+    timeplate_1_4   4;
+    timeplate_1_5   5;
+    timeplate_1_6   6;
+    timeplate_1_7   7;
+    timeplate_1_8   8;
+    timeplate_1_9   9;
+    timeplate_1_10  10;
+    timeplate_1_11  11;
+    timeplate_1_12  12;
+    timeplate_1_13  13;
+    timeplate_1_14  14;
+    timeplate_1_15  15;
+    timeplate_1_16  16;
+    timeplate_1_17  17;
+    timeplate_1_18  18;
+    timeplate_1_19  19;
+    	
+}
+
+Pattern {
+    (PMU_PWRON, SIM_IO_PDN_2, NFC_IC_SDA, NFC_GPIO0, NFC_GPIO4, IC0_TEST, IC1_TEST, NFC_IC_SCL, NFC_GPIO1, NFC_IC_ADDR1, NFC_IC_ADDR0, SE_UART_RXD, SE_WKUP_DEV, RXN, RXP, SE_POW_ON, SE_UART_TXD, NFC_DEV_WKUP_HOST, NFC_CLK_REQ, NFC_HOST_WKUP_DEV)
+  Repeat 150    > timeplate_1_0  00000000000000000000; //V0 S3697 cycle 1  111X11XXXXXXXXXX; //V2 S109 cycle 2-3 | begin:Test io_ctrlport_ctrlr_cfg(00001100) instruction | ++++++++++++++++++++load io_ctrlport_ctrlr_cfg(00001100) instruction begin++++++++++++++++++++ | cycle2:Change TAP state from Idle to SelectDRScan! | cycle3:Change TAP state from Idle to Select DR-Scan/Select IR-Scan! | vector 3      cycle 2-3
+  Repeat 5      > timeplate_1_0  Z0000000000000000000; //V1 S3699 cycle 2  101X11XXXXXXXXXX; //V3 S114 cycle 4-5 | cycle4-5:Change TAP state from SelectIRScan to CaptureIR/ShiftIR! | vector 4      cycle 4-5             > timeplate_1_0  00; //V0 S3693 cycle 0 | Pattern 0 Vector 0 TesterCycle 0
+  		        > timeplate_1_1  M0000000000000000000; //V2 S3697 cycle 1 | Scan_test | Pattern 0 Vector 1 TesterCycle 1
+  Repeat 5	    > timeplate_1_0  00000000000000000000; //V3 S3699 cycle 2
+  Repeat 5      > timeplate_1_0  0Z000000000000000000; //V4 S3701 cycle 3
+                > timeplate_1_2  0M000000000000000000; //V5 S3703 cycle 4
+  Repeat 5      > timeplate_1_0  00000000000000000000; //V6 S3705 cycle 5
+  Repeat 5      > timeplate_1_0  00Z00000000000000000; //V7 S3707 cycle 6
+                > timeplate_1_3  00M00000000000000000; //V8 S3709 cycle 7
+  Repeat 5      > timeplate_1_0  00000000000000000000; //V9 S3711 cycle 8
+  Repeat 5      > timeplate_1_0  000Z0000000000000000; //V10 S3713 cycle 9
+                > timeplate_1_4  000M0000000000000000; //V11 S3697 cycle 1  111X11XXXXXXXXXX; //V2 S109 cycle 2-3 | begin:Test io_ctrlport_ctrlr_cfg(00001100) instruction | ++++++++++++++++++++load io_ctrlport_ctrlr_cfg(00001100) instruction begin++++++++++++++++++++ | cycle2:Change TAP state from Idle to SelectDRScan! | cycle3:Change TAP state from Idle to Select DR-Scan/Select IR-Scan! | vector 3      cycle 2-3
+  Repeat 5      > timeplate_1_0  00000000000000000000; //V12 S3699 cycle 2  101X11XXXXXXXXXX; //V3 S114 cycle 4-5 | cycle4-5:Change TAP state from SelectIRScan to CaptureIR/ShiftIR! | vector 4      cycle 4-5             > timeplate_1_0  00; //V0 S3693 cycle 0 | Pattern 0 Vector 0 TesterCycle 0
+  Repeat 5      > timeplate_1_0  0000Z000000000000000; //V13 S3697 cycle 1 | Scan_test | Pattern 0 Vector 1 TesterCycle 1
+                > timeplate_1_5  0000M000000000000000; //V14 S3699 cycle 2
+  Repeat 5      > timeplate_1_0 00000000000000000000; //V15 S3701 cycle 3
+  Repeat 5      > timeplate_1_0 00000Z00000000000000; //V16 S3703 cycle 4
+                > timeplate_1_6 00000M00000000000000; //V17 S3705 cycle 5
+  Repeat 5      > timeplate_1_0 00000000000000000000; //V18 S3707 cycle 6
+  Repeat 5      > timeplate_1_0 000000Z0000000000000; //V19 S3709 cycle 7
+                > timeplate_1_7 000000M0000000000000; //V20 S3711 cycle 8
+  Repeat 5      > timeplate_1_0 00000000000000000000; //V21 S3713 cycle 9
+  Repeat 5      > timeplate_1_0 0000000Z000000000000; //V22 S3697 cycle 1  111X11XXXXXXXXXX; //V2 S109 cycle 2-3 | begin:Test io_ctrlport_ctrlr_cfg(00001100) instruction | ++++++++++++++++++++load io_ctrlport_ctrlr_cfg(00001100) instruction begin++++++++++++++++++++ | cycle2:Change TAP state from Idle to SelectDRScan! | cycle3:Change TAP state from Idle to Select DR-Scan/Select IR-Scan! | vector 3      cycle 2-3
+                > timeplate_1_8 0000000M000000000000; //V23 S3699 cycle 2  101X11XXXXXXXXXX; //V3 S114 cycle 4-5 | cycle4-5:Change TAP state from SelectIRScan to CaptureIR/ShiftIR! | vector 4      cycle 4-5             > timeplate_1_0  00; //V0 S3693 cycle 0 | Pattern 0 Vector 0 TesterCycle 0
+  Repeat 5      > timeplate_1_0 00000000000000000000; //V24 S3697 cycle 1 | Scan_test | Pattern 0 Vector 1 TesterCycle 1
+  Repeat 5      > timeplate_1_0 00000000Z00000000000; //V25 S3699 cycle 2
+                > timeplate_1_9 00000000M00000000000; //V26 S3701 cycle 3
+  Repeat 5      > timeplate_1_0 00000000000000000000; //V27 S3703 cycle 4
+  Repeat 5      > timeplate_1_0 000000000Z0000000000; //V28 S3705 cycle 5
+                > timeplate_1_10 000000000M0000000000; //V29 S3707 cycle 6
+  Repeat 5      > timeplate_1_0 00000000000000000000; //V30 S3709 cycle 7
+  Repeat 5      > timeplate_1_0 0000000000Z000000000; //V31 S3711 cycle 8
+                > timeplate_1_11 0000000000M000000000; //V32 S3713 cycle 9
+  Repeat 5      > timeplate_1_0 00000000000000000000; //V33 S3697 cycle 1  111X11XXXXXXXXXX; //V2 S109 cycle 2-3 | begin:Test io_ctrlport_ctrlr_cfg(00001100) instruction | ++++++++++++++++++++load io_ctrlport_ctrlr_cfg(00001100) instruction begin++++++++++++++++++++ | cycle2:Change TAP state from Idle to SelectDRScan! | cycle3:Change TAP state from Idle to Select DR-Scan/Select IR-Scan! | vector 3      cycle 2-3
+  Repeat 5      > timeplate_1_0 00000000000Z00000000; //V34 S3699 cycle 2  101X11XXXXXXXXXX; //V3 S114 cycle 4-5 | cycle4-5:Change TAP state from SelectIRScan to CaptureIR/ShiftIR! | vector 4      cycle 4-5             > timeplate_1_0  00; //V0 S3693 cycle 0 | Pattern 0 Vector 0 TesterCycle 0
+                > timeplate_1_12 00000000000M00000000; //V35 S3697 cycle 1 | Scan_test | Pattern 0 Vector 1 TesterCycle 1
+  Repeat 5      > timeplate_1_0 00000000000000000000; //V36 S3699 cycle 2
+  Repeat 5      > timeplate_1_0 000000000000Z0000000; //V37 S3701 cycle 3
+                > timeplate_1_13 000000000000M0000000; //V38 S3703 cycle 4
+  Repeat 5      > timeplate_1_0 00000000000000000000; //V39 S3705 cycle 5
+  Repeat 5      > timeplate_1_0 0000000000000Z000000; //V40 S3707 cycle 6
+                > timeplate_1_14 0000000000000M000000; //V41 S3709 cycle 7
+  Repeat 5      > timeplate_1_0 00000000000000000000; //V42 S3711 cycle 8
+  Repeat 5      > timeplate_1_0 00000000000000Z00000; //V43 S3713 cycle 9
+                > timeplate_1_15 00000000000000M00000; //V44
+  Repeat 5      > timeplate_1_0 00000000000000000000; //V45
+  Repeat 5      > timeplate_1_0 000000000000000Z0000; //V46
+                > timeplate_1_16 000000000000000M0000; //V47
+  Repeat 5      > timeplate_1_0 00000000000000000000; //V48
+  Repeat 5      > timeplate_1_0 0000000000000000Z000; //V49
+                > timeplate_1_17 0000000000000000M000; //V50
+  Repeat 5      > timeplate_1_0 00000000000000000000; //V51
+  Repeat 5      > timeplate_1_0 00000000000000000Z00; //V52
+                > timeplate_1_18 00000000000000000M00; //V53
+  Repeat 5      > timeplate_1_0 00000000000000000000; //V54
+  Repeat 5      > timeplate_1_0 000000000000000000Z0; //V55
+                > timeplate_1_19 000000000000000000M0; //V56
+			    
+}                
+
+
+
+

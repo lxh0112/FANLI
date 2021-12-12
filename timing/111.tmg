@@ -672,4 +672,341 @@
             <breakwaveform pin="IC1_TEST" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
         </breakwaveforms>
     </timingblock>
+    <timingblock name="OS_FUNC" mastertimingset="" domainclk="5">
+        <edgesets comment="">
+            <edgeset pin="PMU_PWRON" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="SIM_IO_PDN_2" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="NFC_IC_SDA" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="NFC_GPIO0" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="NFC_GPIO4" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="IC0_TEST" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="IC1_TEST" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="NFC_IC_SCL" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="NFC_GPIO1" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="NFC_IC_ADDR1" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="NFC_IC_ADDR0" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="SE_UART_RXD" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="SE_WKUP_DEV" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="SE_POW_ON" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="SE_UART_TXD" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="NFC_DEV_WKUP_HOST" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="NFC_CLK_REQ" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="NFC_HOST_WKUP_DEV" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+            <edgeset pin="PMU_PWRON" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="SIM_IO_PDN_2" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="NFC_IC_SDA" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="NFC_GPIO0" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="NFC_GPIO4" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="IC0_TEST" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="IC1_TEST" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="NFC_IC_SCL" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="NFC_GPIO1" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="NFC_IC_ADDR1" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="NFC_IC_ADDR0" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="SE_UART_RXD" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="SE_WKUP_DEV" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="SE_POW_ON" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="SE_UART_TXD" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="NFC_DEV_WKUP_HOST" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="NFC_CLK_REQ" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+            <edgeset pin="NFC_HOST_WKUP_DEV" name="EP_1" format="EP" source="PAT" timingA="0.0*per_20" timingB="0.75*per_20" timingC="" />
+        </edgesets>
+        <timingsets comment="">
+            <timingset name="timeplate_1_0" timingsetno="0" basetimingset="" period="per_20">
+                <pinedge pin="PMU_PWRON" edge="NR_1" comment="" />
+                <pinedge pin="SIM_IO_PDN_2" edge="NR_1" comment="" />
+                <pinedge pin="NFC_IC_SDA" edge="NR_1" comment="" />
+                <pinedge pin="NFC_GPIO0" edge="NR_1" comment="" />
+                <pinedge pin="NFC_GPIO4" edge="NR_1" comment="" />
+                <pinedge pin="IC0_TEST" edge="NR_1" comment="" />
+                <pinedge pin="IC1_TEST" edge="NR_1" comment="" />
+                <pinedge pin="NFC_IC_SCL" edge="NR_1" comment="" />
+                <pinedge pin="NFC_GPIO1" edge="NR_1" comment="" />
+                <pinedge pin="NFC_IC_ADDR1" edge="NR_1" comment="" />
+                <pinedge pin="NFC_IC_ADDR0" edge="NR_1" comment="" />
+                <pinedge pin="SE_UART_RXD" edge="NR_1" comment="" />
+                <pinedge pin="SE_WKUP_DEV" edge="NR_1" comment="" />
+                <pinedge pin="SE_POW_ON" edge="NR_1" comment="" />
+                <pinedge pin="SE_UART_TXD" edge="NR_1" comment="" />
+                <pinedge pin="NFC_DEV_WKUP_HOST" edge="NR_1" comment="" />
+                <pinedge pin="NFC_CLK_REQ" edge="NR_1" comment="" />
+                <pinedge pin="NFC_HOST_WKUP_DEV" edge="NR_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_1" timingsetno="1" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="PMU_PWRON" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_2" timingsetno="2" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="SIM_IO_PDN_2" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_3" timingsetno="3" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="NFC_IC_SDA" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_4" timingsetno="4" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="NFC_GPIO0" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_5" timingsetno="5" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="NFC_GPIO4" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_6" timingsetno="6" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="IC0_TEST" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_7" timingsetno="7" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="IC1_TEST" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_8" timingsetno="8" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="NFC_IC_SCL" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_9" timingsetno="9" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="NFC_GPIO1" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_10" timingsetno="10" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="NFC_IC_ADDR1" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_11" timingsetno="11" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="NFC_IC_ADDR0" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_12" timingsetno="12" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="SE_UART_RXD" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_13" timingsetno="13" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="SE_WKUP_DEV" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_16" timingsetno="16" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="SE_POW_ON" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_17" timingsetno="17" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="SE_UART_TXD" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_18" timingsetno="18" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="NFC_DEV_WKUP_HOST" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_19" timingsetno="19" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="NFC_CLK_REQ" edge="EP_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_20" timingsetno="20" basetimingset="timeplate_1_0" period="per_20">
+                <pinedge pin="NFC_HOST_WKUP_DEV" edge="EP_1" comment="" />
+            </timingset>
+        </timingsets>
+        <statics comment="" enable="N">
+            <static pin="PMU_PWRON" priorevent="NOOP" />
+            <static pin="SIM_IO_PDN_2" priorevent="NOOP" />
+            <static pin="NFC_IC_SDA" priorevent="NOOP" />
+            <static pin="NFC_GPIO0" priorevent="NOOP" />
+            <static pin="NFC_GPIO4" priorevent="NOOP" />
+            <static pin="IC0_TEST" priorevent="NOOP" />
+            <static pin="IC1_TEST" priorevent="NOOP" />
+            <static pin="NFC_IC_SCL" priorevent="NOOP" />
+            <static pin="NFC_GPIO1" priorevent="NOOP" />
+            <static pin="NFC_IC_ADDR1" priorevent="NOOP" />
+            <static pin="NFC_IC_ADDR0" priorevent="NOOP" />
+            <static pin="SE_UART_RXD" priorevent="NOOP" />
+            <static pin="SE_WKUP_DEV" priorevent="NOOP" />
+            <static pin="SE_POW_ON" priorevent="NOOP" />
+            <static pin="SE_UART_TXD" priorevent="NOOP" />
+            <static pin="NFC_DEV_WKUP_HOST" priorevent="NOOP" />
+            <static pin="NFC_CLK_REQ" priorevent="NOOP" />
+            <static pin="NFC_HOST_WKUP_DEV" priorevent="NOOP" />
+        </statics>
+        <freerunnings comment="" />
+        <breakwaveforms comment="" period="5ns">
+            <breakwaveform pin="PMU_PWRON" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="SIM_IO_PDN_2" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="NFC_IC_SDA" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="NFC_GPIO0" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="NFC_GPIO4" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="IC0_TEST" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="IC1_TEST" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="NFC_IC_SCL" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="NFC_GPIO1" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="NFC_IC_ADDR1" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="NFC_IC_ADDR0" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="SE_UART_RXD" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="SE_WKUP_DEV" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="SE_POW_ON" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="SE_UART_TXD" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="NFC_DEV_WKUP_HOST" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="NFC_CLK_REQ" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="NFC_HOST_WKUP_DEV" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+        </breakwaveforms>
+    </timingblock>
+    <timingblock name="TCXO_CTRL_OFF" mastertimingset="" domainclk="5">
+        <edgesets comment="">
+            <edgeset pin="U*002" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*1.0/SSI_CLK" timingC="" />
+        </edgesets>
+        <timingsets comment="">
+            <timingset name="timeplate_1_0" timingsetno="0" basetimingset="" period="1.0/SSI_CLK">
+                <pinedge pin="U*002" edge="NR_1" comment="" />
+            </timingset>
+        </timingsets>
+        <statics comment="" enable="N">
+            <static pin="U*002" priorevent="NOOP" />
+        </statics>
+        <freerunnings comment="" />
+        <breakwaveforms comment="" period="5ns">
+            <breakwaveform pin="U*002" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+        </breakwaveforms>
+    </timingblock>
+    <timingblock name="SSI_MODE" mastertimingset="" domainclk="5">
+        <edgesets comment="">
+            <edgeset pin="PMU_PWRON" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*1.0/SSI_CLK" timingC="" />
+            <edgeset pin="NFC_HOST_WKUP_DEV" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*1.0/SSI_CLK" timingC="" />
+        </edgesets>
+        <timingsets comment="">
+            <timingset name="timeplate_1_0" timingsetno="0" basetimingset="" period="1.0/SSI_CLK">
+                <pinedge pin="PMU_PWRON" edge="NR_1" comment="" />
+                <pinedge pin="NFC_HOST_WKUP_DEV" edge="NR_1" comment="" />
+            </timingset>
+        </timingsets>
+        <statics comment="" enable="N">
+            <static pin="PMU_PWRON" priorevent="NOOP" />
+            <static pin="NFC_HOST_WKUP_DEV" priorevent="NOOP" />
+        </statics>
+        <freerunnings comment="" />
+        <breakwaveforms comment="" period="5ns">
+            <breakwaveform pin="PMU_PWRON" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="NFC_HOST_WKUP_DEV" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+        </breakwaveforms>
+    </timingblock>
+    <timingblock name="TCXO_CTRL_ON" mastertimingset="" domainclk="5">
+        <edgesets comment="">
+            <edgeset pin="U*002" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*per_20" timingC="" />
+        </edgesets>
+        <timingsets comment="">
+            <timingset name="timeplate_1_0" timingsetno="0" basetimingset="" period="per_20">
+                <pinedge pin="U*002" edge="NR_1" comment="" />
+            </timingset>
+        </timingsets>
+        <statics comment="" enable="N">
+            <static pin="U*002" priorevent="NOOP" />
+        </statics>
+        <freerunnings comment="" />
+        <breakwaveforms comment="" period="5ns">
+            <breakwaveform pin="U*002" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+        </breakwaveforms>
+    </timingblock>
+    <timingblock name="BOOST_OSC" mastertimingset="" domainclk="5">
+        <edgesets comment="">
+            <edgeset pin="BOOST_LX_D" name="EC_1" format="EC" source="PAT" timingA="0*1.0/SSI_CLK" timingB="0.55*1.0/SSI_CLK" timingC="" />
+        </edgesets>
+        <timingsets comment="">
+            <timingset name="timeplate_1_0" timingsetno="0" basetimingset="" period="1.0/SSI_CLK">
+                <pinedge pin="BOOST_LX_D" edge="EC_1" comment="" />
+            </timingset>
+        </timingsets>
+        <statics comment="" enable="N">
+            <static pin="BOOST_LX_D" priorevent="NOOP" />
+        </statics>
+        <freerunnings comment="" />
+        <breakwaveforms comment="" period="5ns">
+            <breakwaveform pin="BOOST_LX_D" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+        </breakwaveforms>
+    </timingblock>
+    <timingblock name="BOOST_RC250K" mastertimingset="" domainclk="5">
+        <edgesets comment="">
+            <edgeset pin="SIM_IO_PDN_2" name="EC_1" format="EC" source="PAT" timingA="0*1.0/SSI_CLK" timingB="0.55*1.0/SSI_CLK" timingC="" />
+        </edgesets>
+        <timingsets comment="">
+            <timingset name="timeplate_1_0" timingsetno="0" basetimingset="" period="1.0/SSI_CLK">
+                <pinedge pin="SIM_IO_PDN_2" edge="EC_1" comment="" />
+            </timingset>
+        </timingsets>
+        <statics comment="" enable="N">
+            <static pin="SIM_IO_PDN_2" priorevent="NOOP" />
+        </statics>
+        <freerunnings comment="" />
+        <breakwaveforms comment="" period="5ns">
+            <breakwaveform pin="SIM_IO_PDN_2" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+        </breakwaveforms>
+    </timingblock>
+    <timingblock name="EXTRA_DET" mastertimingset="" domainclk="5">
+        <edgesets comment="">
+            <edgeset pin="NFC_GPIO1" name="EC_1" format="EC" source="PAT" timingA="0*1.0/SSI_CLK" timingB="0.55*1.0/SSI_CLK" timingC="" />
+        </edgesets>
+        <timingsets comment="">
+            <timingset name="timeplate_1_0" timingsetno="0" basetimingset="" period="1.0/SSI_CLK">
+                <pinedge pin="NFC_GPIO1" edge="EC_1" comment="" />
+            </timingset>
+        </timingsets>
+        <statics comment="" enable="N">
+            <static pin="NFC_GPIO1" priorevent="NOOP" />
+        </statics>
+        <freerunnings comment="" />
+        <breakwaveforms comment="" period="5ns">
+            <breakwaveform pin="NFC_GPIO1" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+        </breakwaveforms>
+    </timingblock>
+    <timingblock name="FIELD_DET" mastertimingset="" domainclk="5">
+        <edgesets comment="">
+            <edgeset pin="NFC_GPIO1" name="EC_1" format="EC" source="PAT" timingA="0*1.0/SSI_CLK" timingB="0.55*1.0/SSI_CLK" timingC="" />
+        </edgesets>
+        <timingsets comment="">
+            <timingset name="timeplate_1_0" timingsetno="0" basetimingset="" period="1.0/SSI_CLK">
+                <pinedge pin="NFC_GPIO1" edge="EC_1" comment="" />
+            </timingset>
+        </timingsets>
+        <statics comment="" enable="N">
+            <static pin="NFC_GPIO1" priorevent="NOOP" />
+        </statics>
+        <freerunnings comment="" />
+        <breakwaveforms comment="" period="5ns">
+            <breakwaveform pin="NFC_GPIO1" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+        </breakwaveforms>
+    </timingblock>
+    <timingblock name="RF_ADPLL_TEST" mastertimingset="" domainclk="5">
+        <edgesets comment="" />
+        <timingsets comment="" />
+        <statics comment="" enable="" />
+        <freerunnings comment="" />
+        <breakwaveforms comment="" period="" />
+    </timingblock>
+    <timingblock name="SWIO1_S1_CAP" mastertimingset="" domainclk="5">
+        <edgesets comment="">
+            <edgeset pin="NFC_IC_ADDR0" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*1.0/SSI_CLK" timingC="" />
+            <edgeset pin="NFC_SIM_SWIO1" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*1.0/SSI_CLK" timingC="" />
+            <edgeset pin="NFC_SIM_SWIO1" name="EP_1" format="EP" source="PAT" timingA="0*1.0/SSI_CLK" timingB="0.55*1.0/SSI_CLK" timingC="" />
+        </edgesets>
+        <timingsets comment="">
+            <timingset name="timeplate_1_0" timingsetno="0" basetimingset="" period="1.0/SSI_CLK">
+                <pinedge pin="NFC_IC_ADDR0" edge="NR_1" comment="" />
+                <pinedge pin="NFC_SIM_SWIO1" edge="NR_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_1" timingsetno="1" basetimingset="timeplate_1_0" period="1.0/SSI_CLK">
+                <pinedge pin="NFC_SIM_SWIO1" edge="EP_1" comment="" />
+            </timingset>
+        </timingsets>
+        <statics comment="" enable="N">
+            <static pin="NFC_IC_ADDR0" priorevent="NOOP" />
+            <static pin="NFC_SIM_SWIO1" priorevent="NOOP" />
+        </statics>
+        <freerunnings comment="" />
+        <breakwaveforms comment="" period="5ns">
+            <breakwaveform pin="NFC_IC_ADDR0" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="NFC_SIM_SWIO1" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+        </breakwaveforms>
+    </timingblock>
+    <timingblock name="SWIO3_S1_CAP" mastertimingset="" domainclk="5">
+        <edgesets comment="">
+            <edgeset pin="NFC_IC_ADDR0" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*1.0/SSI_CLK" timingC="" />
+            <edgeset pin="NFC_SIM_SWIO3" name="NR_1" format="NR" source="PAT" timingA="" timingB="0.0*1.0/SSI_CLK" timingC="" />
+            <edgeset pin="NFC_SIM_SWIO3" name="EP_1" format="EP" source="PAT" timingA="0*1.0/SSI_CLK" timingB="0.55*1.0/SSI_CLK" timingC="" />
+        </edgesets>
+        <timingsets comment="">
+            <timingset name="timeplate_1_0" timingsetno="0" basetimingset="" period="1.0/SSI_CLK">
+                <pinedge pin="NFC_IC_ADDR0" edge="NR_1" comment="" />
+                <pinedge pin="NFC_SIM_SWIO3" edge="NR_1" comment="" />
+            </timingset>
+            <timingset name="timeplate_1_1" timingsetno="1" basetimingset="timeplate_1_0" period="1.0/SSI_CLK">
+                <pinedge pin="NFC_SIM_SWIO3" edge="EP_1" comment="" />
+            </timingset>
+        </timingsets>
+        <statics comment="" enable="N">
+            <static pin="NFC_IC_ADDR0" priorevent="NOOP" />
+            <static pin="NFC_SIM_SWIO3" priorevent="NOOP" />
+        </statics>
+        <freerunnings comment="" />
+        <breakwaveforms comment="" period="5ns">
+            <breakwaveform pin="NFC_IC_ADDR0" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+            <breakwaveform pin="NFC_SIM_SWIO3" format="STAY" pattern="NOOP" driveon="" drivedata="" drivereturn="" />
+        </breakwaveforms>
+    </timingblock>
 </timings>
