@@ -1,12 +1,10 @@
-17:04:25 **** Rebuild of configuration Debug for project UserCode ****
+11:25:12 **** Incremental Build of configuration Debug for project UserCode ****
 Info: Internal Builder is used for build
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mytest3.o" "..\\src\\mytest3.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mytest1.o" "..\\src\\mytest1.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mytest2.o" "..\\src\\mytest2.cpp" 
-g++ "-L..\\lib" "-LC:\\PhoenixSys\\bin" -shared -o libUserCode.dll "src\\mytest1.o" "src\\mytest2.o" "src\\mytest3.o" -lTestClass -lAPIDLL 
-xcopy libUserCode.dll "C:\\Users\\Administrator\\Desktop\\TestProgram-0901\\lib" /y 
-C:libUserCode.dll
-复制了 1 个文件
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TSENSOR_TEST.o" "..\\src\\TSENSOR_TEST.cpp" 
+..\src\TSENSOR_TEST.cpp:8:10: fatal error: Globle_Var.h: No such file or directory
+ #include "Globle_Var.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
 
-17:04:28 Build Finished. 0 errors, 0 warnings. (took 2s.337ms)
+11:25:12 Build Failed. 1 errors, 0 warnings. (took 101ms)
 

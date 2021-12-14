@@ -29,7 +29,7 @@ public:
                }
 
     void execute(){
-					TheInst.DCVS().Power().Apply();
+					TheInst.DCVI().Power().Apply();
 					TheInst.PPMU().Pins(pinlist).SetClear();
 					TheInst.PPMU().Pins(pinlist).SetMeasureType(PhxAPI::E_MEASURE)
 												.SetVClampL(vclampl)

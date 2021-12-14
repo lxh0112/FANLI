@@ -229,7 +229,31 @@
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
-        <row opcode="Test" operand="MEMORY_TEST MODE 1-5" test="" testnumber="">
+        <row opcode="Test" operand="MEMORY_TEST MODE 1" test="" testnumber="">
+            <limit lowlimit="" highlimit="" />
+            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <action pass="" fail="" />
+            <device sense="" condition="" name="" />
+        </row>
+        <row opcode="Test" operand="MEMORY_TEST MODE 2" test="" testnumber="">
+            <limit lowlimit="" highlimit="" />
+            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <action pass="" fail="" />
+            <device sense="" condition="" name="" />
+        </row>
+        <row opcode="Test" operand="MEMORY_TEST MODE 3" test="" testnumber="">
+            <limit lowlimit="" highlimit="" />
+            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <action pass="" fail="" />
+            <device sense="" condition="" name="" />
+        </row>
+        <row opcode="Test" operand="MEMORY_TEST MODE 4" test="" testnumber="">
+            <limit lowlimit="" highlimit="" />
+            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <action pass="" fail="" />
+            <device sense="" condition="" name="" />
+        </row>
+        <row opcode="Test" operand="MEMORY_TEST MODE 5" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
             <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />
@@ -734,6 +758,12 @@
             <device sense="" condition="" name="" />
         </row>
         <row opcode="Test" operand="DFT_EXIT_STEP1" test="" testnumber="">
+            <limit lowlimit="" highlimit="" />
+            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <action pass="" fail="" />
+            <device sense="" condition="" name="" />
+        </row>
+        <row opcode="Test" operand="" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
             <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />

@@ -31,7 +31,7 @@ public:
     	//    	cout << "!!!Hello Basic_02_OS_VDD_PPMU!!!" << endl;
     	//    	TheSoft.Message().InfoMessage("Basic_02_OS_VDD_PPMU");
 
-    	TheInst.DCVS().Power().Apply();
+    	TheInst.DCVI().Power().Apply();
 #if 1
     	vddpinlist="gOS_VDD";
     	string strPinList = vddpinlist;

@@ -28,7 +28,7 @@ public:
     void execute(){
     	//    	cout << "!!!Hello Basic_02_OS_VSS_PPMU!!!" << endl;
     	//    	TheSoft.Message().InfoMessage("Basic_02_OS_VSS_PPMU");
-    	TheInst.DCVS().Power().Apply();
+    	TheInst.DCVI().Power().Apply();
 #if 1
     	vsspinlist="gOS_VSS";
 		std::string strPinList = vsspinlist;

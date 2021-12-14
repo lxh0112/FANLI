@@ -22,17 +22,17 @@ public:
                 }
 
     void execute(){
-					TheInst.DCVS().Power().Apply();
+					TheInst.DCVI().Power().Apply();
 
 
-					TheInst.DCVS().Pins(powerpinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MI)
+					TheInst.DCVI().Pins(powerpinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MI)
 													 .SetReadMode(PhxAPI::E_DC_MODE_MEASURE)
 													 .SetMeasureMethod(PhxAPI::E_DC_METHOD_STATIC)
 													 .SetMeasureOrder(PhxAPI::E_DC_ORDER_GROUP)
 													 .SetSampleSize(samplesize)
 													 .SetWaitTime(5*ms)
 													 .Measure();
-					PinArrayDouble  Result=TheInst.DCVS().Pins(powerpinlist).GetMeasureResults();
+					PinArrayDouble  Result=TheInst.DCVI().Pins(powerpinlist).GetMeasureResults();
 					vector<string> pinname = SplitPinList(powerpinlist);
 					for(int i=0;i<pinname.size();i++)
 					{

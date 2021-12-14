@@ -23,7 +23,7 @@ public:
 	            }
 	void execute() {
 						cout << "!!!Hello Basic_01_Functional!!!" << endl;
-						TheInst.DCVS().Power().Apply();
+						TheInst.DCVI().Power().Apply();
 						TheInst.Digital().Level().Apply();
 						TheInst.Digital().Timing().Apply();
 						TheInst.Digital().PatEng().SetupMCFData();
@@ -39,13 +39,13 @@ public:
 //						  cout<<"executedcount (dec) :"<<executedcount<<endl;
 						  std::string testname = TheSoft.Flow().Test().GetCurrentTestName();
 //						  cout<<"*******testname is********"<<testname<<endl;
-						  if(testname == "PCIE_PREEM_EXT_5G")
-						  {
-							  TheInst.Digital().Timing("").StopFreeRunningClock();
-							  TheInst.Digital().Timing("").Apply();
-//							  double freq_result = Cymomer_Read_Freq_Hz(100);
-//							  if(freq_result > 900000) freq_result = 0;
-						  }
+//						  if(testname == "PCIE_PREEM_EXT_5G")
+//						  {
+//							  TheInst.Digital().Timing("").StopFreeRunningClock();
+//							  TheInst.Digital().Timing("").Apply();
+////							  double freq_result = Cymomer_Read_Freq_Hz(100);
+////							  if(freq_result > 900000) freq_result = 0;
+//						  }
 					    }
 
 };

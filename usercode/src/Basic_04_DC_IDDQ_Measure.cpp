@@ -15,15 +15,15 @@ public:
 
 	void init(){
 					add_param( "Measure_pinlist",  "PinString", &pinlist);
-					add_param("SampleSize","int",&samplesize).set_default("16");
+					add_param("SampleSize","int",&samplesize).set_default("4");
 	           }
     void execute(){
-					TheInst.DCVS().Power().Apply();
+					TheInst.DCVI().Power().Apply();
 					TheInst.Digital().Level().Apply();
 					TheInst.Digital().Timing().Apply();
-					TheInst.DCVS().Pins("VDD_PMU_SYSLDO").SetIRange(PhxAPI::E_POWER_R2_5MA).SetIClampH(1*mA).SetIClampL(-1*mA);
-					TheInst.DCVS().Pins("VDD_PMU_CLDO").SetIRange(PhxAPI::E_POWER_R25MA).SetIClampH(20*mA).SetIClampH(-0.01*mA);
-					TheInst.DCVS().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MI)
+					TheInst.DCVI().Pins("VDD_PMU_SYSLDO").SetIRange(PhxAPI::E_POWER_R2_5MA).SetIClampH(1*mA).SetIClampL(-1*mA);
+					TheInst.DCVI().Pins("VDD_PMU_CLDO").SetIRange(PhxAPI::E_POWER_R25MA).SetIClampH(20*mA).SetIClampH(-0.01*mA);
+					TheInst.DCVI().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MI)
 												.SetReadMode(PhxAPI::E_DC_MODE_MEASURE)
 												.SetMeasureMethod(PhxAPI::E_DC_METHOD_TRIGGER)
 												.SetMeasureOrder(PhxAPI::E_DC_ORDER_SINGLE)
@@ -32,8 +32,8 @@ public:
 												.Measure();
 					TheInst.Digital().Pattern().Start();
 					TheInst.Wait(3*ms);
-					vector<PinArrayDouble> iddq_result = TheInst.DCVS().Pins(pinlist).GetTrigResults();
-					TheInst.DCVS().ClearAllSetPara();
+					vector<PinArrayDouble> iddq_result = TheInst.DCVI().Pins(pinlist).GetTrigResults();
+					TheInst.DCVI().ClearAllSetPara();
 
 //					map<int,double> IDDQ_DATA_1[17];
 //					map<int,double> IDDQ_DATA_2[17];

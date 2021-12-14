@@ -1,0 +1,237 @@
+15:37:29 **** Rebuild of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_03_DC_Leakage.o" "..\\src\\Basic_03_DC_Leakage.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PMU_IDD_ECO.o" "..\\src\\PMU_IDD_ECO.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\BOOT_UP.o" "..\\src\\BOOT_UP.cpp" 
+..\src\BOOT_UP.cpp:15:10: fatal error: d2sProtocolSSI.h: No such file or directory
+ #include "d2sProtocolSSI.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+15:39:07 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\d2s.o" "..\\src\\d2s.cpp" 
+..\src\d2s.cpp:7:10: fatal error: d2s.h: No such file or directory
+ #include <d2s.h>
+          ^~~~~~~
+compilation terminated.
+15:39:34 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_04_DC_IDDQ_Measure.o" "..\\src\\Basic_04_DC_IDDQ_Measure.cpp" 
+..\src\Basic_04_DC_IDDQ_Measure.cpp: In lambda function:
+..\src\Basic_04_DC_IDDQ_Measure.cpp:81:19: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<PinArrayDataEx<double> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+      for(int i=0;i<iddq_result.size();i++)
+                  ~^~~~~~~~~~~~~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Hi1151_RX_Reg.o" "..\\src\\Hi1151_RX_Reg.cpp" 
+..\src\Hi1151_RX_Reg.cpp:6:10: fatal error: d2sProtocolSSI.h: No such file or directory
+ #include "d2sProtocolSSI.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+15:39:55 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\PMU_IDD_OFF.o" "..\\src\\PMU_IDD_OFF.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\CMU_CRYSTAL_DFT_.o" "..\\src\\CMU_CRYSTAL_DFT_.cpp" 
+In file included from C:\PhoenixSys\bin\include/TestClass.h:8,
+                 from ..\src\CMU_CRYSTAL_DFT_.cpp:10:
+..\src\CMU_CRYSTAL_DFT_.cpp: In member function 'virtual TestClass* __TestClassFactory__128CMU_CRYSTAL_DFT::createUserTestClass() const':
+C:\PhoenixSys\bin\include/TestClassFactoryMacro.h:32:36: error: invalid new-expression of abstract class type 'CMU_CRYSTAL_DFT'
+       pProto = new TestClass_class(); \
+                                    ^
+..\src\CMU_CRYSTAL_DFT_.cpp:128:1: note: in expansion of macro 'REGISTER_TESTCLASS'
+ REGISTER_TESTCLASS("CMU_CRYSTAL_DFT",CMU_CRYSTAL_DFT)
+ ^~~~~~~~~~~~~~~~~~
+..\src\CMU_CRYSTAL_DFT_.cpp:14:7: note:   because the following virtual functions are pure within 'CMU_CRYSTAL_DFT':
+ class CMU_CRYSTAL_DFT: public TestClass{
+       ^~~~~~~~~~~~~~~
+In file included from ..\src\CMU_CRYSTAL_DFT_.cpp:10:
+C:\PhoenixSys\bin\include/TestClass.h:16:18: note: 	'virtual void TestClass::execute()'
+     virtual void execute() = 0;
+                  ^~~~~~~
+15:44:05 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mytest3.o" "..\\src\\mytest3.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\5VON.o" "..\\src\\5VON.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_00_PowerShort.o" "..\\src\\Basic_00_PowerShort.cpp" 
+..\src\Basic_00_PowerShort.cpp: In member function 'virtual void Basic_00_PowerShort::execute()':
+..\src\Basic_00_PowerShort.cpp:37:19: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::__cxx11::basic_string<char> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+      for(int i=0;i<pinname.size();i++)
+                  ~^~~~~~~~~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_03_DC_IIHL_Leakage.o" "..\\src\\Basic_03_DC_IIHL_Leakage.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_02_OS_VDD_VSS_PPMU.o" "..\\src\\Basic_02_OS_VDD_VSS_PPMU.cpp" 
+..\src\Basic_02_OS_VDD_VSS_PPMU.cpp: In member function 'virtual void Basic_02_OS_VDD_VSS_PPMU::execute()':
+..\src\Basic_02_OS_VDD_VSS_PPMU.cpp:48:19: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::__cxx11::basic_string<char> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+      for(int i=0;i<pinname.size();i++)
+                  ~^~~~~~~~~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\BOOT_UP.o" "..\\src\\BOOT_UP.cpp" 
+..\src\BOOT_UP.cpp:15:10: fatal error: d2sProtocolSSI.h: No such file or directory
+ #include "d2sProtocolSSI.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+15:44:47 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mytest2.o" "..\\src\\mytest2.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mytest1.o" "..\\src\\mytest1.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_02_OS_VSS_PPMU.o" "..\\src\\Basic_02_OS_VSS_PPMU.cpp" 
+..\src\Basic_02_OS_VSS_PPMU.cpp:36:3: warning: "/*" within comment [-Wcomment]
+   /*==================OS_PPMU  FIMV==================*/
+    
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_01_Functional.o" "..\\src\\Basic_01_Functional.cpp" 
+..\src\Basic_01_Functional.cpp: In member function 'virtual void Basic_01_Functional::execute()':
+..\src\Basic_01_Functional.cpp:37:18: warning: unused variable 'executedcount' [-Wunused-variable]
+         uint64_t executedcount=TheInst.Digital().PatEng().GetExecutedCyclesCount();
+                  ^~~~~~~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\GetLog.o" "..\\src\\GetLog.cpp" 
+..\src\GetLog.cpp:1:10: fatal error: GetLog.h: No such file or directory
+ #include "GetLog.h"
+          ^~~~~~~~~~
+compilation terminated.
+15:45:31 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\5VOFF.o" "..\\src\\5VOFF.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_02_OS_VDD_PPMU.o" "..\\src\\Basic_02_OS_VDD_PPMU.cpp" 
+g++ "-L..\\lib" "-LC:\\PhoenixSys\\bin" -shared -o libUserCode.dll "src\\5VOFF.o" "src\\5VON.o" "src\\Basic_00_PowerShort.o" "src\\Basic_01_Functional.o" "src\\Basic_02_OS_VDD_PPMU.o" "src\\Basic_02_OS_VDD_VSS_PPMU.o" "src\\Basic_02_OS_VSS_PPMU.o" "src\\Basic_03_DC_IIHL_Leakage.o" "src\\Basic_03_DC_Leakage.o" "src\\Basic_04_DC_IDDQ_Measure.o" "src\\mytest1.o" "src\\mytest2.o" "src\\mytest3.o" -lTestClass -lAPIDLL 
+xcopy libUserCode.dll "E:\\hisilicon program\\FANLI_TOTAL\\FANLI\\lib" /y 
+E:libUserCode.dll
+复制了 1 个文件
+15:52:24 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_01_Functional.o" "..\\src\\Basic_01_Functional.cpp" 
+..\src\Basic_01_Functional.cpp: In member function 'virtual void Basic_01_Functional::execute()':
+..\src\Basic_01_Functional.cpp:37:18: warning: unused variable 'executedcount' [-Wunused-variable]
+         uint64_t executedcount=TheInst.Digital().PatEng().GetExecutedCyclesCount();
+                  ^~~~~~~~~~~~~
+g++ "-L..\\lib" "-LC:\\PhoenixSys\\bin" -shared -o libUserCode.dll "src\\5VOFF.o" "src\\5VON.o" "src\\Basic_00_PowerShort.o" "src\\Basic_01_Functional.o" "src\\Basic_02_OS_VDD_PPMU.o" "src\\Basic_02_OS_VDD_VSS_PPMU.o" "src\\Basic_02_OS_VSS_PPMU.o" "src\\Basic_03_DC_IIHL_Leakage.o" "src\\Basic_03_DC_Leakage.o" "src\\Basic_04_DC_IDDQ_Measure.o" "src\\mytest1.o" "src\\mytest2.o" "src\\mytest3.o" -lTestClass -lAPIDLL 
+xcopy libUserCode.dll "E:\\hisilicon program\\FANLI_TOTAL\\FANLI\\lib" /y 
+E:libUserCode.dll
+复制了 1 个文件
+Info: Nothing to build for UserCode
+09:00:47 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_03_DC_Leakage.o" "..\\src\\Basic_03_DC_Leakage.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_02_OS_VSS_PPMU.o" "..\\src\\Basic_02_OS_VSS_PPMU.cpp" 
+..\src\Basic_02_OS_VSS_PPMU.cpp:36:3: warning: "/*" within comment [-Wcomment]
+   /*==================OS_PPMU  FIMV==================*/
+    
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_04_DC_IDDQ_Measure.o" "..\\src\\Basic_04_DC_IDDQ_Measure.cpp" 
+..\src\Basic_04_DC_IDDQ_Measure.cpp: In lambda function:
+..\src\Basic_04_DC_IDDQ_Measure.cpp:81:19: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<PinArrayDataEx<double> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+      for(int i=0;i<iddq_result.size();i++)
+                  ~^~~~~~~~~~~~~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_00_PowerShort.o" "..\\src\\Basic_00_PowerShort.cpp" 
+..\src\Basic_00_PowerShort.cpp: In member function 'virtual void Basic_00_PowerShort::execute()':
+..\src\Basic_00_PowerShort.cpp:37:19: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::__cxx11::basic_string<char> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+      for(int i=0;i<pinname.size();i++)
+                  ~^~~~~~~~~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_01_Functional.o" "..\\src\\Basic_01_Functional.cpp" 
+..\src\Basic_01_Functional.cpp: In member function 'virtual void Basic_01_Functional::execute()':
+..\src\Basic_01_Functional.cpp:37:18: warning: unused variable 'executedcount' [-Wunused-variable]
+         uint64_t executedcount=TheInst.Digital().PatEng().GetExecutedCyclesCount();
+                  ^~~~~~~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_02_OS_VDD_PPMU.o" "..\\src\\Basic_02_OS_VDD_PPMU.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_02_OS_VDD_VSS_PPMU.o" "..\\src\\Basic_02_OS_VDD_VSS_PPMU.cpp" 
+..\src\Basic_02_OS_VDD_VSS_PPMU.cpp: In member function 'virtual void Basic_02_OS_VDD_VSS_PPMU::execute()':
+..\src\Basic_02_OS_VDD_VSS_PPMU.cpp:48:19: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<std::__cxx11::basic_string<char> >::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+      for(int i=0;i<pinname.size();i++)
+                  ~^~~~~~~~~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_03_DC_IIHL_Leakage.o" "..\\src\\Basic_03_DC_IIHL_Leakage.cpp" 
+g++ "-L..\\lib" "-LC:\\PhoenixSys\\bin" -shared -o libUserCode.dll "src\\5VOFF.o" "src\\5VON.o" "src\\Basic_00_PowerShort.o" "src\\Basic_01_Functional.o" "src\\Basic_02_OS_VDD_PPMU.o" "src\\Basic_02_OS_VDD_VSS_PPMU.o" "src\\Basic_02_OS_VSS_PPMU.o" "src\\Basic_03_DC_IIHL_Leakage.o" "src\\Basic_03_DC_Leakage.o" "src\\Basic_04_DC_IDDQ_Measure.o" "src\\mytest1.o" "src\\mytest2.o" "src\\mytest3.o" -lTestClass -lAPIDLL 
+xcopy libUserCode.dll "E:\\hisilicon program\\FANLI_TOTAL\\FANLI\\lib" /y 
+E:libUserCode.dll
+复制了 1 个文件
+10:09:44 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC_IOZHL_PPMU.o" "..\\src\\DC_IOZHL_PPMU.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC_VIHL_PPMU.o" "..\\src\\DC_VIHL_PPMU.cpp" 
+g++ "-L..\\lib" "-LC:\\PhoenixSys\\bin" -shared -o libUserCode.dll "src\\5VOFF.o" "src\\5VON.o" "src\\Basic_00_PowerShort.o" "src\\Basic_01_Functional.o" "src\\Basic_02_OS_VDD_PPMU.o" "src\\Basic_02_OS_VDD_VSS_PPMU.o" "src\\Basic_02_OS_VSS_PPMU.o" "src\\Basic_03_DC_IIHL_Leakage.o" "src\\Basic_03_DC_Leakage.o" "src\\Basic_04_DC_IDDQ_Measure.o" "src\\DC_IOZHL_PPMU.o" "src\\DC_VIHL_PPMU.o" "src\\mytest1.o" "src\\mytest2.o" "src\\mytest3.o" -lTestClass -lAPIDLL 
+xcopy libUserCode.dll "E:\\hisilicon program\\FANLI_TOTAL\\FANLI\\lib" /y 
+E:libUserCode.dll
+复制了 1 个文件
+Info: Nothing to build for UserCode
+11:21:30 **** Rebuild of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Basic_02_OS_VSS_PPMU.o" "..\\src\\Basic_02_OS_VSS_PPMU.cpp" 
+..\src\Basic_02_OS_VSS_PPMU.cpp:36:3: warning: "/*" within comment [-Wcomment]
+   /*==================OS_PPMU  FIMV==================*/
+    
+In file included from C:\PhoenixSys\bin\include/UserAPI.h:3,
+                 from ..\src\Basic_02_OS_VSS_PPMU.cpp:6:
+C:\PhoenixSys\bin\include/TheInst/TheInst.h:25:17: error: expected unqualified-id before numeric constant
+  CPPMU&  PPMU();32
+                 ^~
+..\src\Basic_02_OS_VSS_PPMU.cpp: In member function 'virtual void Basic_02_OS_VSS_PPMU::execute()':
+..\src\Basic_02_OS_VSS_PPMU.cpp:31:14: error: 'class CTheInst' has no member named 'DCVI'; did you mean 'DCVS'?
+      TheInst.DCVI().Power().Apply();
+              ^~~~
+              DCVS
+Info: Nothing to build for UserCode
+11:22:26 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TSENSOR_TEST.o" "..\\src\\TSENSOR_TEST.cpp" 
+..\src\TSENSOR_TEST.cpp:8:10: fatal error: Globle_Var.h: No such file or directory
+ #include "Globle_Var.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
+11:24:09 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TSENSOR_TEST.o" "..\\src\\TSENSOR_TEST.cpp" 
+..\src\TSENSOR_TEST.cpp:13:10: fatal error: d2sProtocolSSI.h: No such file or directory
+ #include "d2sProtocolSSI.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+11:24:20 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TSENSOR_TEST.o" "..\\src\\TSENSOR_TEST.cpp" 
+..\src\TSENSOR_TEST.cpp:14:10: fatal error: D2S_PMU_Module.h: No such file or directory
+ #include "D2S_PMU_Module.h"
+          ^~~~~~~~~~~~~~~~~~
+compilation terminated.
+11:24:33 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TSENSOR_TEST.o" "..\\src\\TSENSOR_TEST.cpp" 
+..\src\TSENSOR_TEST.cpp:16:9: fatal error: readlimit.h: No such file or directory
+ #include"readlimit.h"
+         ^~~~~~~~~~~~~
+compilation terminated.
+11:24:44 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TSENSOR_TEST.o" "..\\src\\TSENSOR_TEST.cpp" 
+..\src\TSENSOR_TEST.cpp:17:9: fatal error: Getlog.h: No such file or directory
+ #include"Getlog.h"
+         ^~~~~~~~~~
+compilation terminated.
+11:24:55 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TSENSOR_TEST.o" "..\\src\\TSENSOR_TEST.cpp" 
+In file included from C:\PhoenixSys\bin\include/UserAPI.h:3,
+                 from ..\src\TSENSOR_TEST.cpp:12:
+C:\PhoenixSys\bin\include/TheInst/TheInst.h:25:17: error: expected unqualified-id before numeric constant
+  CPPMU&  PPMU();32
+                 ^~
+..\src\TSENSOR_TEST.cpp: In member function 'virtual void Tsensor_Test::execute()':
+..\src\TSENSOR_TEST.cpp:36:9: error: 'Read_Limit' was not declared in this scope
+         Read_Limit(lowl,hil,Test_Item,Test_number,Units);
+         ^~~~~~~~~~
+..\src\TSENSOR_TEST.cpp:38:9: error: 'd2s' has not been declared
+         d2s::d2s_LABEL_BEGIN("ssi", d2s_WorkMode);
+         ^~~
+..\src\TSENSOR_TEST.cpp:38:37: error: 'd2s_WorkMode' was not declared in this scope
+         d2s::d2s_LABEL_BEGIN("ssi", d2s_WorkMode);
+                                     ^~~~~~~~~~~~
+..\src\TSENSOR_TEST.cpp:39:9: error: 'd2sProtocolSSI' was not declared in this scope
+         d2sProtocolSSI d2s_test;
+         ^~~~~~~~~~~~~~
+..\src\TSENSOR_TEST.cpp:40:9: error: 'd2s_test' was not declared in this scope
+         d2s_test.SSI_write(0x200,0x2000,false);
+         ^~~~~~~~
+..\src\TSENSOR_TEST.cpp:64:9: error: 'd2s' has not been declared
+         d2s::d2s_LABEL_END();
+         ^~~
+..\src\TSENSOR_TEST.cpp:80:10: error: 'TSENSOR_TG' was not declared in this scope
+          TSENSOR_TG[site_id] = (tempVal[site_id] - 15)/5 + 0.5;
+          ^~~~~~~~~~
+11:25:12 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TSENSOR_TEST.o" "..\\src\\TSENSOR_TEST.cpp" 
+..\src\TSENSOR_TEST.cpp:8:10: fatal error: Globle_Var.h: No such file or directory
+ #include "Globle_Var.h"
+          ^~~~~~~~~~~~~~
+compilation terminated.
