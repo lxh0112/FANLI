@@ -30,7 +30,7 @@ public:
     	//    	TheSoft.Message().InfoMessage("Basic_02_OS_VSS_PPMU");
     	TheInst.DCVI().Power().Apply();
 #if 1
-    	vsspinlist="gOS_VSS";
+//    	vsspinlist="gOS_VSS";
 		std::string strPinList = vsspinlist;
 		/* step2: Set ppmu parameter
 		/*==================OS_PPMU  FIMV==================*/

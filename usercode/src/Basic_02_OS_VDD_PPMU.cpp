@@ -33,7 +33,7 @@ public:
 
     	TheInst.DCVI().Power().Apply();
 #if 1
-    	vddpinlist="gOS_VDD";
+//    	vddpinlist="gOS_VDD";
     	string strPinList = vddpinlist;
     	TheInst.PPMU().Pins(strPinList).SetClear();
 		TheInst.PPMU().Pins(strPinList).SetMeasureMode(PhxAPI::E_DC_FI_MV)

@@ -96,4 +96,10 @@
     <patternburst name="TCXO_CTRL_ON" type="" comment="">
         <pattern file="TCXO_CTRL_ON.cbp" />
     </patternburst>
+    <patternburst name="Hi1151A_DR2W_template_test" type="" comment="">
+        <pattern file="Hi1151A_DR2W_template_test.cbp" />
+    </patternburst>
+    <patternburst name="Hi1151A_DR2R_template_test_offset7" type="" comment="">
+        <pattern file="Hi1151A_DR2R_template_test_offset7.cbp" />
+    </patternburst>
 </patternbursts>

@@ -65,12 +65,12 @@
         </testclass>
     </test>
     <test name="PMU_IDD_SLEEP" type="Test" timing="SSI_MODE" level="VIHLR_VOHLR_IOHLR" pattern="SSI_MODE" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="">
+        <testclass name="libUserCode.SSI_MODE">
             <propvalues />
         </testclass>
     </test>
     <test name="SSI_MODE" type="Test" timing="SSI_MODE" level="VIHLR_VOHLR_IOHLR" pattern="SSI_MODE" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="">
+        <testclass name="libUserCode.SSI_MODE">
             <propvalues />
         </testclass>
     </test>
@@ -485,7 +485,7 @@
         </testclass>
     </test>
     <test name="DFT_MODE" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="DFT_MODE_VDDN_VIHLR_VOHLR_IOHLR" comment="">
-        <testclass name="">
+        <testclass name="libUserCode.DFT_MODE">
             <propvalues />
         </testclass>
     </test>
@@ -638,12 +638,12 @@
                 <propvalue name="Measure_pinlist" value="gDFTPINS,gDFTPINS_DC," />
                 <propvalue name="IIH_VForce" value="1.98" />
                 <propvalue name="RangeH" value="100e-6" />
-                <propvalue name="IIH_IClampL" value="" />
-                <propvalue name="IIH_IClampH" value="" />
+                <propvalue name="IIH_IClampL" value="-100e-6" />
+                <propvalue name="IIH_IClampH" value="100e-6" />
                 <propvalue name="IIL_VForce" value="0.0" />
                 <propvalue name="RangeL" value="100e-6" />
-                <propvalue name="IIL_IClampL" value="" />
-                <propvalue name="IIL_IClampH" value="" />
+                <propvalue name="IIL_IClampL" value="-100e-6" />
+                <propvalue name="IIL_IClampH" value="100e-6" />
                 <propvalue name="Waittime" value="10e-3" />
                 <propvalue name="SampleSize" value="12" />
             </propvalues>
@@ -655,12 +655,12 @@
                 <propvalue name="Measure_pinlist" value="gDFTPINS_DC,gDFTPINS," />
                 <propvalue name="IIH_VForce" value="1.98" />
                 <propvalue name="RangeH" value="100e-6" />
-                <propvalue name="IIH_IClampL" value="" />
-                <propvalue name="IIH_IClampH" value="" />
+                <propvalue name="IIH_IClampL" value="-100e-6" />
+                <propvalue name="IIH_IClampH" value="100e-6" />
                 <propvalue name="IIL_VForce" value="0.0" />
                 <propvalue name="RangeL" value="10e-6" />
-                <propvalue name="IIL_IClampL" value="" />
-                <propvalue name="IIL_IClampH" value="" />
+                <propvalue name="IIL_IClampL" value="-10e-6" />
+                <propvalue name="IIL_IClampH" value="10e-6" />
                 <propvalue name="Waittime" value="10e-3" />
                 <propvalue name="SampleSize" value="12" />
             </propvalues>

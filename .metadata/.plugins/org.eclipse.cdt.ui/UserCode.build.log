@@ -1,10 +1,10 @@
-11:25:12 **** Incremental Build of configuration Debug for project UserCode ****
+20:25:37 **** Incremental Build of configuration Debug for project UserCode ****
 Info: Internal Builder is used for build
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\TSENSOR_TEST.o" "..\\src\\TSENSOR_TEST.cpp" 
-..\src\TSENSOR_TEST.cpp:8:10: fatal error: Globle_Var.h: No such file or directory
- #include "Globle_Var.h"
-          ^~~~~~~~~~~~~~
-compilation terminated.
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SSI_MODE.o" "..\\src\\SSI_MODE.cpp" 
+g++ "-L..\\lib" "-LC:\\PhoenixSys\\bin" -shared -o libUserCode.dll "src\\Basic_00_PowerShort.o" "src\\Basic_01_Functional.o" "src\\Basic_02_OS_VDD_PPMU.o" "src\\Basic_02_OS_VDD_VSS_PPMU.o" "src\\Basic_02_OS_VSS_PPMU.o" "src\\Basic_03_DC_IIHL_Leakage.o" "src\\Basic_03_DC_Leakage.o" "src\\Basic_04_DC_IDDQ_Measure.o" "src\\DC_IOZHL_PPMU.o" "src\\DC_VIHL_PPMU.o" "src\\DFT_MODE.o" "src\\MD5.o" "src\\PatternManager.o" "src\\SSI_MODE.o" "src\\d2s.o" -lTestClass -lAPIDLL 
+xcopy libUserCode.dll "E:\\hisilicon program\\FANLI_TOTAL\\FANLI\\lib" /y 
+E:libUserCode.dll
+复制了 1 个文件
 
-11:25:12 Build Failed. 1 errors, 0 warnings. (took 101ms)
+20:25:39 Build Finished. 0 errors, 0 warnings. (took 2s.308ms)
 

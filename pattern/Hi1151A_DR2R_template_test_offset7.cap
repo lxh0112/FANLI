@@ -16,7 +16,7 @@ SignalGroups {
 TimingBlock {
 	TS1_0                0;
 	TS1_1                1;
-	TS_CAPTURE__2        2;
+	TS_CAPTURE_2        2;
 }
 
 Pattern {

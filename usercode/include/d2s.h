@@ -31,7 +31,7 @@ public:
     static bool Is_simulator();
 
 	void write(long long llAddress, long long llData, long long llMd5Data = 0XFFFFFFFF);
-	void read(long long llAddress, string id);
+	void read(long long llAddress, string id, int offset);	//@20211030 change
 	void wait(double timeS);
 	void wait_cycles(unsigned long cycles);
 	void expectValue(long long address, long long value, long long mask = 0XFFFFFFFF);
@@ -57,7 +57,7 @@ private:
 	int getExpectTemplatFileInfos();
 	string getNewWritePatternName(long long address, long long data, bool bPositiveAddr, bool bPositiveData);
 	string getNewWritePatternName_MD5(long long address, long long data, bool bPositiveAddr, bool bPositiveData,long long md5data = 0XFFFFFFFF);
-	string getNewReadPatternName(long long address, bool bPositiveAddr);
+	string getNewReadPatternName(long long address, bool bPositiveAddr, int offset);    //@20211030 change
 	string getNewWaitPatternName(double timeS);
 	string getNewWaitPatternName(unsigned long cycles);
 	string getNewExpectPatternName(long long address, long long data, bool bPositiveAddr, bool bPositiveData);

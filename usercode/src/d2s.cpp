@@ -111,6 +111,8 @@ void d2s::d2s_LABEL_END() {
 			doWriteDynamicInProductionMode(burst_name);
 		}
 		// Execute current test, according to the same burst_name
+		TheInst.Digital().PatEng().SetupMCFData();   //@20211129 ADD
+		TheInst.Digital().PatEng().SetFailMode(PhxAPI::E_SET_PF_MODE);	//@20211129 ADD
 		TheInst.Digital().Pattern().Start(burst_name);
 	}
 	if(bExpectValue) {
@@ -213,7 +215,7 @@ void d2s::write(long long llAddress, long long llData, long long llMd5Data) {
  * 			llData:     the data register
  * @note
  * */
-void d2s::read(long long llAddress, string id) {
+void d2s::read(long long llAddress, string id, int offset) {
 	if (d2s::work_mode == ProductionMode && is_pre_d2s) {
 		return;
 	}
@@ -234,7 +236,7 @@ void d2s::read(long long llAddress, string id) {
 		return;
 	}
 	getReadRegisterAttribute();
-	string newPatternName = getNewReadPatternName(llAddress, vectors_attr_t[Read].positive_addr);
+	string newPatternName = getNewReadPatternName(llAddress, vectors_attr_t[Read].positive_addr, offset);
 	bool pattern_exist = checkPatternNameExist(newPatternName);
 	if(!is_pre_d2s)
 	{
@@ -252,7 +254,7 @@ void d2s::read(long long llAddress, string id) {
 		// Execute pattern
 		TheInst.Digital().Pattern().Start(getReadTemplatePatternName());
 
-		cout<<getReadTemplatePatternName()<<endl;
+//		cout<<getReadTemplatePatternName()<<endl;
 		// Capture data
 		map<int, long long> capture_data;
 		capture_data = GetCaptureData(getReadPinName(), 0, getDataBits(), vectors_attr_t[Read].positive_addr);//???
@@ -1007,10 +1009,12 @@ string d2s::getNewWritePatternName_MD5(long long address, long long data, bool b
  *
  * @note 	NONE
  */
-string d2s::getNewReadPatternName(long long address, bool bPositiveAddr) {
+string d2s::getNewReadPatternName(long long address, bool bPositiveAddr, int offset) {
 	ostringstream pattern_name;
+//	string current_test = TheSoft.Flow().Test().GetCurrentTestName();    //@20211129 add
+
 	pattern_name << "d2s_" << getInterfaceName() << "_" << getReadAddressPinName() \
-				 << "_"  << (bPositiveAddr? "P" : "N") << "_Read_0x" << hex << address;
+				 << "_"  << (bPositiveAddr? "P" : "N") << "_Read_0x" << hex << address <<  "_sync_"<< offset;    //@20211130 change
 //	if(id != "") {
 //		pattern_name << "_" << id;
 //	}

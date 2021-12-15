@@ -59,6 +59,7 @@ public:
         writeDynamic(regAddr, regData,id);
     }
 
+
     /*read parameters*/
     std::string getReadTemplatePatternName(){ return DR2R_template;}
     std::string getReadAddressPinName() { return "DBB_GPIO7";}
@@ -75,7 +76,7 @@ public:
 //    int getReadDataVectorNumberMSB(){ return 28;}
 //    int getReadPatternVectors(){return 51;}
 
-    void SSI_read(long regAddr,std::string id,int offset=7,bool bitShiftflag=true){
+    void SSI_read(long regAddr,std::string id,int offset,bool bitShiftflag=true){
         if(bitShiftflag){
             if(regAddr<0){
                 regAddr=(65536+regAddr)/2;
@@ -111,6 +112,12 @@ public:
                 ReadDataVectorNumberLSB=ReadDataVectorNumberMSB+15;
                 ReadPatternVectors=ReadDataVectorNumberLSB+8;
             break;
+            case 11:
+				DR2R_template="Hi1151A_DR2R_template_test_offset11";
+				ReadDataVectorNumberMSB=ReadAddressVectorNumberLSB+offset+2;
+				ReadDataVectorNumberLSB=ReadDataVectorNumberMSB+15;
+				ReadPatternVectors=ReadDataVectorNumberLSB+8;
+			break;
             case 12:
                 DR2R_template="Hi1151A_DR2R_template_test_offset12";
                 ReadDataVectorNumberMSB=ReadAddressVectorNumberLSB+offset+2;
@@ -130,7 +137,7 @@ public:
                 ReadPatternVectors=ReadDataVectorNumberLSB+8;
             break;
         }
-        read(regAddr,id) ;
+        read(regAddr,id, offset) ;
     }
 
     /*wait parameters*/
