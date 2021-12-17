@@ -1,10 +1,29 @@
-20:25:37 **** Incremental Build of configuration Debug for project UserCode ****
+11:07:55 **** Incremental Build of configuration Debug for project UserCode ****
 Info: Internal Builder is used for build
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\SSI_MODE.o" "..\\src\\SSI_MODE.cpp" 
-g++ "-L..\\lib" "-LC:\\PhoenixSys\\bin" -shared -o libUserCode.dll "src\\Basic_00_PowerShort.o" "src\\Basic_01_Functional.o" "src\\Basic_02_OS_VDD_PPMU.o" "src\\Basic_02_OS_VDD_VSS_PPMU.o" "src\\Basic_02_OS_VSS_PPMU.o" "src\\Basic_03_DC_IIHL_Leakage.o" "src\\Basic_03_DC_Leakage.o" "src\\Basic_04_DC_IDDQ_Measure.o" "src\\DC_IOZHL_PPMU.o" "src\\DC_VIHL_PPMU.o" "src\\DFT_MODE.o" "src\\MD5.o" "src\\PatternManager.o" "src\\SSI_MODE.o" "src\\d2s.o" -lTestClass -lAPIDLL 
-xcopy libUserCode.dll "E:\\hisilicon program\\FANLI_TOTAL\\FANLI\\lib" /y 
-E:libUserCode.dll
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\CMU_TCXO_SSI.o" "..\\src\\DC\\CMU_TCXO_SSI.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\TypeDef/CCRfsgTypeDef.h:12,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCSIGNAL.h:11,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCRFMIX.h:10,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08FAPI.h:11,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08F.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/D2S_PMU_Module.h:12,
+                 from ..\src\DC\CMU_TCXO_SSI.cpp:13:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\CMU_TCXO_SSI.cpp:12:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ "-L..\\lib" "-LC:\\PhoenixSys\\bin" -shared -o libtestp_share2.dll "src\\ABB\\ABB_ADC_IQ.o" "src\\ABB\\ABB_DAC_IQ.o" "src\\ABB\\ADC_DAC_IDD.o" "src\\Cal\\CAL_RC_PPF.o" "src\\Cal\\CAL_RX_Phase.o" "src\\Cal\\CAL_VI_DET.o" "src\\Cal\\DAC_SPUR.o" "src\\Cal\\RX_IQ_IR.o" "src\\Cal\\Test_CAL_cpp.o" "src\\Cal\\Update_All_RC_PPF_vbt.o" "src\\Common\\Basic_00_PowerShort.o" "src\\Common\\Basic_01_Functional.o" "src\\Common\\Basic_02_OS_VDD_VSS_PPMU.o" "src\\Common\\CBBLimits.o" "src\\Common\\CC08FCBBAPI.o" "src\\Common\\CCWaveformsData.o" "src\\Common\\CLK_STOP.o" "src\\Common\\CPP_Utility.o" "src\\Common\\Capture_Function.o" "src\\Common\\Execute_test.o" "src\\Common\\Gainmode_Parse.o" "src\\Common\\Globle_Var.o" "src\\Common\\Hbin_Check.o" "src\\Common\\Test_TX_cpp.o" "src\\Common\\augmentedmatrix.o" "src\\Common\\linearfit.o" "src\\Common\\polynomialfit.o" "src\\Common\\tinystr.o" "src\\Common\\tinyxml.o" "src\\Common\\tinyxmlerror.o" "src\\Common\\tinyxmlparser.o" "src\\DC\\BOOT_UP.o" "src\\DC\\CMU_TCXO_SSI.o" "src\\DC\\DC_IIHL_JTAG.o" "src\\DC\\PMU_BUCK_LOAD.o" "src\\DC\\PMU_BUCK_TRIM.o" "src\\DC\\PMU_CAPLESSLDO_TEST.o" "src\\DC\\PMU_IDD_ECO.o" "src\\DC\\PMU_IDD_OFF.o" "src\\DC\\PMU_IREF_TRIM.o" "src\\DC\\PMU_LDO_LOAD.o" "src\\DC\\PMU_VREF_TRIM.o" "src\\DC\\PowerOFF.o" "src\\DC\\Power_OSD.o" "src\\DC\\SSI_MODE.o" "src\\DC\\TSENSOR_TEST.o" "src\\DC\\read_DIBID.o" "src\\Device_Setup\\D2S_ABB_Module.o" "src\\Device_Setup\\D2S_CAL_Module.o" "src\\Device_Setup\\D2S_PMU_Module.o" "src\\Device_Setup\\DSP_test_ABB.o" "src\\Device_Setup\\Hi1151_Init_Reg.o" "src\\Device_Setup\\Hi1151_RX_Reg.o" "src\\Device_Setup\\Hi1151_Setup.o" "src\\Device_Setup\\Hi1151_TX_Reg.o" "src\\Device_Setup\\PROG_INIT.o" "src\\Device_Setup\\TRX_Disable.o" "src\\Device_Setup\\TRX_Init.o" "src\\Device_Setup\\Test_ABB_cpp.o" "src\\Device_Setup\\resetDevice.o" "src\\WL_RX\\RX_DC_offset_cal.o" "src\\WL_RX\\RX_Gain.o" "src\\WL_RX\\RX_IIP3_Fund_Tone_Inband.o" "src\\WL_RX\\RX_IIPX.o" "src\\WL_RX\\RX_IRR_IQ.o" "src\\WL_RX\\RX_NF.o" "src\\WL_RX\\RX_Selectivity.o" "src\\WL_RX\\WL_RX_EVM.o" "src\\WL_RX\\WL_RX_GC.o" "src\\WL_RX\\WL_RX_PowerUpTime.o" "src\\WL_RX\\WL_RX_RFI_IDD.o" "src\\WL_TX\\CAL_TX_IQ.o" "src\\WL_TX\\PLL_Sweep_vbt.o" "src\\WL_TX\\TX_2G_IDD_DC_vbt.o" "src\\WL_TX\\TX_5G_PowerTrim_cpp.o" "src\\WL_TX\\TX_DummyOP_cpp.o" "src\\WL_TX\\TX_IDD_cpp.o" "src\\WL_TX\\TX_OIP3_cpp.o" "src\\WL_TX\\TX_PXdB_cpp.o" "src\\WL_TX\\TX_PowerTrim_cpp.o" "src\\WL_TX\\TX_Power_PPF.o" "src\\WL_TX\\TX_Power_Spur.o" "src\\WL_TX\\TX_Power_cpp.o" "src\\WL_TX\\WL_TX_EVM_cpp.o" "src\\WL_TX\\WL_TX_FEM_PD_BUF.o" "src\\WL_TX\\WL_TX_Mask_cpp.o" "src\\WL_TX\\WL_TX_OIP3_Dri_Mod_cpp.o" "src\\d2s\\MD5.o" "src\\d2s\\PatternManager.o" "src\\d2s\\d2s.o" -lTestClass -lExcel -lExcelOprt -llibCCTimer -lAPIDLL -llibCCVSTDriver -llibCCDSPALG 
+xcopy libtestp_share2.dll "..\\..\\lib\\/y" 
+E:libtestp_share2.dll
 复制了 1 个文件
 
-20:25:39 Build Finished. 0 errors, 0 warnings. (took 2s.308ms)
+11:08:00 Build Finished. 0 errors, 1 warnings. (took 5s.259ms)
 
