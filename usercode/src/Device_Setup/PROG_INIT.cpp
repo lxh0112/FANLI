@@ -31,8 +31,6 @@ public:
 	    }
     void execute(){
 
-
-
     	d2s_WorkMode = ProductionMode;  //ProductionMode;  //LearningMode;
 
 		char szWfmPath[256] = {0};
@@ -50,6 +48,7 @@ public:
 			TheInst.Util().SetRelayState(j, PhxAPI::E_UTIL_STATE_OFF); //bihe-0,duankai-1
 		}
 		TheInst.Wait(4*ms);//us
+
 
 		Clogenable = true;
 		Last_TestName="";

@@ -1,4 +1,4 @@
-#,,FANLI_S08V2,2021.12.14 15:41:31 CST,,
+#,,FANLI_S08V2,2021.12.17 15:33:15 CST,,
 #,Name,FirstPinIdx,LastPinIdx,Diff,Type,Tag,
 Signal,BOOST_LX,-1,-1,0,Supply,
 Signal,PMU_REFBP,-1,-1,0,Supply,

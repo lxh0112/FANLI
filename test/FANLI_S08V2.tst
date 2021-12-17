@@ -44,7 +44,7 @@
             <propvalues />
         </testclass>
     </test>
-    <test name="OS_PS" type="Test" timing="" level="" pattern="" power="" comment="">
+    <test name="OS_PS" type="Test" timing="" level="" pattern="" power="power_short" comment="">
         <testclass name="">
             <propvalues />
         </testclass>
@@ -682,6 +682,11 @@
         </testclass>
     </test>
     <test name="DFT_EXIT_STEP2" type="Test" timing="" level="" pattern="" power="DFT_EXIT_STEP2" comment="">
+        <testclass name="">
+            <propvalues />
+        </testclass>
+    </test>
+    <test name="OSD" type="Test" timing="" level="" pattern="" power="" comment="">
         <testclass name="">
             <propvalues />
         </testclass>

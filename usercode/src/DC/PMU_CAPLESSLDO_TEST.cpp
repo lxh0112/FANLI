@@ -23,8 +23,6 @@ public:
 		std::string pinlist;
 		int samplesize;
 
-
-
     void init(){
 		add_param( "Measure_pinlist",  "PinString", &pinlist);
 		add_param("SampleSize","int",&samplesize);
