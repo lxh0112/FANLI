@@ -34,18 +34,18 @@ public:
 		int Test_number[30];
 		int Soft_Bin[30];
 		int Hard_Bin[30];
-		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
+	//	Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
 
-		TheInst.DCVS().Power().Apply();
+		TheInst.DCVI().Power().Apply();
 		TheInst.Digital().Level().Apply();
-		TheInst.DCVS().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MV)
+		TheInst.DCVI().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MV)
 									.SetMeasureMethod(PhxAPI::E_DC_METHOD_STATIC)
 									.SetReadMode(PhxAPI::E_DC_MODE_MEASURE)
 									.SetMeasureOrder(PhxAPI::E_DC_ORDER_SINGLE)
 									.SetSampleSize(samplesize)
 									.SetWaitTime(waittime)//100us
 									.Measure();
-		PinArrayDouble result = TheInst.DCVS().Pins(pinlist).GetMeasureResults();
+		PinArrayDouble result = TheInst.DCVI().Pins(pinlist).GetMeasureResults();
 //		result.ShowPinArrayData();
 //		TheSoft.Flow().TestLimit(pinlist,result ,lowl[0], hil[0],Hard_Bin[0], Soft_Bin[0],"",Test_Item[0], Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
 

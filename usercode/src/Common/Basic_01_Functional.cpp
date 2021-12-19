@@ -20,10 +20,11 @@ class Basic_01_Functional: public TestClass {
 public:
 	void init() {
 
-	            }
+
+	}
 	void execute() {
 						cout << "!!!Hello Basic_01_Functional!!!" << endl;
-						TheInst.DCVS().Power().Apply();
+						TheInst.DCVI().Power().Apply();
 						TheInst.Digital().Level().Apply();
 						TheInst.Digital().Timing().Apply();
 //						TheInst.Digital().PatEng().SetupMCFData();

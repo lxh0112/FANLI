@@ -60,7 +60,7 @@ public:
 		TheInst.Util().SetUserPower(PhxAPI::E_USERPW_P5V , 1  );
 		TheInst.Wait(5*ms);
 
-		TheInst.DCVS().Power().Apply();
+		TheInst.DCVI().Power().Apply();
 
 		cout<<"all power off now!!!!!"<<endl;
 

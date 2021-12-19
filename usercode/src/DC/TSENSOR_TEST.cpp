@@ -26,7 +26,7 @@ public:
 
 	}
     void execute(){
-        TheInst.DCVS().Power().Apply();
+        TheInst.DCVI().Power().Apply();
         TheInst.Digital().Level().Apply();
 
         double hil[30],lowl[30];
@@ -35,7 +35,7 @@ public:
         int  Test_number[30];
         int Soft_Bin[30];
 		int Hard_Bin[30];
-		Read_Limit(lowl,hil,Test_Item,Test_number,Units,Soft_Bin,Hard_Bin);
+	//	Read_Limit(lowl,hil,Test_Item,Test_number,Units,Soft_Bin,Hard_Bin);
 
         d2s::d2s_LABEL_BEGIN("ssi", d2s_WorkMode);
         d2sProtocolSSI d2s_test;
@@ -48,6 +48,7 @@ public:
         d2s_test.SSI_write(0x200,0x2000,false);
         d2s_test.SSI_write(0x202,0x0,false);
         d2s_test.SSI_write(0x124,0xF);    //RF_PLL_CLK_EN
+
 
         d2s_test.SSI_write(0x200,0x2000,false);
         d2s_test.SSI_write(0x202,0x80,false);

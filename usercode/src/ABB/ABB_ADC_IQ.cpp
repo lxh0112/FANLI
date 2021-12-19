@@ -6,8 +6,6 @@
  */
 
 
-
-
 #include "TestClass.h"
 #include <UserAPI.h>
 #include <iostream>

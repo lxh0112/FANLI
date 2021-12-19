@@ -18,6 +18,8 @@ public:
     int samplesize;
     double waittime;
 
+
+
     void init(){
     	//gOS_PS 0.005 2
 		add_param( "powerpinlist",  "PinString", &powerpinlist);
@@ -25,22 +27,24 @@ public:
 		add_param("SampleSize","int",&samplesize);
 	}
 
+
+
     void execute(){
 		double hil[30], lowl[30];
 		vector<string> Test_Item;
 		vector<string> Units;
 		int Test_number[30],Soft_Bin[30],Hard_Bin[30];
-		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
+//		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
 
-		TheInst.DCVS().Power().Apply();
-		TheInst.DCVS().Pins(powerpinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MI)
+		TheInst.DCVI().Power().Apply();
+		TheInst.DCVI().Pins(powerpinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MI)
 										 .SetReadMode(PhxAPI::E_DC_MODE_MEASURE)
 										 .SetMeasureMethod(PhxAPI::E_DC_METHOD_STATIC)
 										 .SetMeasureOrder(PhxAPI::E_DC_ORDER_GROUP)
 										 .SetSampleSize(samplesize)
 										 .SetWaitTime(waittime)//5ms
 										 .Measure();
-		PinArrayDouble  Result=TheInst.DCVS().Pins(powerpinlist).GetMeasureResults();
+		PinArrayDouble  Result=TheInst.DCVI().Pins(powerpinlist).GetMeasureResults();
 		vector<string> pinname = GetGroupPinItems(powerpinlist);
 
 		for(unsigned int i=0;i<pinname.size();i++)

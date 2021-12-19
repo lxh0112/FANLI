@@ -27,7 +27,7 @@ public:
 		vector<string> Test_Item;
 		vector<string> Units;
 		int Test_number[30],Soft_Bin[30],Hard_Bin[30];
-		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
+		//Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
 
 		uint32_t UBIT[8] = {0,15,38,74,42,3,29,83};
 
@@ -37,37 +37,37 @@ public:
 		}
 
 		TheInst.Wait(4*ms);
-		TheInst.DCVS().Power().Apply();
+		TheInst.DCVI().Power().Apply();
 		TheInst.Digital().Level().Apply();
 		TheInst.Digital().Timing().Apply();
 		TheInst.Digital().Pattern().Start();
 		TheInst.Wait(5*ms);
 
 
-		TheInst.DCVS().Pins("RF_VDD_TX2G_3P3_0").SetIRange(E_POWER_R250UA)
+		TheInst.DCVI().Pins("RF_VDD_TX2G_3P3_0").SetIRange(E_POWER_R250UA)
 												.SetIClampL(-200*uA)
 												.SetIClampH(200*uA)
 												.Apply();
-		TheInst.DCVS().Pins("RF_VDD_TX2G_3P3_1").SetIRange(E_POWER_R250UA)
-												.SetIClampL(-200*uA)
-												.SetIClampH(200*uA)
-												.Apply();
-
-		TheInst.DCVS().Pins("RF_VDD_TX5G_3P3_0").SetIRange(E_POWER_R250UA)
+		TheInst.DCVI().Pins("RF_VDD_TX2G_3P3_1").SetIRange(E_POWER_R250UA)
 												.SetIClampL(-200*uA)
 												.SetIClampH(200*uA)
 												.Apply();
 
-		TheInst.DCVS().Pins("RF_VDD_TX5G_3P3_1").SetIRange(E_POWER_R250UA)
+		TheInst.DCVI().Pins("RF_VDD_TX5G_3P3_0").SetIRange(E_POWER_R250UA)
 												.SetIClampL(-200*uA)
 												.SetIClampH(200*uA)
 												.Apply();
-		TheInst.DCVS().Pins("DBB_VDDIO_3V3").SetIRange(E_POWER_R25UA)
+
+		TheInst.DCVI().Pins("RF_VDD_TX5G_3P3_1").SetIRange(E_POWER_R250UA)
+												.SetIClampL(-200*uA)
+												.SetIClampH(200*uA)
+												.Apply();
+		TheInst.DCVI().Pins("DBB_VDDIO_3V3").SetIRange(E_POWER_R25UA)
 											.SetIClampL(-20*uA)
 											.SetIClampH(20*uA)
 											.Apply();
 		TheInst.Wait(5*ms);
-		TheInst.DCVS().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MI)
+		TheInst.DCVI().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MI)
 									.SetMeasureMethod(PhxAPI::E_DC_METHOD_STATIC)
 									.SetReadMode(PhxAPI::E_DC_MODE_MEASURE)
 									.SetMeasureOrder(PhxAPI::E_DC_ORDER_GROUP)
@@ -75,7 +75,7 @@ public:
 									.SetWaitTime(waittime)//500us
 									.Measure();
 
-		PinArrayDouble Idd_ECO_result = TheInst.DCVS().Pins(pinlist).GetMeasureResults();
+		PinArrayDouble Idd_ECO_result = TheInst.DCVI().Pins(pinlist).GetMeasureResults();
 		vector<string> pinname = GetGroupPinItems(pinlist);
 		for(unsigned int i=0;i<pinname.size();i++)
 		{

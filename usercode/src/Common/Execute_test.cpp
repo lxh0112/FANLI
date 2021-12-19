@@ -35,11 +35,11 @@ PinArrayDouble TX_2G_IDD_TEST(){
 	Read_Limit(lowl,hil,Test_Item,Test_number,Units,Soft_Bin,Hard_Bin);
 
 //	TheSoft.Flow().Power().SetPower("3V3_VDDN_FUNC");
-//	TheInst.DCVS().Power().Apply();
+//	TheInst.DCVI().Power().Apply();
 //	TheSoft.Flow().Level().SetLevel("3V3_VIHLR_VOHLR_IOHLR");
 //	TheInst.Digital().Level().Apply();
 
-	TheInst.DCVS().Pins("RF_VDD_TX2G_3P3_0").SetMeasureMode(E_DC_MODE_MI)
+	TheInst.DCVI().Pins("RF_VDD_TX2G_3P3_0").SetMeasureMode(E_DC_MODE_MI)
 										  .SetMeasureMethod(E_DC_METHOD_STATIC)
 										  .SetReadMode(E_DC_MODE_GONOGO)
 										  .SetMeasureOrder(E_DC_ORDER_SINGLE)
@@ -79,7 +79,7 @@ void WL_TX_2G_M_C0_IDD(int number){
 	string pinGroup = "VDD_PMU_1V5_IN,,RF_VDD_TX2G_3P3_0,RF_VDD_TX2G_3P3_1";
 	/********************遍历********************/
 	for( int i=0; i<3; i++ ){
-		TheInst.DCVS().Pins(pin[i].dcname).SetMeasureMode(pin[i].mode)
+		TheInst.DCVI().Pins(pin[i].dcname).SetMeasureMode(pin[i].mode)
 //										  .SetVForce(pin[i].force)
 //	    								  .SetILimitL(pin[i].LLimit)
 //	    								  .SetILimitH(pin[i].HLimit)
@@ -92,7 +92,7 @@ void WL_TX_2G_M_C0_IDD(int number){
 										  .SetMeasureOrder(pin[i].order)
 										  .Measure();
 	};
-	PinArrayDouble Result= TheInst.DCVS().Pins(pinGroup).GetMeasureResults();
+	PinArrayDouble Result= TheInst.DCVI().Pins(pinGroup).GetMeasureResults();
 
 	Result.ShowPinArrayData();
 	TheSoft.Flow().TestLimit("VDD_PMU_1V5_IN",Result,lowl[3],hil[3],Hard_Bin[3],Soft_Bin[3],Units[3],"WL_TX_2G_M_C0_IDD",Test_number[3]+number);
@@ -125,7 +125,7 @@ void WL_TX_2G_M_C1_IDD(int number){
 
 	/********************遍历********************/
 	for( int i=0; i<10; i++ ){
-		TheInst.DCVS().Pins(pin[i].dcname).SetMeasureMode(pin[i].mode)
+		TheInst.DCVI().Pins(pin[i].dcname).SetMeasureMode(pin[i].mode)
 //										  .SetVForce(pin[i].force)
 //	    								  .SetILimitL(pin[i].LLimit)
 //	    								  .SetILimitH(pin[i].HLimit)
@@ -139,7 +139,7 @@ void WL_TX_2G_M_C1_IDD(int number){
 //										  .Connect(true)
 //										  .SetSampleSize(16)
 										  .Measure();
-		PinArrayDouble Result= TheInst.DCVS().Pins(pin[i].dcname).GetMeasureResults();
+		PinArrayDouble Result= TheInst.DCVI().Pins(pin[i].dcname).GetMeasureResults();
 
 		Result.ShowPinArrayData();
 		TheSoft.Flow().TestLimit(pin[i].dcname,Result,lowl[i],hil[i],Hard_Bin[i],Soft_Bin[i],Units[i],"WL_TX_2G_M_C1_IDD",Test_number[i]+number);
@@ -179,7 +179,7 @@ void Excute_Test(string Pname,string Lname,string Tname,string PTname)
     string PatternName = TheSoft.Flow().Pattern().GetCurrentPatternName();
 
     TheSoft.Flow().Power().SetPower(Pname);
-    TheInst.DCVS().Power().Apply();
+    TheInst.DCVI().Power().Apply();
 	TheSoft.Flow().Level().SetLevel(Lname);
 	TheInst.Digital().PatEng().SetupMCFData();
 	TheSoft.Flow().Timing().SetTiming(Tname); //5ns,RL

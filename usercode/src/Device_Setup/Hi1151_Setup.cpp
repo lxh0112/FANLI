@@ -122,7 +122,6 @@ int RX_BW_Setup(emMode Mode_Select, emRX_Band Band_Select, char *Channel, double
             WLAN_5G_RX_C1_BW_Reg(Band_Select, BW);
         }
     }
-
     return EXIT_SUCCESS;
 }
 

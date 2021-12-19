@@ -1,223 +1,16 @@
-15:05:58 **** Incremental Build of configuration Debug for project UserCode ****
+16:59:40 **** Incremental Build of configuration Debug for project UserCode ****
 Info: Internal Builder is used for build
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\Basic_02_OS_VDD_VSS_PPMU.o" "..\\src\\Common\\Basic_02_OS_VDD_VSS_PPMU.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\Gainmode_Parse.o" "..\\src\\Common\\Gainmode_Parse.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Cal\\Update_All_RC_PPF_vbt.o" "..\\src\\Cal\\Update_All_RC_PPF_vbt.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Device_Setup\\D2S_ABB_Module.o" "..\\src\\Device_Setup\\D2S_ABB_Module.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/D2S_ABB_Module.h:13,
-                 from ..\src\Device_Setup\D2S_ABB_Module.cpp:10:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from ..\src\Device_Setup\D2S_ABB_Module.cpp:9:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_ADC_C0_DC_Module()':
-..\src\Device_Setup\D2S_ABB_Module.cpp:22:10: warning: unused variable 'i' [-Wunused-variable]
-     long i;
-          ^
-..\src\Device_Setup\D2S_ABB_Module.cpp:23:10: warning: unused variable 'j' [-Wunused-variable]
-     long j;
-          ^
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_ADC_C1_DC_Module()':
-..\src\Device_Setup\D2S_ABB_Module.cpp:48:10: warning: unused variable 'i' [-Wunused-variable]
-     long i;
-          ^
-..\src\Device_Setup\D2S_ABB_Module.cpp:49:10: warning: unused variable 'j' [-Wunused-variable]
-     long j;
-          ^
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_ADC_C0_Cap_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:74:10: warning: unused variable 'i' [-Wunused-variable]
-     long i;
-          ^
-..\src\Device_Setup\D2S_ABB_Module.cpp:75:10: warning: unused variable 'j' [-Wunused-variable]
-     long j;
-          ^
-..\src\Device_Setup\D2S_ABB_Module.cpp:76:10: warning: unused variable 'cReadFlag' [-Wunused-variable]
-     char cReadFlag[32] = {"\0"};
-          ^~~~~~~~~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_ADC_C0_Cap_Module_read(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:232:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_i%d", k);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp:235:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_q%d", k);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In lambda function:
-..\src\Device_Setup\D2S_ABB_Module.cpp:278:23: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-    sprintf(cReadFlag, "readdata_i%d", j);
-                       ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp:280:23: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-    sprintf(cReadFlag, "readdata_q%d", j);
-                       ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_RX_CAL_PHASE_ADC_C0_Cap_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:354:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_i%d", k);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp:357:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_q%d", k);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In lambda function:
-..\src\Device_Setup\D2S_ABB_Module.cpp:370:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_i%d", j);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp:373:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_q%d", j);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_PD_BUF_ADC_C0_BeforeCap_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:385:10: warning: unused variable 'i' [-Wunused-variable]
-     long i;
-          ^
-..\src\Device_Setup\D2S_ABB_Module.cpp:386:10: warning: unused variable 'j' [-Wunused-variable]
-     long j;
-          ^
-..\src\Device_Setup\D2S_ABB_Module.cpp:387:10: warning: unused variable 'cReadFlag' [-Wunused-variable]
-     char cReadFlag[32] = {"\0"};
-          ^~~~~~~~~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_PD_BUF_ADC_C0_Cap_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:488:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_i%d", k);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp:491:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_q%d", k);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In lambda function:
-..\src\Device_Setup\D2S_ABB_Module.cpp:505:36: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-                 sprintf(cReadFlag, "readdata_i%d", j);
-                                    ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp:508:36: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-                 sprintf(cReadFlag, "readdata_q%d", j);
-                                    ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_PD_BUF_GPIO1_ADC_C0_Cap_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:568:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_i%d", k);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp:571:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_q%d", k);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In lambda function:
-..\src\Device_Setup\D2S_ABB_Module.cpp:611:23: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-    sprintf(cReadFlag, "readdata_i%d", j);
-                       ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp:614:23: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-    sprintf(cReadFlag, "readdata_q%d", j);
-                       ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_ADC_C1_Cap_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:655:10: warning: unused variable 'i' [-Wunused-variable]
-     long i;
-          ^
-..\src\Device_Setup\D2S_ABB_Module.cpp:656:10: warning: unused variable 'j' [-Wunused-variable]
-     long j;
-          ^
-..\src\Device_Setup\D2S_ABB_Module.cpp:657:10: warning: unused variable 'cReadFlag' [-Wunused-variable]
-     char cReadFlag[32] = {"\0"};
-          ^~~~~~~~~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_ADC_C1_Cap_Module_read(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:812:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_i%d", k);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp:815:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_q%d", k);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In lambda function:
-..\src\Device_Setup\D2S_ABB_Module.cpp:855:23: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-    sprintf(cReadFlag, "readdata_i%d", j);
-                       ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp:857:23: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-    sprintf(cReadFlag, "readdata_q%d", j);
-                       ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_RX_CAL_PHASE_ADC_C1_Cap_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:939:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_i%d", k);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp:942:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_q%d", k);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In lambda function:
-..\src\Device_Setup\D2S_ABB_Module.cpp:956:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_i%d", j);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp:959:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_q%d", j);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_PD_BUF_ADC_C1_BeforeCap_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:973:10: warning: unused variable 'i' [-Wunused-variable]
-     long i;
-          ^
-..\src\Device_Setup\D2S_ABB_Module.cpp:974:10: warning: unused variable 'j' [-Wunused-variable]
-     long j;
-          ^
-..\src\Device_Setup\D2S_ABB_Module.cpp:975:10: warning: unused variable 'cReadFlag' [-Wunused-variable]
-     char cReadFlag[32] = {"\0"};
-          ^~~~~~~~~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_PD_BUF_ADC_C1_Cap_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:1076:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_i%d", k);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp:1079:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_q%d", k);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In lambda function:
-..\src\Device_Setup\D2S_ABB_Module.cpp:1094:36: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-                 sprintf(cReadFlag, "readdata_i%d", j);
-                                    ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp:1097:36: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-                 sprintf(cReadFlag, "readdata_q%d", j);
-                                    ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_PD_BUF_GPIO1_ADC_C1_Cap_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:1157:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_i%d", k);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp:1160:32: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-             sprintf(cReadFlag, "readdata_q%d", k);
-                                ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In lambda function:
-..\src\Device_Setup\D2S_ABB_Module.cpp:1201:27: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-        sprintf(cReadFlag, "readdata_i%d", j);
-                           ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp:1204:27: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-        sprintf(cReadFlag, "readdata_q%d", j);
-                           ^~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_ADC_C0_Setup_PVCal_LV_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:1528:15: warning: unused variable 'dwResult' [-Wunused-variable]
-     long long dwResult = 0;
-               ^~~~~~~~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_ADC_C0_Setup_PVCal_LV1_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:1647:15: warning: unused variable 'dwResult' [-Wunused-variable]
-     long long dwResult = 0;
-               ^~~~~~~~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_ADC_C0_Setup_CalStatus_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:1968:15: warning: unused variable 'dwResult' [-Wunused-variable]
-     long long dwResult = 0;
-               ^~~~~~~~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_ADC_C1_Setup_PVCal_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:2387:15: warning: unused variable 'dwResult' [-Wunused-variable]
-     long long dwResult = 0;
-               ^~~~~~~~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_ADC_C1_Setup_PVCal_LV_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:2519:15: warning: unused variable 'dwResult' [-Wunused-variable]
-     long long dwResult = 0;
-               ^~~~~~~~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_ADC_C1_Setup_PVCal_LV1_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:2637:15: warning: unused variable 'dwResult' [-Wunused-variable]
-     long long dwResult = 0;
-               ^~~~~~~~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_ADC_C1_Setup_CalStatus_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:2754:15: warning: unused variable 'dwResult' [-Wunused-variable]
-     long long dwResult = 0;
-               ^~~~~~~~
-..\src\Device_Setup\D2S_ABB_Module.cpp: In function 'void WL_ADC_C1_Setup_CapCal_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_ABB_Module.cpp:2998:15: warning: unused variable 'dwResult' [-Wunused-variable]
-     long long dwResult = 0;
-               ^~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\d2s\\d2s.o" "..\\src\\d2s\\d2s.cpp" 
+..\src\d2s\d2s.cpp: In member function 'std::map<int, long long int> d2s::GetCaptureData(std::__cxx11::string, long unsigned int, long unsigned int, bool)':
+..\src\d2s\d2s.cpp:751:26: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
+   for(int site = 0; site < active_sites.size(); site++) {
+                     ~~~~~^~~~~~~~~~~~~~~~~~~~~
+..\src\d2s\d2s.cpp: In member function 'int d2s::getWaitTemplatFileInfos()':
+..\src\d2s\d2s.cpp:912:6: warning: unused variable 'vectors_cnt' [-Wunused-variable]
+  int vectors_cnt = 0;
+      ^~~~~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\CPP_Utility.o" "..\\src\\Common\\CPP_Utility.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_IDD_ECO.o" "..\\src\\DC\\PMU_IDD_ECO.cpp" 
 g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\d2s\\PatternManager.o" "..\\src\\d2s\\PatternManager.cpp" 
 ..\src\d2s\PatternManager.cpp: In static member function 'static long long unsigned int PatternManager::getCyclesFromLabel(const string&, const string&)':
 ..\src\d2s\PatternManager.cpp:74:9: warning: unused variable 'seqNoStart' [-Wunused-variable]
@@ -244,126 +37,8 @@ g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_
 ..\src\d2s\PatternManager.cpp:466:47: warning: comparison of integer expressions of different signedness: 'int' and 'std::__cxx11::basic_string<char>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
   while((begin = strStream.find(str, begin+1)) != string::npos) {
         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\tinyxmlerror.o" "..\\src\\Common\\tinyxmlerror.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_VREF_TRIM.o" "..\\src\\DC\\PMU_VREF_TRIM.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
-                 from ..\src\DC\PMU_VREF_TRIM.cpp:8:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
-                 from ..\src\DC\PMU_VREF_TRIM.cpp:8:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\BOOT_UP.o" "..\\src\\DC\\BOOT_UP.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
-                 from ..\src\DC\BOOT_UP.cpp:17:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from ..\src\DC\BOOT_UP.cpp:15:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Device_Setup\\resetDevice.o" "..\\src\\Device_Setup\\resetDevice.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mytest3.o" "..\\src\\mytest3.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\tinyxmlparser.o" "..\\src\\Common\\tinyxmlparser.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\Hbin_Check.o" "..\\src\\Common\\Hbin_Check.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Device_Setup\\TRX_Init.o" "..\\src\\Device_Setup\\TRX_Init.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
-                 from ..\src\Device_Setup\TRX_Init.cpp:6:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
-                 from ..\src\Device_Setup\TRX_Init.cpp:6:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_IDD_ECO.o" "..\\src\\DC\\PMU_IDD_ECO.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\SSI_MODE.o" "..\\src\\DC\\SSI_MODE.cpp" 
 g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\CLK_STOP.o" "..\\src\\Common\\CLK_STOP.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Device_Setup\\D2S_PMU_Module.o" "..\\src\\Device_Setup\\D2S_PMU_Module.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\TypeDef/CCRfsgTypeDef.h:12,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCSIGNAL.h:11,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCRFMIX.h:10,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08FAPI.h:11,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08F.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/D2S_PMU_Module.h:12,
-                 from ..\src\Device_Setup\D2S_PMU_Module.cpp:3:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from ..\src\Device_Setup\D2S_PMU_Module.cpp:2:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-..\src\Device_Setup\D2S_PMU_Module.cpp: In function 'void WL_2G_PLL_Sweep_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_PMU_Module.cpp:305:10: warning: unused variable 'i' [-Wunused-variable]
-     long i;
-          ^
-..\src\Device_Setup\D2S_PMU_Module.cpp:308:10: warning: unused variable 'pll_frac_22to16' [-Wunused-variable]
-     long pll_frac_22to16;
-          ^~~~~~~~~~~~~~~
-..\src\Device_Setup\D2S_PMU_Module.cpp:309:10: warning: unused variable 'pll_frac_15to0' [-Wunused-variable]
-     long pll_frac_15to0;
-          ^~~~~~~~~~~~~~
-..\src\Device_Setup\D2S_PMU_Module.cpp: In function 'void WL_5G_PLL_Sweep_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_PMU_Module.cpp:430:10: warning: unused variable 'i' [-Wunused-variable]
-     long i;
-          ^
-..\src\Device_Setup\D2S_PMU_Module.cpp:433:10: warning: unused variable 'pll_frac_22to16' [-Wunused-variable]
-     long pll_frac_22to16;
-          ^~~~~~~~~~~~~~~
-..\src\Device_Setup\D2S_PMU_Module.cpp:434:10: warning: unused variable 'pll_frac_15to0' [-Wunused-variable]
-     long pll_frac_15to0;
-          ^~~~~~~~~~~~~~
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\CMU_TCXO_SSI.o" "..\\src\\DC\\CMU_TCXO_SSI.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\TypeDef/CCRfsgTypeDef.h:12,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCSIGNAL.h:11,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCRFMIX.h:10,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08FAPI.h:11,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08F.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/D2S_PMU_Module.h:12,
-                 from ..\src\DC\CMU_TCXO_SSI.cpp:13:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from ..\src\DC\CMU_TCXO_SSI.cpp:12:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
 g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_CAPLESSLDO_TEST.o" "..\\src\\DC\\PMU_CAPLESSLDO_TEST.cpp" 
 In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
                  from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
@@ -382,723 +57,6 @@ In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2
 E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
  #define DLLAPI __declspec(dllexport)
  
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Cal\\RX_IQ_IR.o" "..\\src\\Cal\\RX_IQ_IR.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\polynomialfit.o" "..\\src\\Common\\polynomialfit.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Device_Setup\\TRX_Disable.o" "..\\src\\Device_Setup\\TRX_Disable.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\d2s\\d2s.o" "..\\src\\d2s\\d2s.cpp" 
-..\src\d2s\d2s.cpp: In member function 'std::map<int, long long int> d2s::GetCaptureData(std::__cxx11::string, long unsigned int, long unsigned int, bool)':
-..\src\d2s\d2s.cpp:751:26: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<int>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
-   for(int site = 0; site < active_sites.size(); site++) {
-                     ~~~~~^~~~~~~~~~~~~~~~~~~~~
-..\src\d2s\d2s.cpp: In member function 'int d2s::getWaitTemplatFileInfos()':
-..\src\d2s\d2s.cpp:912:6: warning: unused variable 'vectors_cnt' [-Wunused-variable]
-  int vectors_cnt = 0;
-      ^~~~~~~~~~~
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\TSENSOR_TEST.o" "..\\src\\DC\\TSENSOR_TEST.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
-                 from ..\src\DC\TSENSOR_TEST.cpp:8:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
-                 from ..\src\DC\TSENSOR_TEST.cpp:8:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_IDD_OFF.o" "..\\src\\DC\\PMU_IDD_OFF.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\d2s\\MD5.o" "..\\src\\d2s\\MD5.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\augmentedmatrix.o" "..\\src\\Common\\augmentedmatrix.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Cal\\CAL_VI_DET.o" "..\\src\\Cal\\CAL_VI_DET.cpp" 
-..\src\Cal\CAL_VI_DET.cpp: In member function 'virtual void CAL_VI_DET::execute()':
-..\src\Cal\CAL_VI_DET.cpp:66:10: warning: format '%s' expects argument of type 'char*', but argument 2 has type '__gnu_cxx::__alloc_traits<std::allocator<std::__cxx11::basic_string<char> >, std::__cxx11::basic_string<char> >::value_type' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
-   printf("123>>>>>>>>>>>>>>>>>>>>>>Test_name:%s --- Units:%s \n",Test_Item[0],Units[0]);
-          ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-..\src\Cal\CAL_VI_DET.cpp:66:10: warning: format '%s' expects argument of type 'char*', but argument 3 has type '__gnu_cxx::__alloc_traits<std::allocator<std::__cxx11::basic_string<char> >, std::__cxx11::basic_string<char> >::value_type' {aka 'std::__cxx11::basic_string<char>'} [-Wformat=]
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\tinyxml.o" "..\\src\\Common\\tinyxml.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\Execute_test.o" "..\\src\\Common\\Execute_test.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
-                 from ..\src\Common\Execute_test.cpp:1:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
-                 from ..\src\Common\Execute_test.cpp:1:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Device_Setup\\Hi1151_Setup.o" "..\\src\\Device_Setup\\Hi1151_Setup.cpp" 
-..\src\Device_Setup\Hi1151_Setup.cpp: In function 'int Write_RC_C_CODE(char*)':
-..\src\Device_Setup\Hi1151_Setup.cpp:328:12: warning: variable 'Channel_p' set but not used [-Wunused-but-set-variable]
-     char * Channel_p;
-            ^~~~~~~~~
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Cal\\Test_CAL_cpp.o" "..\\src\\Cal\\Test_CAL_cpp.cpp" 
-..\src\Cal\Test_CAL_cpp.cpp: In function 'int Calc_VI_Det(long long int*, long long int*, long int*, long int*, long int*, long int*, long int*, long int*, long int*, double*, double*, long int*, long int*, long int*, long int*, long int*, long int*, long int*, long int*, long int*)':
-..\src\Cal\Test_CAL_cpp.cpp:158:12: warning: unused variable 'Cur_I_Wave' [-Wunused-variable]
-     double Cur_I_Wave[204] = {0};
-            ^~~~~~~~~~
-..\src\Cal\Test_CAL_cpp.cpp: In function 'void Calc_TX_Power_CR_maxSR(SpecAnResultAttribute*, double, double, double*, double*, double*)':
-..\src\Cal\Test_CAL_cpp.cpp:358:12: warning: unused variable 'Post_Power' [-Wunused-variable]
-     double Post_Power;
-            ^~~~~~~~~~
-..\src\Cal\Test_CAL_cpp.cpp:359:12: warning: unused variable 'CR' [-Wunused-variable]
-     double CR;
-            ^~
-..\src\Cal\Test_CAL_cpp.cpp:360:12: warning: unused variable 'SR' [-Wunused-variable]
-     double SR;
-            ^~
-..\src\Cal\Test_CAL_cpp.cpp: In function 'int Get_I_Q_Wave(double*, double*, long int, int, double*, double*)':
-..\src\Cal\Test_CAL_cpp.cpp:536:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-..\src\Cal\Test_CAL_cpp.cpp: In function 'int Calc_WLAN_IQ_PE_VBT(int, int, CSiteLong*, long int*, long int*, double*, double*)':
-..\src\Cal\Test_CAL_cpp.cpp:596:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
-         for(int j = i * 2; j < Capsize;j += 64);
-         ^~~
-..\src\Cal\Test_CAL_cpp.cpp:597:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
-         {
-         ^
-..\src\Cal\Test_CAL_cpp.cpp:606:9: warning: this 'for' clause does not guard... [-Wmisleading-indentation]
-         for(int j = i * 2 + 1; j < Capsize;j+=64);
-         ^~~
-..\src\Cal\Test_CAL_cpp.cpp:607:9: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the 'for'
-         {
-         ^
-..\src\Cal\Test_CAL_cpp.cpp: In function 'int DSP_WLAN_IQ_P_FIT_VBT(double*, double*, double*, double*)':
-..\src\Cal\Test_CAL_cpp.cpp:688:12: warning: unused variable 'raw_P_BestFitWave' [-Wunused-variable]
-     double raw_P_BestFitWave[6];
-            ^~~~~~~~~~~~~~~~~
-..\src\Cal\Test_CAL_cpp.cpp: In function 'int CAL_RX_Phase()':
-..\src\Cal\Test_CAL_cpp.cpp:781:63: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-         RX_PLL_Setup( WLAN_5G_Mode,WLAN_5G_RX_D_Band,"C0",40e6);
-                                                               ^
-..\src\Cal\Test_CAL_cpp.cpp:786:63: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-         RX_PLL_Setup( WLAN_5G_Mode,WLAN_5G_RX_D_Band,"C1",40e6);
-                                                               ^
-..\src\Cal\Test_CAL_cpp.cpp:793:31: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
-         sprintf(RF_SrcSignal, "MWsrc_RX5G_D_PHASE_C0_%dM", Freq_List[i]);
-                               ^~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~
-..\src\Cal\Test_CAL_cpp.cpp:840:16: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
-         printf("---------- %s    Freq_List    :    %d-----------","SSI_DATA",Freq_List[i]);
-                ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~            ~~~~~~~~~~~~
-..\src\Cal\Test_CAL_cpp.cpp:752:11: warning: unused variable 'RF_Src_Label' [-Wunused-variable]
-     char* RF_Src_Label;
-           ^~~~~~~~~~~~
-..\src\Cal\Test_CAL_cpp.cpp:757:12: warning: unused variable 'E_wave' [-Wunused-variable]
-     double E_wave[24];
-            ^~~~~~
-..\src\Cal\Test_CAL_cpp.cpp:758:12: warning: unused variable 'P_Wave' [-Wunused-variable]
-     double P_Wave[24];
-            ^~~~~~
-..\src\Cal\Test_CAL_cpp.cpp:761:12: warning: unused variable 'e_val' [-Wunused-variable]
-     double e_val;
-            ^~~~~
-..\src\Cal\Test_CAL_cpp.cpp:762:12: warning: unused variable 'p_val' [-Wunused-variable]
-     double p_val;
-            ^~~~~
-..\src\Cal\Test_CAL_cpp.cpp:772:9: warning: unused variable 'P_Wave_Size' [-Wunused-variable]
-     int P_Wave_Size = 0;
-         ^~~~~~~~~~~
-..\src\Cal\Test_CAL_cpp.cpp: In function 'int Calc_PD_BUF(std::__cxx11::string, bool, int, double*)':
-..\src\Cal\Test_CAL_cpp.cpp:931:24: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     char *Ana_SrcPin = "RF_TEST_TX_IP";
-                        ^~~~~~~~~~~~~~~
-..\src\Cal\Test_CAL_cpp.cpp:929:17: warning: unused variable 'testname' [-Wunused-variable]
-     const char* testname = NULL;
-                 ^~~~~~~~
-..\src\Cal\Test_CAL_cpp.cpp: In function 'int DSP_WLAN_IQ_P_FIT_VBT(double*, double*, double*, double*)':
-..\src\Cal\Test_CAL_cpp.cpp:740:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\read_DIBID.o" "..\\src\\DC\\read_DIBID.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Device_Setup\\Hi1151_TX_Reg.o" "..\\src\\Device_Setup\\Hi1151_TX_Reg.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\TypeDef/CCRfsgTypeDef.h:12,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCSIGNAL.h:11,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCRFMIX.h:10,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08FAPI.h:11,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08F.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/RegDef.h:15,
-                 from ..\src\Device_Setup\Hi1151_TX_Reg.cpp:4:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from ..\src\Device_Setup\Hi1151_TX_Reg.cpp:3:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-..\src\Device_Setup\Hi1151_TX_Reg.cpp: In function 'void WLAN_2G_TX_C0_PLL_Reg(emTX_Band)':
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:12:10: warning: enumeration value 'WLAN_5G_TX_B1_Band' not handled in switch [-Wswitch]
-    switch(Band_Select)
-          ^
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:12:10: warning: enumeration value 'WLAN_5G_TX_B2_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:12:10: warning: enumeration value 'WLAN_5G_TX_B3_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:12:10: warning: enumeration value 'WLAN_5G_TX_B4_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:12:10: warning: enumeration value 'WLAN_5G_TX_B5_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:12:10: warning: enumeration value 'WLAN_5G_TX_B6_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:12:10: warning: enumeration value 'WLAN_5G_TX_B7_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp: In function 'void WLAN_2G_TX_C1_PLL_Reg(emTX_Band)':
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:105:11: warning: enumeration value 'WLAN_5G_TX_B1_Band' not handled in switch [-Wswitch]
-     switch(Band_Select)
-           ^
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:105:11: warning: enumeration value 'WLAN_5G_TX_B2_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:105:11: warning: enumeration value 'WLAN_5G_TX_B3_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:105:11: warning: enumeration value 'WLAN_5G_TX_B4_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:105:11: warning: enumeration value 'WLAN_5G_TX_B5_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:105:11: warning: enumeration value 'WLAN_5G_TX_B6_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:105:11: warning: enumeration value 'WLAN_5G_TX_B7_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp: In function 'void WLAN_5G_TX_C0_PLL_Reg(emTX_Band, double)':
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:191:11: warning: enumeration value 'WLAN_2G_TX_L_Band' not handled in switch [-Wswitch]
-     switch(Band_Select)
-           ^
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:191:11: warning: enumeration value 'WLAN_2G_TX_M_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:191:11: warning: enumeration value 'WLAN_2G_TX_H_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:191:11: warning: enumeration value 'WLAN_5G_TX_B1_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:191:11: warning: enumeration value 'WLAN_5G_TX_B3_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:191:11: warning: enumeration value 'WLAN_5G_TX_B5_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:191:11: warning: enumeration value 'WLAN_5G_TX_B6_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp: In function 'void WLAN_5G_TX_C1_PLL_Reg(emTX_Band, double)':
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:276:11: warning: enumeration value 'WLAN_2G_TX_L_Band' not handled in switch [-Wswitch]
-     switch(Band_Select)
-           ^
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:276:11: warning: enumeration value 'WLAN_2G_TX_M_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:276:11: warning: enumeration value 'WLAN_2G_TX_H_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:276:11: warning: enumeration value 'WLAN_5G_TX_B1_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:276:11: warning: enumeration value 'WLAN_5G_TX_B3_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:276:11: warning: enumeration value 'WLAN_5G_TX_B5_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:276:11: warning: enumeration value 'WLAN_5G_TX_B6_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp: In function 'void WLAN_2G_TX_C0_BW_Reg(emTX_Band)':
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:359:12: warning: enumeration value 'WLAN_5G_TX_B1_Band' not handled in switch [-Wswitch]
-      switch(Band_Select)
-            ^
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:359:12: warning: enumeration value 'WLAN_5G_TX_B2_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:359:12: warning: enumeration value 'WLAN_5G_TX_B3_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:359:12: warning: enumeration value 'WLAN_5G_TX_B4_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:359:12: warning: enumeration value 'WLAN_5G_TX_B5_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:359:12: warning: enumeration value 'WLAN_5G_TX_B6_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:359:12: warning: enumeration value 'WLAN_5G_TX_B7_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp: In function 'void WLAN_2G_TX_C1_BW_Reg(emTX_Band)':
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:392:11: warning: enumeration value 'WLAN_5G_TX_B1_Band' not handled in switch [-Wswitch]
-     switch(Band_Select)
-           ^
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:392:11: warning: enumeration value 'WLAN_5G_TX_B2_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:392:11: warning: enumeration value 'WLAN_5G_TX_B3_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:392:11: warning: enumeration value 'WLAN_5G_TX_B4_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:392:11: warning: enumeration value 'WLAN_5G_TX_B5_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:392:11: warning: enumeration value 'WLAN_5G_TX_B6_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:392:11: warning: enumeration value 'WLAN_5G_TX_B7_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp: In function 'void WLAN_5G_TX_C0_BW_Reg(emTX_Band, double)':
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:426:11: warning: enumeration value 'WLAN_2G_TX_L_Band' not handled in switch [-Wswitch]
-     switch(Band_Select)
-           ^
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:426:11: warning: enumeration value 'WLAN_2G_TX_M_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:426:11: warning: enumeration value 'WLAN_2G_TX_H_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:426:11: warning: enumeration value 'WLAN_5G_TX_B1_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:426:11: warning: enumeration value 'WLAN_5G_TX_B3_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:426:11: warning: enumeration value 'WLAN_5G_TX_B5_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:426:11: warning: enumeration value 'WLAN_5G_TX_B6_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp: In function 'void WLAN_5G_TX_C1_BW_Reg(emTX_Band, double)':
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:473:11: warning: enumeration value 'WLAN_2G_TX_L_Band' not handled in switch [-Wswitch]
-     switch(Band_Select)
-           ^
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:473:11: warning: enumeration value 'WLAN_2G_TX_M_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:473:11: warning: enumeration value 'WLAN_2G_TX_H_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:473:11: warning: enumeration value 'WLAN_5G_TX_B1_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:473:11: warning: enumeration value 'WLAN_5G_TX_B3_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:473:11: warning: enumeration value 'WLAN_5G_TX_B5_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_TX_Reg.cpp:473:11: warning: enumeration value 'WLAN_5G_TX_B6_Band' not handled in switch [-Wswitch]
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\Power_OSD.o" "..\\src\\DC\\Power_OSD.cpp" 
-..\src\DC\Power_OSD.cpp:9:24: warning: extra tokens at end of #include directive
- #include "Globle_Var.h";
-                        ^
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
-                 from ..\src\DC\Power_OSD.cpp:9:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
-                 from ..\src\DC\Power_OSD.cpp:9:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Cal\\CAL_RX_Phase.o" "..\\src\\Cal\\CAL_RX_Phase.cpp" 
-..\src\Cal\CAL_RX_Phase.cpp: In member function 'virtual void CAL_RX_Phase::execute()':
-..\src\Cal\CAL_RX_Phase.cpp:80:68: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-              RX_PLL_Setup( WLAN_5G_Mode,WLAN_5G_RX_D_Band,"C0",40e6);
-                                                                    ^
-..\src\Cal\CAL_RX_Phase.cpp:85:68: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-              RX_PLL_Setup( WLAN_5G_Mode,WLAN_5G_RX_D_Band,"C1",40e6);
-                                                                    ^
-..\src\Cal\CAL_RX_Phase.cpp:92:36: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
-              sprintf(RF_SrcSignal, "MWsrc_RX5G_D_PHASE_C0_%dM", Freq_List[i]);
-                                    ^~~~~~~~~~~~~~~~~~~~~~~~~~~  ~~~~~~~~~~~~
-..\src\Cal\CAL_RX_Phase.cpp:139:21: warning: format '%d' expects argument of type 'int', but argument 3 has type 'double' [-Wformat=]
-              printf("---------- %s    Freq_List    :    %d-----------","SSI_DATA",Freq_List[i]);
-                     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~            ~~~~~~~~~~~~
-..\src\Cal\CAL_RX_Phase.cpp:53:16: warning: unused variable 'RF_Src_Label' [-Wunused-variable]
-          char* RF_Src_Label;
-                ^~~~~~~~~~~~
-..\src\Cal\CAL_RX_Phase.cpp:58:17: warning: unused variable 'E_wave' [-Wunused-variable]
-          double E_wave[24];
-                 ^~~~~~
-..\src\Cal\CAL_RX_Phase.cpp:59:17: warning: unused variable 'P_Wave' [-Wunused-variable]
-          double P_Wave[24];
-                 ^~~~~~
-..\src\Cal\CAL_RX_Phase.cpp:62:17: warning: unused variable 'e_val' [-Wunused-variable]
-          double e_val;
-                 ^~~~~
-..\src\Cal\CAL_RX_Phase.cpp:63:17: warning: unused variable 'p_val' [-Wunused-variable]
-          double p_val;
-                 ^~~~~
-..\src\Cal\CAL_RX_Phase.cpp:73:14: warning: unused variable 'P_Wave_Size' [-Wunused-variable]
-          int P_Wave_Size = 0;
-              ^~~~~~~~~~~
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\Basic_01_Functional.o" "..\\src\\Common\\Basic_01_Functional.cpp" 
-..\src\Common\Basic_01_Functional.cpp: In member function 'virtual void Basic_01_Functional::execute()':
-..\src\Common\Basic_01_Functional.cpp:34:16: warning: unused variable 'executedcount' [-Wunused-variable]
-       uint64_t executedcount=TheInst.Digital().PatEng().GetExecutedCyclesCount();
-                ^~~~~~~~~~~~~
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABB\\ABB_ADC_IQ.o" "..\\src\\ABB\\ABB_ADC_IQ.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
-                 from ..\src\ABB\ABB_ADC_IQ.cpp:16:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
-                 from ..\src\ABB\ABB_ADC_IQ.cpp:16:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-..\src\ABB\ABB_ADC_IQ.cpp: In member function 'virtual void ABB_ADC_IQ::execute()':
-..\src\ABB\ABB_ADC_IQ.cpp:88:8: warning: unused variable 'site0_flag' [-Wunused-variable]
-   bool site0_flag = false;
-        ^~~~~~~~~~
-..\src\ABB\ABB_ADC_IQ.cpp:94:16: warning: unused variable 'active_sites_cnt' [-Wunused-variable]
-   unsigned int active_sites_cnt = 0;
-                ^~~~~~~~~~~~~~~~
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_BUCK_TRIM.o" "..\\src\\DC\\PMU_BUCK_TRIM.cpp" 
-..\src\DC\PMU_BUCK_TRIM.cpp: In member function 'virtual void BUCK_VrefTrim::execute()':
-..\src\DC\PMU_BUCK_TRIM.cpp:39:14: warning: unused variable 'GetValue' [-Wunused-variable]
-      double *GetValue;
-              ^~~~~~~~
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABB\\ABB_DAC_IQ.o" "..\\src\\ABB\\ABB_DAC_IQ.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/D2S_ABB_Module.h:13,
-                 from ..\src\ABB\ABB_DAC_IQ.cpp:13:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/D2S_ABB_Module.h:12,
-                 from ..\src\ABB\ABB_DAC_IQ.cpp:13:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\mytest2.o" "..\\src\\mytest2.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_BUCK_LOAD.o" "..\\src\\DC\\PMU_BUCK_LOAD.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
-                 from ..\src\DC\PMU_BUCK_LOAD.cpp:8:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
-                 from ..\src\DC\PMU_BUCK_LOAD.cpp:8:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Device_Setup\\DSP_test_ABB.o" "..\\src\\Device_Setup\\DSP_test_ABB.cpp" 
-..\src\Device_Setup\DSP_test_ABB.cpp: In function 'void dacDynamicCalc(const unsigned int&, IQMeasureAttribute*, const unsigned int&, double&, double&, double&, double&, double&, double&, double&, double&, double&, double&, double&, double&, double&, double&, double&, const unsigned int&)':
-..\src\Device_Setup\DSP_test_ABB.cpp:261:26: warning: comparison of integer expressions of different signedness: 'int' and 'unsigned int' [-Wsign-compare]
-         for(int i = 0; i < FFT_Size; i++)
-                        ~~^~~~~~~~~~
-..\src\Device_Setup\DSP_test_ABB.cpp: In function 'std::vector<double> BestFitAnalysis(double*, const int&, double*, double*)':
-..\src\Device_Setup\DSP_test_ABB.cpp:447:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-..\src\Device_Setup\DSP_test_ABB.cpp: In function 'std::vector<double> EndPointAnalysis(double*, const int&, double*, double*)':
-..\src\Device_Setup\DSP_test_ABB.cpp:484:1: warning: no return statement in function returning non-void [-Wreturn-type]
- }
- ^
-..\src\Device_Setup\DSP_test_ABB.cpp: In function 'std::vector<double> HistogramAnalysis(int*, const int&, const int&, const double&, const double&, double*, double*)':
-..\src\Device_Setup\DSP_test_ABB.cpp:623:1: warning: control reaches end of non-void function [-Wreturn-type]
- }
- ^
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Device_Setup\\Hi1151_RX_Reg.o" "..\\src\\Device_Setup\\Hi1151_RX_Reg.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\TypeDef/CCRfsgTypeDef.h:12,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCSIGNAL.h:11,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCRFMIX.h:10,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08FAPI.h:11,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08F.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/RegDef.h:15,
-                 from ..\src\Device_Setup\Hi1151_RX_Reg.cpp:7:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from ..\src\Device_Setup\Hi1151_RX_Reg.cpp:6:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-..\src\Device_Setup\Hi1151_RX_Reg.cpp: In function 'int WLAN_2G_RX_C0_PLL_Reg(emRX_Band, double)':
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:17:11: warning: enumeration value 'WLAN_5G_RX_A_Band' not handled in switch [-Wswitch]
-     switch(Band_Select)
-           ^
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:17:11: warning: enumeration value 'WLAN_5G_RX_B_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:17:11: warning: enumeration value 'WLAN_5G_RX_C_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:17:11: warning: enumeration value 'WLAN_5G_RX_D_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp: In function 'int WLAN_2G_RX_C1_PLL_Reg(emRX_Band, double)':
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:120:11: warning: enumeration value 'WLAN_5G_RX_A_Band' not handled in switch [-Wswitch]
-     switch(Band_Select)
-           ^
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:120:11: warning: enumeration value 'WLAN_5G_RX_B_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:120:11: warning: enumeration value 'WLAN_5G_RX_C_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:120:11: warning: enumeration value 'WLAN_5G_RX_D_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp: In function 'int WLAN_5G_RX_C0_PLL_Reg(emRX_Band, double)':
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:221:11: warning: enumeration value 'WLAN_2G_RX_L_Band' not handled in switch [-Wswitch]
-     switch(Band_Select)
-           ^
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:221:11: warning: enumeration value 'WLAN_2G_RX_M_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:221:11: warning: enumeration value 'WLAN_2G_RX_H_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp: In function 'int WLAN_5G_RX_C1_PLL_Reg(emRX_Band, double)':
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:350:11: warning: enumeration value 'WLAN_2G_RX_L_Band' not handled in switch [-Wswitch]
-     switch(Band_Select)
-           ^
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:350:11: warning: enumeration value 'WLAN_2G_RX_M_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:350:11: warning: enumeration value 'WLAN_2G_RX_H_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp: In function 'int WLAN_2G_RX_C0_BW_Reg(emRX_Band, double)':
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:480:11: warning: enumeration value 'WLAN_5G_RX_A_Band' not handled in switch [-Wswitch]
-     switch(Band_Select)
-           ^
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:480:11: warning: enumeration value 'WLAN_5G_RX_B_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:480:11: warning: enumeration value 'WLAN_5G_RX_C_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:480:11: warning: enumeration value 'WLAN_5G_RX_D_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp: In function 'int WLAN_2G_RX_C1_BW_Reg(emRX_Band, double)':
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:527:11: warning: enumeration value 'WLAN_5G_RX_A_Band' not handled in switch [-Wswitch]
-     switch(Band_Select)
-           ^
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:527:11: warning: enumeration value 'WLAN_5G_RX_B_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:527:11: warning: enumeration value 'WLAN_5G_RX_C_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:527:11: warning: enumeration value 'WLAN_5G_RX_D_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp: In function 'int WLAN_5G_RX_C0_BW_Reg(emRX_Band, double)':
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:576:11: warning: enumeration value 'WLAN_2G_RX_L_Band' not handled in switch [-Wswitch]
-     switch(Band_Select)
-           ^
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:576:11: warning: enumeration value 'WLAN_2G_RX_M_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:576:11: warning: enumeration value 'WLAN_2G_RX_H_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp: In function 'int WLAN_5G_RX_C1_BW_Reg(emRX_Band, double)':
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:628:11: warning: enumeration value 'WLAN_2G_RX_L_Band' not handled in switch [-Wswitch]
-     switch(Band_Select)
-           ^
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:628:11: warning: enumeration value 'WLAN_2G_RX_M_Band' not handled in switch [-Wswitch]
-..\src\Device_Setup\Hi1151_RX_Reg.cpp:628:11: warning: enumeration value 'WLAN_2G_RX_H_Band' not handled in switch [-Wswitch]
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Device_Setup\\Test_ABB_cpp.o" "..\\src\\Device_Setup\\Test_ABB_cpp.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PowerOFF.o" "..\\src\\DC\\PowerOFF.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\Capture_Function.o" "..\\src\\Common\\Capture_Function.cpp" 
-..\src\Common\Capture_Function.cpp: In function 'void DIO_Capture(int, std::__cxx11::string, long unsigned int*)':
-..\src\Common\Capture_Function.cpp:48:15: warning: comparison of integer expressions of different signedness: 'int' and 'const unsigned int' [-Wsign-compare]
-    if(Site_id == it->first)
-       ~~~~~~~~^~~~~~~~~~~~
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_LDO_LOAD.o" "..\\src\\DC\\PMU_LDO_LOAD.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\TypeDef/CCRfsgTypeDef.h:12,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCSIGNAL.h:11,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCRFMIX.h:10,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08FAPI.h:11,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08F.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/D2S_PMU_Module.h:12,
-                 from ..\src\DC\PMU_LDO_LOAD.cpp:7:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/D2S_PMU_Module.h:11,
-                 from ..\src\DC\PMU_LDO_LOAD.cpp:7:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\CC08FCBBAPI.o" "..\\src\\Common\\CC08FCBBAPI.cpp" 
-..\src\Common\CC08FCBBAPI.cpp: In function 'int LoadSignal_RX_DT(tyTestData)':
-..\src\Common\CC08FCBBAPI.cpp:213:12: warning: unused variable 'pathloss' [-Wunused-variable]
-     double pathloss[4];
-            ^~~~~~~~
-..\src\Common\CC08FCBBAPI.cpp: In function 'int LoadSignal_RX_MOD(tyTestData)':
-..\src\Common\CC08FCBBAPI.cpp:294:64: warning: ISO C++ forbids converting a string constant to 'ViChar*' {aka 'char*'} [-Wwrite-strings]
-     rfmxWlan.trigger.IQPowerEdgeTrigger.pszIQPowerEdgeSource = "0";
-                                                                ^~~
-..\src\Common\CC08FCBBAPI.cpp: In function 'int LoadSignal_TX_MOD(tyTestData)':
-..\src\Common\CC08FCBBAPI.cpp:400:64: warning: ISO C++ forbids converting a string constant to 'ViChar*' {aka 'char*'} [-Wwrite-strings]
-     rfmxWlan.trigger.IQPowerEdgeTrigger.pszIQPowerEdgeSource = "0";
-                                                                ^~~
-..\src\Common\CC08FCBBAPI.cpp: In function 'int LoadEverySignal(tyTestData)':
-..\src\Common\CC08FCBBAPI.cpp:474:9: warning: variable 'nRet' set but not used [-Wunused-but-set-variable]
-     int nRet = 0;
-         ^~~~
-..\src\Common\CC08FCBBAPI.cpp: In function 'void Load_UltraWave_Src_Signals()':
-..\src\Common\CC08FCBBAPI.cpp:987:78: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     MWSource_Signal_CW(WLAN_RX_5G_D_Freq + 5E6,-40,"MWsrc_RX5G_D_PHASE_C0_5M");
-                                                                              ^
-..\src\Common\CC08FCBBAPI.cpp:988:80: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     MWSource_Signal_CW(WLAN_RX_5G_D_Freq + 25E6,-40,"MWsrc_RX5G_D_PHASE_C0_25M");
-                                                                                ^
-..\src\Common\CC08FCBBAPI.cpp:989:80: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     MWSource_Signal_CW(WLAN_RX_5G_D_Freq + 35E6,-40,"MWsrc_RX5G_D_PHASE_C0_35M");
-                                                                                ^
-..\src\Common\CC08FCBBAPI.cpp:990:79: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     MWSource_Signal_CW(WLAN_RX_5G_D_Freq - 5E6,-40,"MWsrc_RX5G_D_PHASE_C0_N5M");
-                                                                               ^
-..\src\Common\CC08FCBBAPI.cpp:991:81: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     MWSource_Signal_CW(WLAN_RX_5G_D_Freq - 25E6,-40,"MWsrc_RX5G_D_PHASE_C0_N25M");
-                                                                                 ^
-..\src\Common\CC08FCBBAPI.cpp:992:81: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     MWSource_Signal_CW(WLAN_RX_5G_D_Freq - 35E6,-40,"MWsrc_RX5G_D_PHASE_C0_N35M");
-                                                                                 ^
-..\src\Common\CC08FCBBAPI.cpp:994:78: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     MWSource_Signal_CW(WLAN_RX_5G_D_Freq + 5E6,-40,"MWsrc_RX5G_D_PHASE_C1_5M");
-                                                                              ^
-..\src\Common\CC08FCBBAPI.cpp:995:80: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     MWSource_Signal_CW(WLAN_RX_5G_D_Freq + 25E6,-40,"MWsrc_RX5G_D_PHASE_C1_25M");
-                                                                                ^
-..\src\Common\CC08FCBBAPI.cpp:996:80: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     MWSource_Signal_CW(WLAN_RX_5G_D_Freq + 35E6,-40,"MWsrc_RX5G_D_PHASE_C1_35M");
-                                                                                ^
-..\src\Common\CC08FCBBAPI.cpp:997:79: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     MWSource_Signal_CW(WLAN_RX_5G_D_Freq - 5E6,-40,"MWsrc_RX5G_D_PHASE_C1_N5M");
-                                                                               ^
-..\src\Common\CC08FCBBAPI.cpp:998:81: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     MWSource_Signal_CW(WLAN_RX_5G_D_Freq - 25E6,-40,"MWsrc_RX5G_D_PHASE_C1_N25M");
-                                                                                 ^
-..\src\Common\CC08FCBBAPI.cpp:999:81: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-     MWSource_Signal_CW(WLAN_RX_5G_D_Freq - 35E6,-40,"MWsrc_RX5G_D_PHASE_C1_N35M");
-                                                                                 ^
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\DC_IIHL_JTAG.o" "..\\src\\DC\\DC_IIHL_JTAG.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
-                 from ..\src\DC\DC_IIHL_JTAG.cpp:12:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from ..\src\DC\DC_IIHL_JTAG.cpp:8:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\SSI_MODE.o" "..\\src\\DC\\SSI_MODE.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\tinystr.o" "..\\src\\Common\\tinystr.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Device_Setup\\Hi1151_Init_Reg.o" "..\\src\\Device_Setup\\Hi1151_Init_Reg.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
-                 from ..\src\Device_Setup\Hi1151_Init_Reg.cpp:4:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from ..\src\Device_Setup\Hi1151_Init_Reg.cpp:3:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\ABB\\ADC_DAC_IDD.o" "..\\src\\ABB\\ADC_DAC_IDD.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
-                 from ..\src\ABB\ADC_DAC_IDD.cpp:13:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
-                 from ..\src\ABB\ADC_DAC_IDD.cpp:13:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Cal\\CAL_RC_PPF.o" "..\\src\\Cal\\CAL_RC_PPF.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/D2S_CAL_Module.h:13,
-                 from ..\src\Cal\CAL_RC_PPF.cpp:12:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from ..\src\Cal\CAL_RC_PPF.cpp:11:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\Test_TX_cpp.o" "..\\src\\Common\\Test_TX_cpp.cpp" 
-..\src\Common\Test_TX_cpp.cpp: In function 'int TX_Power_Trim_Function(emMode, emTX_Band, char*, double*, int*)':
-..\src\Common\Test_TX_cpp.cpp:51:23: warning: enumeration value 'WLAN_5G_TX_B1_Band' not handled in switch [-Wswitch]
-                 switch(Band_Select)
-                       ^
-..\src\Common\Test_TX_cpp.cpp:51:23: warning: enumeration value 'WLAN_5G_TX_B2_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:51:23: warning: enumeration value 'WLAN_5G_TX_B3_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:51:23: warning: enumeration value 'WLAN_5G_TX_B4_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:51:23: warning: enumeration value 'WLAN_5G_TX_B5_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:51:23: warning: enumeration value 'WLAN_5G_TX_B6_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:51:23: warning: enumeration value 'WLAN_5G_TX_B7_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:73:23: warning: enumeration value 'WLAN_5G_TX_B1_Band' not handled in switch [-Wswitch]
-                 switch(Band_Select)
-                       ^
-..\src\Common\Test_TX_cpp.cpp:73:23: warning: enumeration value 'WLAN_5G_TX_B2_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:73:23: warning: enumeration value 'WLAN_5G_TX_B3_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:73:23: warning: enumeration value 'WLAN_5G_TX_B4_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:73:23: warning: enumeration value 'WLAN_5G_TX_B5_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:73:23: warning: enumeration value 'WLAN_5G_TX_B6_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:73:23: warning: enumeration value 'WLAN_5G_TX_B7_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:99:23: warning: enumeration value 'WLAN_2G_TX_L_Band' not handled in switch [-Wswitch]
-                 switch(Band_Select)
-                       ^
-..\src\Common\Test_TX_cpp.cpp:99:23: warning: enumeration value 'WLAN_2G_TX_M_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:99:23: warning: enumeration value 'WLAN_2G_TX_H_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:141:23: warning: enumeration value 'WLAN_2G_TX_L_Band' not handled in switch [-Wswitch]
-                 switch(Band_Select)
-                       ^
-..\src\Common\Test_TX_cpp.cpp:141:23: warning: enumeration value 'WLAN_2G_TX_M_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:141:23: warning: enumeration value 'WLAN_2G_TX_H_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:141:23: warning: enumeration value 'WLAN_5G_TX_B2_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:141:23: warning: enumeration value 'WLAN_5G_TX_B3_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:141:23: warning: enumeration value 'WLAN_5G_TX_B4_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:141:23: warning: enumeration value 'WLAN_5G_TX_B5_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:141:23: warning: enumeration value 'WLAN_5G_TX_B6_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:141:23: warning: enumeration value 'WLAN_5G_TX_B7_Band' not handled in switch [-Wswitch]
-..\src\Common\Test_TX_cpp.cpp:147:21: warning: case value '14' not in enumerated type 'emMode' [-Wswitch]
-                     case(WLAN_5G_TX_B2_Band):
-                     ^~~~
-..\src\Common\Test_TX_cpp.cpp:152:21: warning: case value '15' not in enumerated type 'emMode' [-Wswitch]
-                     case(WLAN_5G_TX_B3_Band):
-                     ^~~~
-..\src\Common\Test_TX_cpp.cpp:157:21: warning: case value '16' not in enumerated type 'emMode' [-Wswitch]
-                     case(WLAN_5G_TX_B4_Band):
-                     ^~~~
-..\src\Common\Test_TX_cpp.cpp:162:21: warning: case value '17' not in enumerated type 'emMode' [-Wswitch]
-                     case(WLAN_5G_TX_B5_Band):
-                     ^~~~
-..\src\Common\Test_TX_cpp.cpp:167:21: warning: case value '18' not in enumerated type 'emMode' [-Wswitch]
-                     case(WLAN_5G_TX_B6_Band):
-                     ^~~~
-..\src\Common\Test_TX_cpp.cpp:172:21: warning: case value '19' not in enumerated type 'emMode' [-Wswitch]
-                     case(WLAN_5G_TX_B7_Band):
-                     ^~~~
-..\src\Common\Test_TX_cpp.cpp: In function 'int calc_PLL_Sweep(int, long long int*, long int, double*, long int*, long int*, long int*, long int*)':
-..\src\Common\Test_TX_cpp.cpp:408:15: warning: unused variable 'raw_band_wave' [-Wunused-variable]
-     long long raw_band_wave[sweep_step];
-               ^~~~~~~~~~~~~
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Cal\\DAC_SPUR.o" "..\\src\\Cal\\DAC_SPUR.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\linearfit.o" "..\\src\\Common\\linearfit.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_IREF_TRIM.o" "..\\src\\DC\\PMU_IREF_TRIM.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
-                 from ..\src\DC\PMU_IREF_TRIM.cpp:8:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
-                 from ..\src\DC\PMU_IREF_TRIM.cpp:8:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\Globle_Var.o" "..\\src\\Common\\Globle_Var.cpp" 
-In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
-                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
-                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
-                 from ..\src\Common\Globle_Var.cpp:3:
-C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
- #define DLLAPI
- 
-In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from ..\src\Common\Globle_Var.cpp:2:
-E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
- #define DLLAPI __declspec(dllexport)
- 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Device_Setup\\PROG_INIT.o" "..\\src\\Device_Setup\\PROG_INIT.cpp" 
-..\src\Device_Setup\PROG_INIT.cpp: In member function 'virtual void PROG_INIT::execute()':
-..\src\Device_Setup\PROG_INIT.cpp:66:20: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-    CurrentLimitSet="QA";
-                    ^~~~
-..\src\Device_Setup\PROG_INIT.cpp:69:20: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-    CurrentLimitSet="Golden";
-                    ^~~~~~~~
-..\src\Device_Setup\PROG_INIT.cpp:72:20: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-    CurrentLimitSet="Default";
-                    ^~~~~~~~~
-..\src\Device_Setup\PROG_INIT.cpp:80:23: warning: ISO C++ forbids converting a string constant to 'char*' [-Wwrite-strings]
-    char *limitsPath = "/TestLimit/Hi1151SV208_Limits.xlsx";
-                       ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\CBBLimits.o" "..\\src\\Common\\CBBLimits.cpp" 
 ..\src\Common\CBBLimits.cpp: In member function 'int CBBLimits::ReadLimits(char*, std::map<std::__cxx11::basic_string<char>, tyLimitsData>*)':
 ..\src\Common\CBBLimits.cpp:95:38: warning: comparison of integer expressions of different signedness: 'int' and 'ViUInt32' {aka 'long unsigned int'} [-Wsign-compare]
@@ -1122,77 +80,264 @@ g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_
 ..\src\Common\CBBLimits.cpp:94:11: warning: unused variable 'cell' [-Wunused-variable]
      char *cell;
            ^~~~
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Device_Setup\\D2S_CAL_Module.o" "..\\src\\Device_Setup\\D2S_CAL_Module.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\d2s\\MD5.o" "..\\src\\d2s\\MD5.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\TSENSOR_TEST.o" "..\\src\\DC\\TSENSOR_TEST.cpp" 
 In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
                  from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
                  from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
                  from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
                  from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
-                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/D2S_CAL_Module.h:13,
-                 from ..\src\Device_Setup\D2S_CAL_Module.cpp:5:
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\TSENSOR_TEST.cpp:8:
 C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
  #define DLLAPI
  
 In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
                  from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
-                 from ..\src\Device_Setup\D2S_CAL_Module.cpp:3:
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
+                 from ..\src\DC\TSENSOR_TEST.cpp:8:
 E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
  #define DLLAPI __declspec(dllexport)
  
-..\src\Device_Setup\D2S_CAL_Module.cpp: In function 'void VI_DET_C0_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_CAL_Module.cpp:2869:22: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-   sprintf(cReadFlag, "readdata_reg0_V%d", i);
-                      ^~~~~~~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_CAL_Module.cpp:2872:22: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-   sprintf(cReadFlag, "readdata_reg2_V%d", i);
-                      ^~~~~~~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_CAL_Module.cpp:2926:22: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-   sprintf(cReadFlag, "readdata_reg0_I%d", i);
-                      ^~~~~~~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_CAL_Module.cpp:2929:22: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-   sprintf(cReadFlag, "readdata_reg2_I%d", i);
-                      ^~~~~~~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_CAL_Module.cpp: In function 'void VI_DET_C1_Module(CSiteLong*)':
-..\src\Device_Setup\D2S_CAL_Module.cpp:3205:22: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-   sprintf(cReadFlag, "readdata_reg0_V%d", i);
-                      ^~~~~~~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_CAL_Module.cpp:3208:22: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-   sprintf(cReadFlag, "readdata_reg2_V%d", i);
-                      ^~~~~~~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_CAL_Module.cpp:3262:22: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-   sprintf(cReadFlag, "readdata_reg0_I%d", i);
-                      ^~~~~~~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_CAL_Module.cpp:3265:22: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-   sprintf(cReadFlag, "readdata_reg2_I%d", i);
-                      ^~~~~~~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_CAL_Module.cpp: In function 'void PDBUF_C0_C1_Module(CSiteLong*, CSiteLong*)':
-..\src\Device_Setup\D2S_CAL_Module.cpp:3491:23: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-    sprintf(cReadFlag, "readdata0_i%d", k);
-                       ^~~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_CAL_Module.cpp:3494:23: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-    sprintf(cReadFlag, "readdata0_q%d", k);
-                       ^~~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_CAL_Module.cpp:3609:25: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-    sprintf(cReadFlag_q, "readdata1_i%d", k);
-                         ^~~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_CAL_Module.cpp:3612:25: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-    sprintf(cReadFlag_q, "readdata1_q%d", k);
-                         ^~~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_CAL_Module.cpp: In lambda function:
-..\src\Device_Setup\D2S_CAL_Module.cpp:3703:23: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-    sprintf(cReadFlag, "readdata0_i%d", j);
-                       ^~~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_CAL_Module.cpp:3708:23: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-    sprintf(cReadFlag, "readdata0_q%d", j);
-                       ^~~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_CAL_Module.cpp:3712:25: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-    sprintf(cReadFlag_q, "readdata1_i%d", j);
-                         ^~~~~~~~~~~~~~~  ~
-..\src\Device_Setup\D2S_CAL_Module.cpp:3716:25: warning: format '%d' expects argument of type 'int', but argument 3 has type 'long int' [-Wformat=]
-    sprintf(cReadFlag_q, "readdata1_q%d", j);
-                         ^~~~~~~~~~~~~~~  ~
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\CPP_Utility.o" "..\\src\\Common\\CPP_Utility.cpp" 
-g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\Basic_00_PowerShort.o" "..\\src\\Common\\Basic_00_PowerShort.cpp" 
+..\src\DC\TSENSOR_TEST.cpp: In member function 'virtual void Tsensor_Test::execute()':
+..\src\DC\TSENSOR_TEST.cpp:78:164: warning: 'Test_number[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+          TheSoft.Flow().TestLimit("SSI_DATA", site_id, double((temp_data & 0x2) >>1), lowl[0], hil[0],Hard_Bin[0] ,Soft_Bin[0],Units[0], Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                                                                                                       ~~~~~~~~~~~~~^
+..\src\DC\TSENSOR_TEST.cpp:78:126: warning: 'Soft_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+          TheSoft.Flow().TestLimit("SSI_DATA", site_id, double((temp_data & 0x2) >>1), lowl[0], hil[0],Hard_Bin[0] ,Soft_Bin[0],Units[0], Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                                                                    ~~~~~~~~~~^
+..\src\DC\TSENSOR_TEST.cpp:78:113: warning: 'Hard_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+          TheSoft.Flow().TestLimit("SSI_DATA", site_id, double((temp_data & 0x2) >>1), lowl[0], hil[0],Hard_Bin[0] ,Soft_Bin[0],Units[0], Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                                                       ~~~~~~~~~~^
+..\src\DC\TSENSOR_TEST.cpp:78:34: warning: 'hil[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+          TheSoft.Flow().TestLimit("SSI_DATA", site_id, double((temp_data & 0x2) >>1), lowl[0], hil[0],Hard_Bin[0] ,Soft_Bin[0],Units[0], Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\DC\TSENSOR_TEST.cpp:78:34: warning: 'lowl[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+..\src\DC\TSENSOR_TEST.cpp:79:152: warning: 'Test_number[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+          TheSoft.Flow().TestLimit("SSI_DATA", site_id, tempVal[site_id], lowl[1], hil[1],Hard_Bin[0] ,Soft_Bin[0], Units[1], Test_Item[1],Test_number[1]);
+                                                                                                                                           ~~~~~~~~~~~~~^
+..\src\DC\TSENSOR_TEST.cpp:79:113: warning: 'Soft_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+          TheSoft.Flow().TestLimit("SSI_DATA", site_id, tempVal[site_id], lowl[1], hil[1],Hard_Bin[0] ,Soft_Bin[0], Units[1], Test_Item[1],Test_number[1]);
+                                                                                                       ~~~~~~~~~~^
+..\src\DC\TSENSOR_TEST.cpp:79:100: warning: 'Hard_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+          TheSoft.Flow().TestLimit("SSI_DATA", site_id, tempVal[site_id], lowl[1], hil[1],Hard_Bin[0] ,Soft_Bin[0], Units[1], Test_Item[1],Test_number[1]);
+                                                                                          ~~~~~~~~~~^
+..\src\DC\TSENSOR_TEST.cpp:79:34: warning: 'hil[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+          TheSoft.Flow().TestLimit("SSI_DATA", site_id, tempVal[site_id], lowl[1], hil[1],Hard_Bin[0] ,Soft_Bin[0], Units[1], Test_Item[1],Test_number[1]);
+          ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\DC\TSENSOR_TEST.cpp:79:34: warning: 'lowl[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_VREF_TRIM.o" "..\\src\\DC\\PMU_VREF_TRIM.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\PMU_VREF_TRIM.cpp:8:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
+                 from ..\src\DC\PMU_VREF_TRIM.cpp:8:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\DC\PMU_VREF_TRIM.cpp: In member function 'virtual void PMU_VrefTrim::execute()':
+..\src\DC\PMU_VREF_TRIM.cpp:90:63: warning: 'Test_number[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Hard_Bin[0], Soft_Bin[0], "V", Test_Item[0], Test_number[0],
+                                                  ~~~~~~~~~~~~~^
+..\src\DC\PMU_VREF_TRIM.cpp:90:28: warning: 'Soft_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Hard_Bin[0], Soft_Bin[0], "V", Test_Item[0], Test_number[0],
+                  ~~~~~~~~~~^
+..\src\DC\PMU_VREF_TRIM.cpp:90:15: warning: 'Hard_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Hard_Bin[0], Soft_Bin[0], "V", Test_Item[0], Test_number[0],
+     ~~~~~~~~~~^
+..\src\DC\PMU_VREF_TRIM.cpp:89:27: warning: 'hil[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   TheSoft.Flow().TestLimit("PMU_REFBP", preTrimMeas, lowl[0], hil[0],
+   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     Hard_Bin[0], Soft_Bin[0], "V", Test_Item[0], Test_number[0],
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PhxAPI::E_Fail, PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PhxAPI::E_RS_DEC);
+     ~~~~~~~~~~~~~~~~~      
+..\src\DC\PMU_VREF_TRIM.cpp:89:27: warning: 'lowl[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+..\src\DC\PMU_VREF_TRIM.cpp:94:62: warning: 'Test_number[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Hard_Bin[1], Soft_Bin[1], "", Test_Item[1], Test_number[1],
+                                                 ~~~~~~~~~~~~~^
+..\src\DC\PMU_VREF_TRIM.cpp:94:28: warning: 'Soft_Bin[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Hard_Bin[1], Soft_Bin[1], "", Test_Item[1], Test_number[1],
+                  ~~~~~~~~~~^
+..\src\DC\PMU_VREF_TRIM.cpp:94:15: warning: 'Hard_Bin[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Hard_Bin[1], Soft_Bin[1], "", Test_Item[1], Test_number[1],
+     ~~~~~~~~~~^
+..\src\DC\PMU_VREF_TRIM.cpp:93:27: warning: 'hil[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   TheSoft.Flow().TestLimit("PMU_REFBP", pmu_v_trimData, lowl[1], hil[1],
+   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     Hard_Bin[1], Soft_Bin[1], "", Test_Item[1], Test_number[1],
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PhxAPI::E_Fail, PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PhxAPI::E_RS_DEC);
+     ~~~~~~~~~~~~~~~~~      
+..\src\DC\PMU_VREF_TRIM.cpp:93:27: warning: 'lowl[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+..\src\DC\PMU_VREF_TRIM.cpp:127:50: warning: 'Test_number[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Soft_Bin[2], "V", Test_Item[2], Test_number[2], PhxAPI::E_Fail,
+                                     ~~~~~~~~~~~~~^
+..\src\DC\PMU_VREF_TRIM.cpp:127:15: warning: 'Soft_Bin[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Soft_Bin[2], "V", Test_Item[2], Test_number[2], PhxAPI::E_Fail,
+     ~~~~~~~~~~^
+..\src\DC\PMU_VREF_TRIM.cpp:126:70: warning: 'Hard_Bin[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   TheSoft.Flow().TestLimit(pinlist, res2, lowl[2], hil[2], Hard_Bin[2],
+                                                            ~~~~~~~~~~^
+..\src\DC\PMU_VREF_TRIM.cpp:126:27: warning: 'hil[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   TheSoft.Flow().TestLimit(pinlist, res2, lowl[2], hil[2], Hard_Bin[2],
+   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     Soft_Bin[2], "V", Test_Item[2], Test_number[2], PhxAPI::E_Fail,
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PhxAPI::E_LEFTCLOSE_RIGHTCLOSE, PhxAPI::E_RS_DEC);
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\DC\PMU_VREF_TRIM.cpp:126:27: warning: 'lowl[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_BUCK_TRIM.o" "..\\src\\DC\\PMU_BUCK_TRIM.cpp" 
+..\src\DC\PMU_BUCK_TRIM.cpp: In member function 'virtual void BUCK_VrefTrim::execute()':
+..\src\DC\PMU_BUCK_TRIM.cpp:39:14: warning: unused variable 'GetValue' [-Wunused-variable]
+      double *GetValue;
+              ^~~~~~~~
+..\src\DC\PMU_BUCK_TRIM.cpp:76:134: warning: 'Test_number[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit("VDD_BUCK_1V5_IN" ,preTrimMeas ,lowl[0], hil[0] ,Hard_Bin[0],Soft_Bin[0],"V",Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                                                                         ~~~~~~~~~~~~~^
+..\src\DC\PMU_BUCK_TRIM.cpp:76:102: warning: 'Soft_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit("VDD_BUCK_1V5_IN" ,preTrimMeas ,lowl[0], hil[0] ,Hard_Bin[0],Soft_Bin[0],"V",Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                                            ~~~~~~~~~~^
+..\src\DC\PMU_BUCK_TRIM.cpp:76:90: warning: 'Hard_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit("VDD_BUCK_1V5_IN" ,preTrimMeas ,lowl[0], hil[0] ,Hard_Bin[0],Soft_Bin[0],"V",Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                                ~~~~~~~~~~^
+..\src\DC\PMU_BUCK_TRIM.cpp:76:30: warning: 'hil[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit("VDD_BUCK_1V5_IN" ,preTrimMeas ,lowl[0], hil[0] ,Hard_Bin[0],Soft_Bin[0],"V",Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\DC\PMU_BUCK_TRIM.cpp:76:30: warning: 'lowl[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+..\src\DC\PMU_BUCK_TRIM.cpp:77:137: warning: 'Test_number[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit("VDD_BUCK_1V5_IN" ,buck_v_trimData ,lowl[1], hil[1] ,Hard_Bin[1],Soft_Bin[1],"",Test_Item[1],Test_number[1],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                                                                            ~~~~~~~~~~~~~^
+..\src\DC\PMU_BUCK_TRIM.cpp:77:106: warning: 'Soft_Bin[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit("VDD_BUCK_1V5_IN" ,buck_v_trimData ,lowl[1], hil[1] ,Hard_Bin[1],Soft_Bin[1],"",Test_Item[1],Test_number[1],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                                                ~~~~~~~~~~^
+..\src\DC\PMU_BUCK_TRIM.cpp:77:94: warning: 'Hard_Bin[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit("VDD_BUCK_1V5_IN" ,buck_v_trimData ,lowl[1], hil[1] ,Hard_Bin[1],Soft_Bin[1],"",Test_Item[1],Test_number[1],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                                    ~~~~~~~~~~^
+..\src\DC\PMU_BUCK_TRIM.cpp:77:30: warning: 'hil[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit("VDD_BUCK_1V5_IN" ,buck_v_trimData ,lowl[1], hil[1] ,Hard_Bin[1],Soft_Bin[1],"",Test_Item[1],Test_number[1],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\DC\PMU_BUCK_TRIM.cpp:77:30: warning: 'lowl[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+..\src\DC\PMU_BUCK_TRIM.cpp:113:116: warning: 'Test_number[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit(pinlist ,res2 ,lowl[2], hil[2],Hard_Bin[2],Soft_Bin[2],"V",Test_Item[2],Test_number[2],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                                                       ~~~~~~~~~~~~~^
+..\src\DC\PMU_BUCK_TRIM.cpp:113:84: warning: 'Soft_Bin[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit(pinlist ,res2 ,lowl[2], hil[2],Hard_Bin[2],Soft_Bin[2],"V",Test_Item[2],Test_number[2],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                          ~~~~~~~~~~^
+..\src\DC\PMU_BUCK_TRIM.cpp:113:72: warning: 'Hard_Bin[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit(pinlist ,res2 ,lowl[2], hil[2],Hard_Bin[2],Soft_Bin[2],"V",Test_Item[2],Test_number[2],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                              ~~~~~~~~~~^
+..\src\DC\PMU_BUCK_TRIM.cpp:113:30: warning: 'hil[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit(pinlist ,res2 ,lowl[2], hil[2],Hard_Bin[2],Soft_Bin[2],"V",Test_Item[2],Test_number[2],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\DC\PMU_BUCK_TRIM.cpp:113:30: warning: 'lowl[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\Globle_Var.o" "..\\src\\Common\\Globle_Var.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\Common\Globle_Var.cpp:3:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\Common\Globle_Var.cpp:2:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\Hbin_Check.o" "..\\src\\Common\\Hbin_Check.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_IREF_TRIM.o" "..\\src\\DC\\PMU_IREF_TRIM.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\PMU_IREF_TRIM.cpp:8:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
+                 from ..\src\DC\PMU_IREF_TRIM.cpp:8:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\DC\PMU_IREF_TRIM.cpp: In member function 'virtual void PMU_IrefTrim::execute()':
+..\src\DC\PMU_IREF_TRIM.cpp:78:63: warning: 'Test_number[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Hard_Bin[0], Soft_Bin[0], "V", Test_Item[0], Test_number[0],
+                                                  ~~~~~~~~~~~~~^
+..\src\DC\PMU_IREF_TRIM.cpp:78:28: warning: 'Soft_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Hard_Bin[0], Soft_Bin[0], "V", Test_Item[0], Test_number[0],
+                  ~~~~~~~~~~^
+..\src\DC\PMU_IREF_TRIM.cpp:78:15: warning: 'Hard_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Hard_Bin[0], Soft_Bin[0], "V", Test_Item[0], Test_number[0],
+     ~~~~~~~~~~^
+..\src\DC\PMU_IREF_TRIM.cpp:77:27: warning: 'hil[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   TheSoft.Flow().TestLimit("PMU_RBIAS", preTrimMeas, lowl[0], hil[0],
+   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     Hard_Bin[0], Soft_Bin[0], "V", Test_Item[0], Test_number[0],
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PhxAPI::E_Fail, PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PhxAPI::E_RS_DEC);
+     ~~~~~~~~~~~~~~~~~      
+..\src\DC\PMU_IREF_TRIM.cpp:77:27: warning: 'lowl[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+..\src\DC\PMU_IREF_TRIM.cpp:82:62: warning: 'Test_number[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Hard_Bin[1], Soft_Bin[1], "", Test_Item[1], Test_number[1],
+                                                 ~~~~~~~~~~~~~^
+..\src\DC\PMU_IREF_TRIM.cpp:82:28: warning: 'Soft_Bin[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Hard_Bin[1], Soft_Bin[1], "", Test_Item[1], Test_number[1],
+                  ~~~~~~~~~~^
+..\src\DC\PMU_IREF_TRIM.cpp:82:15: warning: 'Hard_Bin[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Hard_Bin[1], Soft_Bin[1], "", Test_Item[1], Test_number[1],
+     ~~~~~~~~~~^
+..\src\DC\PMU_IREF_TRIM.cpp:81:27: warning: 'hil[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   TheSoft.Flow().TestLimit("PMU_RBIAS", pb_i_TrimData, lowl[1], hil[1],
+   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     Hard_Bin[1], Soft_Bin[1], "", Test_Item[1], Test_number[1],
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PhxAPI::E_Fail, PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PhxAPI::E_RS_DEC);
+     ~~~~~~~~~~~~~~~~~      
+..\src\DC\PMU_IREF_TRIM.cpp:81:27: warning: 'lowl[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+..\src\DC\PMU_IREF_TRIM.cpp:125:63: warning: 'Test_number[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Hard_Bin[2], Soft_Bin[2], "V", Test_Item[2], Test_number[2],
+                                                  ~~~~~~~~~~~~~^
+..\src\DC\PMU_IREF_TRIM.cpp:125:28: warning: 'Soft_Bin[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Hard_Bin[2], Soft_Bin[2], "V", Test_Item[2], Test_number[2],
+                  ~~~~~~~~~~^
+..\src\DC\PMU_IREF_TRIM.cpp:125:15: warning: 'Hard_Bin[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+     Hard_Bin[2], Soft_Bin[2], "V", Test_Item[2], Test_number[2],
+     ~~~~~~~~~~^
+..\src\DC\PMU_IREF_TRIM.cpp:124:27: warning: 'hil[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   TheSoft.Flow().TestLimit("PMU_RBIAS", postTrimMeas, lowl[2], hil[2],
+   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     Hard_Bin[2], Soft_Bin[2], "V", Test_Item[2], Test_number[2],
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PhxAPI::E_Fail, PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,
+     ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+     PhxAPI::E_RS_DEC);
+     ~~~~~~~~~~~~~~~~~      
+..\src\DC\PMU_IREF_TRIM.cpp:124:27: warning: 'lowl[2]' may be used uninitialized in this function [-Wmaybe-uninitialized]
 g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\CCWaveformsData.o" "..\\src\\Common\\CCWaveformsData.cpp" 
 ..\src\Common\CCWaveformsData.cpp: In function 'int SearchIndex(const char*, CCGAIN)':
 ..\src\Common\CCWaveformsData.cpp:106:21: warning: comparison of integer expressions of different signedness: 'int' and 'std::vector<GAINMODE>::size_type' {aka 'long long unsigned int'} [-Wsign-compare]
@@ -1202,10 +347,165 @@ g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_
 ..\src\Common\CCWaveformsData.cpp:176:9: warning: unused variable 'nLoop' [-Wunused-variable]
      int nLoop = nIndex;
          ^~~~~
-g++ "-L..\\lib" "-LC:\\PhoenixSys\\bin" -shared -o libtestp_share2.dll "src\\ABB\\ABB_ADC_IQ.o" "src\\ABB\\ABB_DAC_IQ.o" "src\\ABB\\ADC_DAC_IDD.o" "src\\Cal\\CAL_RC_PPF.o" "src\\Cal\\CAL_RX_Phase.o" "src\\Cal\\CAL_VI_DET.o" "src\\Cal\\DAC_SPUR.o" "src\\Cal\\RX_IQ_IR.o" "src\\Cal\\Test_CAL_cpp.o" "src\\Cal\\Update_All_RC_PPF_vbt.o" "src\\Common\\Basic_00_PowerShort.o" "src\\Common\\Basic_01_Functional.o" "src\\Common\\Basic_02_OS_VDD_VSS_PPMU.o" "src\\Common\\CBBLimits.o" "src\\Common\\CC08FCBBAPI.o" "src\\Common\\CCWaveformsData.o" "src\\Common\\CLK_STOP.o" "src\\Common\\CPP_Utility.o" "src\\Common\\Capture_Function.o" "src\\Common\\Execute_test.o" "src\\Common\\Gainmode_Parse.o" "src\\Common\\Globle_Var.o" "src\\Common\\Hbin_Check.o" "src\\Common\\Test_TX_cpp.o" "src\\Common\\augmentedmatrix.o" "src\\Common\\linearfit.o" "src\\Common\\polynomialfit.o" "src\\Common\\tinystr.o" "src\\Common\\tinyxml.o" "src\\Common\\tinyxmlerror.o" "src\\Common\\tinyxmlparser.o" "src\\DC\\BOOT_UP.o" "src\\DC\\CMU_TCXO_SSI.o" "src\\DC\\DC_IIHL_JTAG.o" "src\\DC\\PMU_BUCK_LOAD.o" "src\\DC\\PMU_BUCK_TRIM.o" "src\\DC\\PMU_CAPLESSLDO_TEST.o" "src\\DC\\PMU_IDD_ECO.o" "src\\DC\\PMU_IDD_OFF.o" "src\\DC\\PMU_IREF_TRIM.o" "src\\DC\\PMU_LDO_LOAD.o" "src\\DC\\PMU_VREF_TRIM.o" "src\\DC\\PowerOFF.o" "src\\DC\\Power_OSD.o" "src\\DC\\SSI_MODE.o" "src\\DC\\TSENSOR_TEST.o" "src\\DC\\read_DIBID.o" "src\\Device_Setup\\D2S_ABB_Module.o" "src\\Device_Setup\\D2S_CAL_Module.o" "src\\Device_Setup\\D2S_PMU_Module.o" "src\\Device_Setup\\DSP_test_ABB.o" "src\\Device_Setup\\Hi1151_Init_Reg.o" "src\\Device_Setup\\Hi1151_RX_Reg.o" "src\\Device_Setup\\Hi1151_Setup.o" "src\\Device_Setup\\Hi1151_TX_Reg.o" "src\\Device_Setup\\PROG_INIT.o" "src\\Device_Setup\\TRX_Disable.o" "src\\Device_Setup\\TRX_Init.o" "src\\Device_Setup\\Test_ABB_cpp.o" "src\\Device_Setup\\resetDevice.o" "src\\d2s\\MD5.o" "src\\d2s\\PatternManager.o" "src\\d2s\\d2s.o" "src\\mytest2.o" "src\\mytest3.o" -lTestClass -lExcel -lExcelOprt -llibCCTimer -lAPIDLL -llibCCVSTDriver -llibCCDSPALG 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\BOOT_UP.o" "..\\src\\DC\\BOOT_UP.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\BOOT_UP.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\BOOT_UP.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\DC\BOOT_UP.cpp: In member function 'virtual void BOOT_UP::execute()':
+..\src\DC\BOOT_UP.cpp:107:134: warning: 'Test_number[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit("SSI_DATA", capture_data, lowl[0], hil[0],Hard_Bin[0] ,Soft_Bin[0],Units[0], Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                                                                         ~~~~~~~~~~~~~^
+..\src\DC\BOOT_UP.cpp:107:96: warning: 'Soft_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit("SSI_DATA", capture_data, lowl[0], hil[0],Hard_Bin[0] ,Soft_Bin[0],Units[0], Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                                      ~~~~~~~~~~^
+..\src\DC\BOOT_UP.cpp:107:83: warning: 'Hard_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit("SSI_DATA", capture_data, lowl[0], hil[0],Hard_Bin[0] ,Soft_Bin[0],Units[0], Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                         ~~~~~~~~~~^
+..\src\DC\BOOT_UP.cpp:107:30: warning: 'hil[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit("SSI_DATA", capture_data, lowl[0], hil[0],Hard_Bin[0] ,Soft_Bin[0],Units[0], Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\DC\BOOT_UP.cpp:107:30: warning: 'lowl[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_BUCK_LOAD.o" "..\\src\\DC\\PMU_BUCK_LOAD.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\PMU_BUCK_LOAD.cpp:8:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
+                 from ..\src\DC\PMU_BUCK_LOAD.cpp:8:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\DC\PMU_BUCK_LOAD.cpp: In member function 'virtual void BUCKLoading::execute()':
+..\src\DC\PMU_BUCK_LOAD.cpp:65:124: warning: 'Test_number[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   TheSoft.Flow().TestLimit("SSI_DATA" ,capture_data,lowl[0], hil[0],Hard_Bin[0], Soft_Bin[0],"",Test_Item[0], Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                                                               ~~~~~~~~~~~~~^
+..\src\DC\PMU_BUCK_LOAD.cpp:65:92: warning: 'Soft_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   TheSoft.Flow().TestLimit("SSI_DATA" ,capture_data,lowl[0], hil[0],Hard_Bin[0], Soft_Bin[0],"",Test_Item[0], Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                                  ~~~~~~~~~~^
+..\src\DC\PMU_BUCK_LOAD.cpp:65:79: warning: 'Hard_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   TheSoft.Flow().TestLimit("SSI_DATA" ,capture_data,lowl[0], hil[0],Hard_Bin[0], Soft_Bin[0],"",Test_Item[0], Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                     ~~~~~~~~~~^
+..\src\DC\PMU_BUCK_LOAD.cpp:65:27: warning: 'hil[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+   TheSoft.Flow().TestLimit("SSI_DATA" ,capture_data,lowl[0], hil[0],Hard_Bin[0], Soft_Bin[0],"",Test_Item[0], Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+   ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\DC\PMU_BUCK_LOAD.cpp:65:27: warning: 'lowl[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\Basic_00_PowerShort.o" "..\\src\\Common\\Basic_00_PowerShort.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_IDD_OFF.o" "..\\src\\DC\\PMU_IDD_OFF.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\Power_OSD.o" "..\\src\\DC\\Power_OSD.cpp" 
+..\src\DC\Power_OSD.cpp:9:24: warning: extra tokens at end of #include directive
+ #include "Globle_Var.h";
+                        ^
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\Power_OSD.cpp:9:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
+                 from ..\src\DC\Power_OSD.cpp:9:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\DC_IIHL_JTAG.o" "..\\src\\DC\\DC_IIHL_JTAG.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\DC_IIHL_JTAG.cpp:12:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from ..\src\DC\DC_IIHL_JTAG.cpp:8:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\DC\DC_IIHL_JTAG.cpp: In member function 'virtual void DC_IIHL_JTAG::execute()':
+..\src\DC\DC_IIHL_JTAG.cpp:87:123: warning: 'Test_number[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    TheSoft.Flow().TestLimit(pinlist,Result1,lowl[0], hil[0],Hard_Bin[0],Soft_Bin[0], Units[0], Test_Item[0], Test_number[0]);
+                                                                                                              ~~~~~~~~~~~~~^
+..\src\DC\DC_IIHL_JTAG.cpp:87:83: warning: 'Soft_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    TheSoft.Flow().TestLimit(pinlist,Result1,lowl[0], hil[0],Hard_Bin[0],Soft_Bin[0], Units[0], Test_Item[0], Test_number[0]);
+                                                                         ~~~~~~~~~~^
+..\src\DC\DC_IIHL_JTAG.cpp:87:71: warning: 'Hard_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    TheSoft.Flow().TestLimit(pinlist,Result1,lowl[0], hil[0],Hard_Bin[0],Soft_Bin[0], Units[0], Test_Item[0], Test_number[0]);
+                                                             ~~~~~~~~~~^
+..\src\DC\DC_IIHL_JTAG.cpp:87:28: warning: 'hil[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    TheSoft.Flow().TestLimit(pinlist,Result1,lowl[0], hil[0],Hard_Bin[0],Soft_Bin[0], Units[0], Test_Item[0], Test_number[0]);
+    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\DC\DC_IIHL_JTAG.cpp:87:28: warning: 'lowl[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+..\src\DC\DC_IIHL_JTAG.cpp:103:123: warning: 'Test_number[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    TheSoft.Flow().TestLimit(pinlist,Result2,lowl[1], hil[1],Hard_Bin[1],Soft_Bin[1], Units[1], Test_Item[1], Test_number[1]);
+                                                                                                              ~~~~~~~~~~~~~^
+..\src\DC\DC_IIHL_JTAG.cpp:103:83: warning: 'Soft_Bin[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    TheSoft.Flow().TestLimit(pinlist,Result2,lowl[1], hil[1],Hard_Bin[1],Soft_Bin[1], Units[1], Test_Item[1], Test_number[1]);
+                                                                         ~~~~~~~~~~^
+..\src\DC\DC_IIHL_JTAG.cpp:103:71: warning: 'Hard_Bin[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    TheSoft.Flow().TestLimit(pinlist,Result2,lowl[1], hil[1],Hard_Bin[1],Soft_Bin[1], Units[1], Test_Item[1], Test_number[1]);
+                                                             ~~~~~~~~~~^
+..\src\DC\DC_IIHL_JTAG.cpp:103:28: warning: 'hil[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+    TheSoft.Flow().TestLimit(pinlist,Result2,lowl[1], hil[1],Hard_Bin[1],Soft_Bin[1], Units[1], Test_Item[1], Test_number[1]);
+    ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\DC\DC_IIHL_JTAG.cpp:103:28: warning: 'lowl[1]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Common\\Basic_01_Functional.o" "..\\src\\Common\\Basic_01_Functional.cpp" 
+..\src\Common\Basic_01_Functional.cpp: In member function 'virtual void Basic_01_Functional::execute()':
+..\src\Common\Basic_01_Functional.cpp:35:16: warning: unused variable 'executedcount' [-Wunused-variable]
+       uint64_t executedcount=TheInst.Digital().PatEng().GetExecutedCyclesCount();
+                ^~~~~~~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PowerOFF.o" "..\\src\\DC\\PowerOFF.cpp" 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\CMU_TCXO_SSI.o" "..\\src\\DC\\CMU_TCXO_SSI.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\TypeDef/CCRfsgTypeDef.h:12,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCSIGNAL.h:11,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCRFMIX.h:10,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08FAPI.h:11,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08F.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/D2S_PMU_Module.h:12,
+                 from ..\src\DC\CMU_TCXO_SSI.cpp:13:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\CMU_TCXO_SSI.cpp:12:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ "-L..\\lib" "-LC:\\PhoenixSys\\bin" -shared -o libtestp_share2.dll "src\\Common\\Basic_00_PowerShort.o" "src\\Common\\Basic_01_Functional.o" "src\\Common\\CBBLimits.o" "src\\Common\\CCWaveformsData.o" "src\\Common\\CLK_STOP.o" "src\\Common\\CPP_Utility.o" "src\\Common\\Globle_Var.o" "src\\Common\\Hbin_Check.o" "src\\DC\\BOOT_UP.o" "src\\DC\\CMU_TCXO_SSI.o" "src\\DC\\DC_IIHL_JTAG.o" "src\\DC\\PMU_BUCK_LOAD.o" "src\\DC\\PMU_BUCK_TRIM.o" "src\\DC\\PMU_CAPLESSLDO_TEST.o" "src\\DC\\PMU_IDD_ECO.o" "src\\DC\\PMU_IDD_OFF.o" "src\\DC\\PMU_IREF_TRIM.o" "src\\DC\\PMU_VREF_TRIM.o" "src\\DC\\PowerOFF.o" "src\\DC\\Power_OSD.o" "src\\DC\\SSI_MODE.o" "src\\DC\\TSENSOR_TEST.o" "src\\d2s\\MD5.o" "src\\d2s\\PatternManager.o" "src\\d2s\\d2s.o" -lTestClass -lExcel -lExcelOprt -llibCCTimer -lAPIDLL -llibCCVSTDriver -llibCCDSPALG 
 xcopy libtestp_share2.dll "..\\..\\lib\\/y" 
 E:libtestp_share2.dll
 复制了 1 个文件
 
-15:08:05 Build Finished. 0 errors, 300 warnings. (took 2m:6s.768ms)
+17:00:13 Build Finished. 0 errors, 106 warnings. (took 33s.461ms)
 

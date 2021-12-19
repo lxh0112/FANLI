@@ -36,9 +36,9 @@ public:
 		int Test_number[30];
 		int Soft_Bin[30];
 		int Hard_Bin[30];
-		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
+	//	Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
 
-		TheInst.DCVS().Power().Apply();
+		TheInst.DCVI().Power().Apply();
 		TheInst.Digital().Level().Apply();
 
 		d2s::d2s_LABEL_BEGIN("ssi", d2s_WorkMode);
@@ -60,14 +60,14 @@ public:
 			d2s_test.SSI_write(0x148,muxRegs[i*3+2]);
 			d2s::d2s_LABEL_END();
 
-			TheInst.DCVS().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MV)
+			TheInst.DCVI().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MV)
 										.SetMeasureMethod(PhxAPI::E_DC_METHOD_STATIC)
 										.SetReadMode(PhxAPI::E_DC_MODE_MEASURE)
 										.SetSampleSize(samplesize)
 										.SetWaitTime(5 * ms)
 										.Measure();
 
-			PinArrayDouble result = TheInst.DCVS().Pins(pinlist).GetMeasureResults();
+			PinArrayDouble result = TheInst.DCVI().Pins(pinlist).GetMeasureResults();
 //			vector<string> pinname2 = SplitPinList(pinlist);
 			TheSoft.Flow().TestLimit(pinlist,result,lowl[i], hil[i],Hard_Bin[i],Soft_Bin[i], Units[i], Test_Item[i], Test_number[i]);
 		  }

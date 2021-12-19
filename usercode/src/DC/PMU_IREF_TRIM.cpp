@@ -35,23 +35,23 @@ public:
 		int Test_number[30];
 		int Soft_Bin[30];
 		int Hard_Bin[30];
-		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,
-				Hard_Bin);
+	//	Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,
+	//			Hard_Bin);
 
 		map<int, double> preTrimMeas;
 		map<int, long long> TrimData;
 		map<int, double> postTrimMeas;
 		double Voffset[4] = { 0.009, 0.009, 0.009, 0.009 };
 
-		TheInst.DCVS().Power().Apply();
+		TheInst.DCVI().Power().Apply();
 		TheInst.Digital().Level().Apply();
-		TheInst.DCVS().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MI).SetMeasureMethod(
+		TheInst.DCVI().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MI).SetMeasureMethod(
 				PhxAPI::E_DC_METHOD_STATIC).SetReadMode(
 				PhxAPI::E_DC_MODE_MEASURE).SetMeasureOrder(
 				PhxAPI::E_DC_ORDER_SINGLE).SetSampleSize(samplesize).SetWaitTime(
 				waittime) //1ms
 		.Measure();
-		PinArrayDouble res = TheInst.DCVS().Pins(pinlist).GetMeasureResults();
+		PinArrayDouble res = TheInst.DCVI().Pins(pinlist).GetMeasureResults();
 		FOREACH_ACTIVESITE_BEGIN(site_id, bInterrupt)double GetValue = res.GetData(pinlist, site_id);
 		Testsoftbin[site_id] = 1;
 		preTrimMeas[site_id] = GetValue;
@@ -106,16 +106,16 @@ public:
 		d2s::d2s_LABEL_END();
 		TheInst.Wait(10 * ms);
 
-		TheInst.DCVS().Power().Apply();
+		TheInst.DCVI().Power().Apply();
 		TheInst.Digital().Level().Apply();
-		TheInst.DCVS().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MI)
+		TheInst.DCVI().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MI)
 									.SetMeasureMethod(PhxAPI::E_DC_METHOD_STATIC)
 									.SetReadMode(PhxAPI::E_DC_MODE_MEASURE)
 									.SetMeasureOrder(PhxAPI::E_DC_ORDER_SINGLE)
 									.SetSampleSize(samplesize)
 									.SetWaitTime(waittime) //1ms
 									.Measure();
-		PinArrayDouble res2 = TheInst.DCVS().Pins(pinlist).GetMeasureResults();
+		PinArrayDouble res2 = TheInst.DCVI().Pins(pinlist).GetMeasureResults();
 		FOREACH_ACTIVESITE_BEGIN(site_id, bInterrupt)double GetValue2 = res2.GetData(pinlist, site_id);
 			postTrimMeas[site_id] = GetValue2;
 			postTrimMeas[site_id] = postTrimMeas[site_id]*(-120000) + Voffset[site_id];

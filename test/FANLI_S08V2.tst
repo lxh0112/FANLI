@@ -55,8 +55,12 @@
         </testclass>
     </test>
     <test name="PMU_IDD_OFF_VDDH" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDH_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="">
-            <propvalues />
+        <testclass name="libtestp_share2.PMU_IDD_OFF">
+            <propvalues>
+                <propvalue name="Measure_pinlist" value="gIDD_OFF" />
+                <propvalue name="WaitTime" value="0.08" />
+                <propvalue name="SampleSize" value="2" />
+            </propvalues>
         </testclass>
     </test>
     <test name="NFC_limiter" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
@@ -75,7 +79,7 @@
         </testclass>
     </test>
     <test name="BOOT_UP" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="">
+        <testclass name="libtestp_share2.BOOT_UP">
             <propvalues />
         </testclass>
     </test>
@@ -85,13 +89,21 @@
         </testclass>
     </test>
     <test name="PMU_VREF_TRIM" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="">
-            <propvalues />
+        <testclass name="libtestp_share2.PMU_VrefTrim">
+            <propvalues>
+                <propvalue name="Measure_pinlist" value="PMU_REFBP" />
+                <propvalue name="WaitTime" value="0.005" />
+                <propvalue name="SampleSize" value="2" />
+            </propvalues>
         </testclass>
     </test>
     <test name="PMU_IREF_TRIM" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="">
-            <propvalues />
+        <testclass name="libtestp_share2.PMU_IrefTrim">
+            <propvalues>
+                <propvalue name="Measure_pinlist" value="PMU_RBIAS" />
+                <propvalue name="WaitTime" value="0.001" />
+                <propvalue name="SampleSize" value="2" />
+            </propvalues>
         </testclass>
     </test>
     <test name="PMU_CLK32K_TRIM" type="Test" timing="RF_ADPLL_TEST" level="VIHLR_VOHLR_IOHLR" pattern="RF_ADPLL_TEST" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">

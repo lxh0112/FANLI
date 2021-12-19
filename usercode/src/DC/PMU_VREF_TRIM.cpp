@@ -28,7 +28,7 @@ public:
 	}
 
 	void execute() {
-		TheInst.DCVS().Power().Apply();
+		TheInst.DCVI().Power().Apply();
 		TheInst.Digital().Level().Apply();
 
 		double hil[30], lowl[30];
@@ -37,8 +37,8 @@ public:
 		int Test_number[30];
 		int Soft_Bin[30];
 		int Hard_Bin[30];
-		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,
-				Hard_Bin);
+	//	Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,
+	//			Hard_Bin);
 
 		d2s::d2s_LABEL_BEGIN("ssi", d2s_WorkMode);
 		d2sProtocolSSI d2s_test;
@@ -52,15 +52,15 @@ public:
 		map<int, double> postTrimMeas;
 		double Voffset = 0.002;
 
-		TheInst.DCVS().Power().Apply();
+		TheInst.DCVI().Power().Apply();
 		TheInst.Digital().Level().Apply();
-		TheInst.DCVS().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MV).SetReadMode(
+		TheInst.DCVI().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MV).SetReadMode(
 				PhxAPI::E_DC_MODE_MEASURE).SetMeasureMethod(
 				PhxAPI::E_DC_METHOD_STATIC).SetMeasureOrder(
 				PhxAPI::E_DC_ORDER_SINGLE).SetSampleSize(samplesize).SetWaitTime(
 				waittime) //5ms
 		.Measure();
-		PinArrayDouble res = TheInst.DCVS().Pins(pinlist).GetMeasureResults();
+		PinArrayDouble res = TheInst.DCVI().Pins(pinlist).GetMeasureResults();
 		FOREACH_ACTIVESITE_BEGIN(site_id, bInterrupt)double GetValue = res.GetData(pinlist, site_id);
 		Testsoftbin[site_id] = 1;
 		preTrimMeas[site_id] = GetValue + Voffset;
@@ -113,15 +113,15 @@ public:
 		d2s::d2s_LABEL_END();
 		TheInst.Wait(10 * ms);
 
-		TheInst.DCVS().Power().Apply();
+		TheInst.DCVI().Power().Apply();
 		TheInst.Digital().Level().Apply();
-		TheInst.DCVS().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MV).SetMeasureMethod(
+		TheInst.DCVI().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MV).SetMeasureMethod(
 				PhxAPI::E_DC_METHOD_STATIC).SetReadMode(
 				PhxAPI::E_DC_MODE_MEASURE).SetMeasureOrder(
 				PhxAPI::E_DC_ORDER_SINGLE).SetSampleSize(samplesize).SetWaitTime(
 				waittime) //5ms
 		.Measure();
-		PinArrayDouble res2 = TheInst.DCVS().Pins(pinlist).GetMeasureResults();
+		PinArrayDouble res2 = TheInst.DCVI().Pins(pinlist).GetMeasureResults();
 
 		TheSoft.Flow().TestLimit(pinlist, res2, lowl[2], hil[2], Hard_Bin[2],
 				Soft_Bin[2], "V", Test_Item[2], Test_number[2], PhxAPI::E_Fail,

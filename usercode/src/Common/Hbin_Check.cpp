@@ -22,7 +22,7 @@ public:
     }
 
     void execute(){
-        TheInst.DCVS().Power().Apply();
+        TheInst.DCVI().Power().Apply();
         TheInst.Digital().Level().Apply();
         TheInst.Digital().Timing().Apply();
     	TheInst.Digital().Pattern().Start();

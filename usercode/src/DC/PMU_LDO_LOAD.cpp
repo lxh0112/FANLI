@@ -67,17 +67,17 @@ public:
 			LDO_Module();
 			TheInst.Wait(10*ms);
 
-			TheInst.DCVS().Power().Apply();
+			TheInst.DCVI().Power().Apply();
 			TheInst.Digital().Level().Apply();
 
-			TheInst.DCVS().Pins(pinlist1).SetMeasureMode(PhxAPI::E_DC_MODE_MV)
+			TheInst.DCVI().Pins(pinlist1).SetMeasureMode(PhxAPI::E_DC_MODE_MV)
 										 .SetReadMode(PhxAPI::E_DC_MODE_MEASURE)
 										 .SetMeasureMethod(PhxAPI::E_DC_METHOD_STATIC)
 										 .SetMeasureOrder(PhxAPI::E_DC_ORDER_SINGLE)
 										 .SetSampleSize(samplesize)
 										 .SetWaitTime(waittime)//5ms
 										 .Measure();
-			PinArrayDouble result1 = TheInst.DCVS().Pins(pinlist1).GetMeasureResults();
+			PinArrayDouble result1 = TheInst.DCVI().Pins(pinlist1).GetMeasureResults();
 			vector<string> pinname1 = SplitPinList(pinlist1);
 			for(unsigned int i=0;i<pinname1.size();i++)
 			{
