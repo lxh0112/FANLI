@@ -513,19 +513,19 @@
         <power pin="VDDPA" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
     </powerblock>
     <powerblock name="OS_PS" comment="">
-        <power pin="BOOST_LX" order="0" state="On" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="PMU_REFBP" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="PMUVCC12" order="0" state="On" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="PMUVCC3" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="SIMVCC1" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="SIMVCC2" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="SIMVCC3" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="VBAT" order="0" state="On" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="VDD_PMU_AIOLDO" order="0" state="On" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="VDD_PMU_CLDO" order="0" state="On" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="VDD_PMU_SYSLDO" order="0" state="On" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="VDDBOOST" order="0" state="On" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="VDDIO" order="0" state="On" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="VDDPA" order="0" state="On" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
+        <power pin="BOOST_LX" order="0" state="On" clamplow="-600mA" clamphigh="600mA" clampdelay="0" range="BestFit" force="BOOST_LX" vbump="" delay="0" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
+        <power pin="PMU_REFBP" order="0" state="Off" clamplow="-100uA" clamphigh="100uA" clampdelay="0" range="250uA" force="0.0V*Vcoef" vbump="" delay="0" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
+        <power pin="PMUVCC12" order="0" state="On" clamplow="-2mA" clamphigh="2mA" clampdelay="0" range="BestFit" force="PMUVCC12" vbump="" delay="0" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
+        <power pin="PMUVCC3" order="0" state="Off" clamplow="-100uA" clamphigh="100uA" clampdelay="0" range="250uA" force="0.0V*Vcoef" vbump="" delay="0" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
+        <power pin="SIMVCC1" order="0" state="Off" clamplow="-100uA" clamphigh="100uA" clampdelay="0" range="250uA" force="0.0V*Vcoef" vbump="" delay="0" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
+        <power pin="SIMVCC2" order="0" state="Off" clamplow="-100uA" clamphigh="100uA" clampdelay="0" range="250uA" force="0.0V*Vcoef" vbump="" delay="0" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
+        <power pin="SIMVCC3" order="0" state="Off" clamplow="-100uA" clamphigh="100uA" clampdelay="0" range="250uA" force="0.0V*Vcoef" vbump="" delay="0" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
+        <power pin="VBAT" order="0" state="On" clamplow="-2mA" clamphigh="2mA" clampdelay="0" range="BestFit" force="VBAT" vbump="" delay="0" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
+        <power pin="VDD_PMU_AIOLDO" order="0" state="On" clamplow="-2mA" clamphigh="2mA" clampdelay="0" range="BestFit" force="VDD_PMU_AIOLDO" vbump="" delay="0" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
+        <power pin="VDD_PMU_CLDO" order="0" state="On" clamplow="-100uA" clamphigh="100uA" clampdelay="0" range="250uA" force="VDD_PMU_CLDO" vbump="" delay="0" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
+        <power pin="VDD_PMU_SYSLDO" order="0" state="On" clamplow="-100uA" clamphigh="100uA" clampdelay="0" range="250uA" force="VDD_PMU_SYSLDO" vbump="" delay="0" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
+        <power pin="VDDBOOST" order="0" state="On" clamplow="-100uA" clamphigh="100uA" clampdelay="0" range="250uA" force="VDDBOOST" vbump="" delay="0" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
+        <power pin="VDDIO" order="0" state="On" clamplow="-2mA" clamphigh="2mA" clampdelay="0" range="BestFit" force="VDDIO" vbump="" delay="0" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
+        <power pin="VDDPA" order="0" state="On" clamplow="-2mA" clamphigh="2mA" clampdelay="0" range="BestFit" force="VDDPA" vbump="" delay="0" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
     </powerblock>
 </powers>

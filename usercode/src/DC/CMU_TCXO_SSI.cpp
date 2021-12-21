@@ -115,7 +115,7 @@ public:
 		int  Test_number[30];
 		Read_Limit(lowl,hil,Test_Item,Test_number,Units);
 
-		TheInst.DCVS().Power().Apply(); //下发执行  DCVS  power pin上电
+		TheInst.DCVI().Power().Apply(); //下发执行  DCVI  power pin上电
 		TheInst.Digital().Level().Apply();//下发执行 DIO  pattern pin  level
 		TheInst.Digital().Timing().Apply();//下发执行 DIO  pattern pin  timing
 //		TheInst.Digital().Pattern().Start();

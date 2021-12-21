@@ -45,7 +45,7 @@ public:
 		int Test_number[30],Soft_Bin[30],Hard_Bin[30];
 		//Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
 
-		TheInst.DCVS().Power().Apply();
+		TheInst.DCVI().Power().Apply();
 		TheInst.Digital().Level().Apply();
 
 		d2s::d2s_LABEL_BEGIN("ssi",d2s_WorkMode);
@@ -61,7 +61,7 @@ public:
 		d2s::d2s_LABEL_END();
 
 
-		TheInst.DCVS().Power().Apply();
+		TheInst.DCVI().Power().Apply();
 		TheInst.Digital().Level().Apply();
 //				printf("**************111111");
 		map<uint32_t, bool> result = TheInst.Digital().PatEng().GetPassFail();

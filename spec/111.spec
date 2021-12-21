@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <specs name="111">
     <spec name="Vcoef" value="1" comment="" />
-    <spec name="BOOST_LX" value="0" comment="" />
-    <spec name="PMUVCC12" value="0" comment="" />
-    <spec name="VDDPA" value="0" comment="" />
-    <spec name="VDDIO" value="0" comment="" />
+    <spec name="BOOST_LX" value="0.1V" comment="" />
+    <spec name="PMUVCC12" value="(0.1+0.002)*1.0V" comment="" />
+    <spec name="VDDPA" value="(0.1+0.002*4)*1.0V" comment="" />
+    <spec name="VDDIO" value="(0.1+0.002*5)*1.0V" comment="" />
     <spec name="vil" value="0" comment="" />
     <spec name="vih" value="1.8V" comment="" />
     <spec name="vol" value="0.63V" comment="" />
@@ -21,12 +21,17 @@
     <spec name="per_40" value="40ns" comment="" />
     <spec name="Tcoef" value="1" comment="" />
     <spec name="Roff" value="0n" comment="" />
-    <spec name="VBAT" value="0" comment="" />
-    <spec name="VDDBOOST" value="0" comment="" />
+    <spec name="VBAT" value="(0.1+0.002*6)*1.0V" comment="" />
+    <spec name="VDDA" value="(0.1+0.002*11)*1.0V" comment="" />
+    <spec name="VDDBOOST" value="(0.1+0.002*2)*1.0V" comment="" />
+    <spec name="TXVCM" value="(0.1+0.002*12)*1.0V" comment="" />
+    <spec name="TXVCASC" value="(0.1+0.002*13)*1.0V" comment="" />
+    <spec name="VDD_PMU_SIMLDO" value="(0.1+0.002*14)*1.0V" comment="" />
     <spec name="TXCO" value="38.4M" comment="" />
-    <spec name="VDD_PMU_AIOLDO" value="0" comment="" />
-    <spec name="VDD_PMU_CLDO" value="0" comment="" />
-    <spec name="VDD_PMU_SYSLDO" value="0" comment="" />
+    <spec name="VDD_PMU_AIOLDO" value="(0.1+0.002*7)*1.0V" comment="" />
+    <spec name="VDD_PMU_CLDO" value="(0.1+0.002*9)*1.0V" comment="" />
+    <spec name="VDD_PMU_SYSLDO" value="(0.1+0.002*8)*1.0V" comment="" />
+    <spec name="VDD_XLDO" value="(0.1+0.002*10)*1.0V" comment="" />
     <spec name="SSI_CLK" value="50MHz" comment="" />
     <spec name="CLK_CAP" value="100MHz" comment="" />
 </specs>

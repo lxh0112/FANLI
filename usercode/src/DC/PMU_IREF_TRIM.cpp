@@ -23,7 +23,7 @@ public:
 	double waittime;
 	void init() {
 		add_param("Measure_pinlist", "PinString", &pinlist).set_default(
-				"PMU_RBIAS"); //PMU_RBIAS
+				"NFC_GPIO0"); //PMU_RBIAS
 		add_param("WaitTime", "double", &waittime).set_default("0.001");
 		add_param("SampleSize", "int", &samplesize).set_default("2");
 	}
@@ -74,11 +74,11 @@ public:
 		pb_i_TrimData[site_id] = TrimData[site_id];
 		TrimData[site_id] = TrimData[site_id]<<5;
 		FOREACH_ACTIVESITE_END
-		TheSoft.Flow().TestLimit("PMU_RBIAS", preTrimMeas, lowl[0], hil[0],
+		TheSoft.Flow().TestLimit("NFC_GPIO0", preTrimMeas, lowl[0], hil[0],
 				Hard_Bin[0], Soft_Bin[0], "V", Test_Item[0], Test_number[0],
 				PhxAPI::E_Fail, PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,
 				PhxAPI::E_RS_DEC);
-		TheSoft.Flow().TestLimit("PMU_RBIAS", pb_i_TrimData, lowl[1], hil[1],
+		TheSoft.Flow().TestLimit("NFC_GPIO0", pb_i_TrimData, lowl[1], hil[1],
 				Hard_Bin[1], Soft_Bin[1], "", Test_Item[1], Test_number[1],
 				PhxAPI::E_Fail, PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,
 				PhxAPI::E_RS_DEC);
@@ -121,7 +121,7 @@ public:
 			postTrimMeas[site_id] = postTrimMeas[site_id]*(-120000) + Voffset[site_id];
 			PRE_IREF_TRIM[site_id] = preTrimMeas[site_id];
 		FOREACH_ACTIVESITE_END
-		TheSoft.Flow().TestLimit("PMU_RBIAS", postTrimMeas, lowl[2], hil[2],
+		TheSoft.Flow().TestLimit("NFC_GPIO0", postTrimMeas, lowl[2], hil[2],
 				Hard_Bin[2], Soft_Bin[2], "V", Test_Item[2], Test_number[2],
 				PhxAPI::E_Fail, PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,
 				PhxAPI::E_RS_DEC);
