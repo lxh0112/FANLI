@@ -1,13 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="ADPLL_TEST_27p12M"/>
+		<item key="selection" value="dio"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="dig"/>
+			<item value="j"/>
+			<item value="pinlist"/>
 			<item value="BOOT_UP"/>
 			<item value="ADPLL_TEST_27p12M"/>
 			<item value="Reader_RX_IDD.cpp"/>
@@ -15,6 +18,9 @@
 			<item value="DCVS"/>
 		</list>
 		<list key="replacehistory">
+			<item value="dio"/>
+			<item value="n"/>
+			<item value="dpsPinlist"/>
 			<item value="ADPLL_TEST_27p12M"/>
 			<item value="XO_CMU_TEST"/>
 			<item value="SSI_IO_TEST"/>
@@ -27,9 +33,6 @@
 			<item value="NFC_TX_TYPEF_424kbps_MI12"/>
 			<item value="NFC_TX_TYPEF_212kbps_MI12"/>
 			<item value="NFC_TX_TYPEB_848kbps_MI12"/>
-			<item value="NFC_TX_TYPEB_212kbps_MI_12"/>
-			<item value="NFC_TX_TYPEA_106kbps_MI_100"/>
-			<item value="NFC_TX_MODE"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

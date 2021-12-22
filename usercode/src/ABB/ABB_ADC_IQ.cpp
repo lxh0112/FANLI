@@ -40,7 +40,7 @@ public:
 		int  Test_number[30];
 		int Soft_Bin[30];
 		int Hard_Bin[30];
-		Read_Limit(lowl,hil,Test_Item,Test_number,Units,Soft_Bin,Hard_Bin);
+//		Read_Limit(lowl,hil,Test_Item,Test_number,Units,Soft_Bin,Hard_Bin);
 
 //		TheInst.DCVS().Power().Apply(); //下发执行  DCVS  power pin上电
 		TheInst.Digital().Level().Apply();//下发执行 DIO  pattern pin  level

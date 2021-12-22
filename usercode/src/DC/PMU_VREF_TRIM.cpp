@@ -24,7 +24,7 @@ public:
 		add_param("Measure_pinlist", "PinString", &pinlist).set_default(
 				"PMU_REFBP"); //PMU_REFBP
 		add_param("WaitTime", "double", &waittime).set_default("0.005");
-		add_param("SampleSize", "int", &samplesize).set_default("2");
+		add_param("SampleSize", "int", &samplesize).set_default("4");
 	}
 
 	void execute() {
@@ -37,8 +37,8 @@ public:
 		int Test_number[30];
 		int Soft_Bin[30];
 		int Hard_Bin[30];
-	//	Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,
-	//			Hard_Bin);
+//		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,
+//				Hard_Bin);
 
 		d2s::d2s_LABEL_BEGIN("ssi", d2s_WorkMode);
 		d2sProtocolSSI d2s_test;

@@ -21,11 +21,22 @@ public:
 	std::string pinlist;
 	int samplesize;
 	double waittime;
+	double vforce;
+	double irange;
+	double iClampl;
+	double iClamph;
+
+
 	void init() {
 		add_param("Measure_pinlist", "PinString", &pinlist).set_default(
 				"NFC_GPIO0"); //PMU_RBIAS
 		add_param("WaitTime", "double", &waittime).set_default("0.001");
-		add_param("SampleSize", "int", &samplesize).set_default("2");
+		add_param("SampleSize", "int", &samplesize).set_default("3");
+		add_param("VForce","double",&vforce).set_default("1.275");
+		add_param("IRange","double",&irange).set_default("100e-6");
+		add_param("IClampL","double",&iClampl).set_default("-100e-6");
+		add_param("IClampH","double",&iClamph).set_default("100e-6");
+		add_param("Waittime","double",&waittime).set_default("0.001");
 	}
 
 	void execute() {
@@ -35,8 +46,8 @@ public:
 		int Test_number[30];
 		int Soft_Bin[30];
 		int Hard_Bin[30];
-	//	Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,
-	//			Hard_Bin);
+//		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,
+//				Hard_Bin);
 
 		map<int, double> preTrimMeas;
 		map<int, long long> TrimData;
@@ -45,13 +56,21 @@ public:
 
 		TheInst.DCVI().Power().Apply();
 		TheInst.Digital().Level().Apply();
-		TheInst.DCVI().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MI).SetMeasureMethod(
-				PhxAPI::E_DC_METHOD_STATIC).SetReadMode(
-				PhxAPI::E_DC_MODE_MEASURE).SetMeasureOrder(
-				PhxAPI::E_DC_ORDER_SINGLE).SetSampleSize(samplesize).SetWaitTime(
-				waittime) //1ms
-		.Measure();
+
+		TheInst.PPMU().Pins(pinlist).SetClear();
+		TheInst.PPMU().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_FV_MV)
+									.SetVForce(vforce)
+									.SetIRange(irange)
+									.SetIClampL(iClampl)
+									.SetIClampH(iClamph)
+									.SetMeasureOrder(PhxAPI::E_MEASURE_ODER_GROUP)
+									.SetMeasureType(PhxAPI::E_MEASURE)
+									.SetSampleSize(samplesize)
+									.SetWaitTime(waittime)
+									.Connect(true)
+									.Measure();
 		PinArrayDouble res = TheInst.DCVI().Pins(pinlist).GetMeasureResults();
+
 		FOREACH_ACTIVESITE_BEGIN(site_id, bInterrupt)double GetValue = res.GetData(pinlist, site_id);
 		Testsoftbin[site_id] = 1;
 		preTrimMeas[site_id] = GetValue;
@@ -106,16 +125,20 @@ public:
 		d2s::d2s_LABEL_END();
 		TheInst.Wait(10 * ms);
 
-		TheInst.DCVI().Power().Apply();
-		TheInst.Digital().Level().Apply();
-		TheInst.DCVI().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MI)
-									.SetMeasureMethod(PhxAPI::E_DC_METHOD_STATIC)
-									.SetReadMode(PhxAPI::E_DC_MODE_MEASURE)
-									.SetMeasureOrder(PhxAPI::E_DC_ORDER_SINGLE)
+		TheInst.PPMU().Pins(pinlist).SetClear();
+		TheInst.PPMU().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_FV_MV)
+									.SetVForce(vforce)
+									.SetIRange(irange)
+									.SetIClampL(iClampl)
+									.SetIClampH(iClamph)
+									.SetMeasureOrder(PhxAPI::E_MEASURE_ODER_GROUP)
+									.SetMeasureType(PhxAPI::E_MEASURE)
 									.SetSampleSize(samplesize)
-									.SetWaitTime(waittime) //1ms
+									.SetWaitTime(waittime)
+									.Connect(true)
 									.Measure();
 		PinArrayDouble res2 = TheInst.DCVI().Pins(pinlist).GetMeasureResults();
+
 		FOREACH_ACTIVESITE_BEGIN(site_id, bInterrupt)double GetValue2 = res2.GetData(pinlist, site_id);
 			postTrimMeas[site_id] = GetValue2;
 			postTrimMeas[site_id] = postTrimMeas[site_id]*(-120000) + Voffset[site_id];

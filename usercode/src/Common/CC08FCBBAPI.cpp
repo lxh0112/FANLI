@@ -89,38 +89,38 @@ double selectFrequency(char* cFreq)
 }
 
 //选择调制的Standard
-static int selectStandard(char* cWave)
-{
-    if(!strcmp(strupr(cWave),"11AG"))
-    {
-        return RFMXWLAN_VAL_STANDARD_802_11_AG;
-    }
-    else if(!strcmp(strupr(cWave),"11B"))
-    {
-        return RFMXWLAN_VAL_STANDARD_802_11_B;
-    }
-    else if(!strcmp(strupr(cWave),"11J"))
-    {
-        return RFMXWLAN_VAL_STANDARD_802_11_J;
-    }
-    else if(!strcmp(strupr(cWave),"11P"))
-    {
-        return RFMXWLAN_VAL_STANDARD_802_11_P;
-    }
-    else if(!strcmp(strupr(cWave),"11N"))
-    {
-        return RFMXWLAN_VAL_STANDARD_802_11_N;
-    }
-    else if(!strcmp(strupr(cWave),"11AC"))
-    {
-        return RFMXWLAN_VAL_STANDARD_802_11_AC;
-    }
-    else if(!strcmp(strupr(cWave),"11AX"))
-    {
-        return RFMXWLAN_VAL_STANDARD_802_11_AX;
-    }
-    return EXIT_SUCCESS;
-}
+//static int selectStandard(char* cWave)
+//{
+//    if(!strcmp(strupr(cWave),"11AG"))
+//    {
+//        return RFMXWLAN_VAL_STANDARD_802_11_AG;
+//    }
+//    else if(!strcmp(strupr(cWave),"11B"))
+//    {
+//        return RFMXWLAN_VAL_STANDARD_802_11_B;
+//    }
+//    else if(!strcmp(strupr(cWave),"11J"))
+//    {
+//        return RFMXWLAN_VAL_STANDARD_802_11_J;
+//    }
+//    else if(!strcmp(strupr(cWave),"11P"))
+//    {
+//        return RFMXWLAN_VAL_STANDARD_802_11_P;
+//    }
+//    else if(!strcmp(strupr(cWave),"11N"))
+//    {
+//        return RFMXWLAN_VAL_STANDARD_802_11_N;
+//    }
+//    else if(!strcmp(strupr(cWave),"11AC"))
+//    {
+//        return RFMXWLAN_VAL_STANDARD_802_11_AC;
+//    }
+//    else if(!strcmp(strupr(cWave),"11AX"))
+//    {
+//        return RFMXWLAN_VAL_STANDARD_802_11_AX;
+//    }
+//    return EXIT_SUCCESS;
+//}
 
 static int LoadSignal_RX_Trig(tyTestData testRecordData)
 {
@@ -286,7 +286,7 @@ static int LoadSignal_RX_MOD(tyTestData testRecordData)
     rfmxWlan.dChannelBandwidth = testRecordData.AnaModCap.BW;
     rfmxWlan.dwCarrierFrequence = 0;
     rfmxWlan.dReferenceLevel = testRecordData.tyCapSigSet.dAmp;     //????????20211028
-    rfmxWlan.nWlanStandard = selectStandard(testRecordData.AnaModCap.cStandard);
+//    rfmxWlan.nWlanStandard = selectStandard(testRecordData.AnaModCap.cStandard);
     
 //    rfmxWlan.cfgOFDMModAcc.nEVMUnit = 1;
     
@@ -394,7 +394,7 @@ static int LoadSignal_TX_MOD(tyTestData testRecordData)
     rfmxWlan.dChannelBandwidth = testRecordData.RfModCap.BW;
     rfmxWlan.dwCarrierFrequence = selectFrequency(testRecordData.cRxFreq);
     rfmxWlan.dReferenceLevel = testRecordData.tyCapSigSet.dAmp;     //????????
-    rfmxWlan.nWlanStandard = selectStandard(testRecordData.RfModCap.cStandard);
+//    rfmxWlan.nWlanStandard = selectStandard(testRecordData.RfModCap.cStandard);
 
     rfmxWlan.trigger.nTriggerType = RFMXINSTR_VAL_TRIGGER_TYPE_IQ_POWER_EDGE;
     rfmxWlan.trigger.IQPowerEdgeTrigger.pszIQPowerEdgeSource = "0";
