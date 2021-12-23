@@ -22,10 +22,16 @@ class PMU_CAPLESS_LDO_TEST: public TestClass{
 public:
 		std::string pinlist;
 		int samplesize;
+		double iforce;
+		double irange;
+		double waittime;
 
     void init(){
 		add_param( "Measure_pinlist",  "PinString", &pinlist);
 		add_param("SampleSize","int",&samplesize);
+		add_param("IForce","double",&iforce);
+		add_param("IRange","double",&irange);
+		add_param("Waittime","double",&waittime);
                }
 
     void execute(){
@@ -36,7 +42,7 @@ public:
 		int Test_number[30];
 		int Soft_Bin[30];
 		int Hard_Bin[30];
-	//	Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
+		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
 
 		TheInst.DCVI().Power().Apply();
 		TheInst.Digital().Level().Apply();
@@ -60,14 +66,18 @@ public:
 			d2s_test.SSI_write(0x148,muxRegs[i*3+2]);
 			d2s::d2s_LABEL_END();
 
-			TheInst.DCVI().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_MODE_MV)
-										.SetMeasureMethod(PhxAPI::E_DC_METHOD_STATIC)
-										.SetReadMode(PhxAPI::E_DC_MODE_MEASURE)
-										.SetSampleSize(samplesize)
-										.SetWaitTime(5 * ms)
-										.Measure();
+			TheInst.PPMU().Pins(pinlist).SetClear();
+			TheInst.PPMU().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_FI_MV)
+											.SetIForce(iforce)
+											.SetIForce(irange)
+											  .SetMeasureOrder(E_MEASURE_ODER_GROUP)
+											  .SetMeasureType(E_MEASURE)
+											  .SetSampleSize(samplesize)
+											  .SetWaitTime(waittime)
+											  .Connect(true)
+											  .Measure();
 
-			PinArrayDouble result = TheInst.DCVI().Pins(pinlist).GetMeasureResults();
+			PinArrayDouble result = TheInst.PPMU().Pins(pinlist).GetMeasureResults();
 //			vector<string> pinname2 = SplitPinList(pinlist);
 			TheSoft.Flow().TestLimit(pinlist,result,lowl[i], hil[i],Hard_Bin[i],Soft_Bin[i], Units[i], Test_Item[i], Test_number[i]);
 		  }

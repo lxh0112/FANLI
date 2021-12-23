@@ -252,6 +252,9 @@ void CMU_Module() {
 }
 
 
+
+
+
 void TSENSOR_Module() {
 
     d2s::d2s_LABEL_BEGIN("ssi", LearningMode);
@@ -295,7 +298,10 @@ void EFUSE_DATA_Module() {
 	d2s::d2s_LABEL_END();
     
 }
+void BOOST_OFF(){
 
+
+}
 
 
 void PCIE_EP_LB_Module() {

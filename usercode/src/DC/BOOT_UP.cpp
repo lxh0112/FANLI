@@ -16,6 +16,7 @@
 #include <math.h>
 #include "Globle_Var.h"
 #include "UserDef.h"
+#include "D2S_PMU_Module.h"
 
 using namespace std;
 using namespace PinTool;

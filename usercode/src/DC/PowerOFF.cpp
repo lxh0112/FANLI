@@ -20,8 +20,8 @@ public:
 	int samplesize;
 
     void init(){
-    	add_param( "Measure_pinlist",  "PinString", &pinlist).set_default("gOS_VDD,gOS_VSS");
-    	add_param("SampleSize","int",&samplesize).set_default("32");
+    	add_param( "Measure_pinlist",  "PinString", &pinlist);
+    	add_param("SampleSize","int",&samplesize).set_default("5");
 //        add_param( "IO_VSSpinlist",  "PinString", &IO_VSSpinlist);
 //        add_param( "UbitON",  "PinString", &UbitON);
 //        add_param( "UbitOFF",  "PinString", &UbitOFF);
