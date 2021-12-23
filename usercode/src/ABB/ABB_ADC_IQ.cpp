@@ -87,61 +87,61 @@ public:
 		unsigned int sitestmp[4] = {0,0,0,0};
 		unsigned int sites[MAX_SITES] = {0};
 
-		vector<int> Sites_Init = TheSoft.Sites().Active().GetActiveSites();
-		unsigned int active_sites_size = TheSoft.Sites().Active().GetActiveSiteCount();
-		unsigned int active_sites_cnt = 0;
-		for(unsigned int i=0;i<active_sites_size;i++)
-		{
-			sitestmp[i]=Sites_Init[i];
-		}
+//		vector<int> Sites_Init = TheSoft.Sites().Active().GetActiveSites();
+//		unsigned int active_sites_size = TheSoft.Sites().Active().GetActiveSiteCount();
+//		unsigned int active_sites_cnt = 0;
+//		for(unsigned int i=0;i<active_sites_size;i++)
+//		{
+//			sitestmp[i]=Sites_Init[i];
+//		}
 
 		//1. Get test item information
-		string testname = TheSoft.Flow().Test().GetCurrentTestName();
-		Get_TestItem_Info(testname.c_str(), RF_Test_Data);
-		Get_Pin_Name(RF_Test_Data, Ana_SrcPin, RF_CapPin);
-		Get_Signal_Name(RF_Test_Data, Ana_Src_Signal, RF_Cap_Signal);
+//		string testname = TheSoft.Flow().Test().GetCurrentTestName();
+//		Get_TestItem_Info(testname.c_str(), RF_Test_Data);
+//		Get_Pin_Name(RF_Test_Data, Ana_SrcPin, RF_CapPin);
+//		Get_Signal_Name(RF_Test_Data, Ana_Src_Signal, RF_Cap_Signal);
 
-		if (strstr(testname.c_str(), "80M") != NULL) {
-			CalType = 0; //calType_Normal;
-		}
-		else if (strstr(testname.c_str(), "SS") != NULL) {
-			CalType = 2; //cal_Type_SS;
-		}
-		else if (strstr(testname.c_str(), "LV1") != NULL) {
-			CalType = 4; //calType_LV1;
-		}
-		else if (strstr(testname.c_str(), "LV") != NULL) {
-			CalType = 1; //calType_LV;
-		}
-		else if (strstr(testname.c_str(), "160M") != NULL) {
-			CalType = 3; //calType_Nocal;
-		}
+//		if (strstr(testname.c_str(), "80M") != NULL) {
+//			CalType = 0; //calType_Normal;
+//		}
+//		else if (strstr(testname.c_str(), "SS") != NULL) {
+//			CalType = 2; //cal_Type_SS;
+//		}
+//		else if (strstr(testname.c_str(), "LV1") != NULL) {
+//			CalType = 4; //calType_LV1;
+//		}
+//		else if (strstr(testname.c_str(), "LV") != NULL) {
+//			CalType = 1; //calType_LV;
+//		}
+//		else if (strstr(testname.c_str(), "160M") != NULL) {
+//			CalType = 3; //calType_Nocal;
+//		}
 
 
 //		CCRFTester.MIXSRC(Ana_SrcPin).SIGNAL(Ana_Src_Signal).Configure();
 //		CCRFTester.MIXSRC(Ana_SrcPin).SIGNAL(Ana_Src_Signal).Start();
 
-
-		int UtilitySites[8] = {51,24,20,65,19,33,11,56};
-
-		for(uint32_t i=0;i<8;i++)
-		{
-			TheInst.Util().SetRelayState(UtilitySites[i], E_UTIL_STATE_ON);
-		}
+//
+//		int UtilitySites[8] = {51,24,20,65,19,33,11,56};
+//
+//		for(uint32_t i=0;i<8;i++)
+//		{
+//			TheInst.Util().SetRelayState(UtilitySites[i], E_UTIL_STATE_ON);
+//		}
 
 
 		//2 DUT register setting for diff CalType
-		if(CalType == cal_Type_SS){
-
-			d2s::d2s_LABEL_BEGIN( "ssi", d2s_WorkMode);
-			d2sProtocolSSI d2s_test;
-			d2s_test.SSI_write(0x200,0x2000,false);
-			d2s_test.SSI_write(0x202,0x94,false);
-			d2s_test.SSI_write(0x350,0x10a0);
-			d2s_test.SSI_write(0x35c,0x2800);
-			d2s_test.SSI_write(0x364,0x10a0);
-			d2s_test.SSI_write(0x370,0x2800);
-			d2s::d2s_LABEL_END();
+//		if(CalType == cal_Type_SS){
+//
+//			d2s::d2s_LABEL_BEGIN( "ssi", d2s_WorkMode);
+//			d2sProtocolSSI d2s_test;
+//			d2s_test.SSI_write(0x200,0x2000,false);
+//			d2s_test.SSI_write(0x202,0x94,false);
+//			d2s_test.SSI_write(0x350,0x10a0);
+//			d2s_test.SSI_write(0x35c,0x2800);
+//			d2s_test.SSI_write(0x364,0x10a0);
+//			d2s_test.SSI_write(0x370,0x2800);
+//			d2s::d2s_LABEL_END();
 	//        FOREACH_ACTIVE_SITE() {
 	//            int site_id = api->Get_active_site();
 	//            if(PV_SENSOR_C0_CODE(site_id,0)>110){
@@ -162,43 +162,43 @@ public:
 	//        d2s_test.SSI_writeDynamic(0x364,ADC_Reg0,"write3");
 	//        d2s_test.SSI_writeDynamic(0x370,ADC_Reg3,"write4");
 	//        d2s::d2s_LABEL_END();
-
-		}
-		else if(CalType == calType_Nocal){
-
-			if(RF_Test_Data.tyABBTest.dABBSampleRate==160e6){
-				d2s::d2s_LABEL_BEGIN( "ssi", d2s_WorkMode);
-				d2sProtocolSSI d2s_test;
-				d2s_test.SSI_write(0x200,0x2000,false);
-				d2s_test.SSI_write(0x202,0x40,false);
-				d2s_test.SSI_write(0x33C,0x19B);
-				d2s::d2s_LABEL_END();
-			}
-			else{
-				d2s::d2s_LABEL_BEGIN( "ssi", d2s_WorkMode);
-				d2sProtocolSSI d2s_test;
-				d2s_test.SSI_write(0x200,0x2000,false);
-				d2s_test.SSI_write(0x202,0x40,false);
-				d2s_test.SSI_write(0x33C,0x1B6);
-				d2s::d2s_LABEL_END();
-			}
-
-		}
-		else {
-			  //resetDevice();
-			  PHY_ABB_RF_Reset_Module();
-			  if(strstr(testname.c_str(),"C0")!=NULL){
-					ABB_ADC_PV_Cal("C0",&WL_PV_Sensor,CalType);
-					ABB_ADC_CalStatus("C0", &pcal_status, &pcal_status_C1,CalType, &pCOMP_CAL_CODE_A1, &pCOMP_CAL_CODE_A2, &pCOMP_CAL_CODE_A3, &pCOMP_CAL_CODE);
-					ABB_ADC_CapCal_DC("C0",RF_Test_Data.tyABBTest.dABBSampleRate,&pWL_ADC_CAP_STS,CalType);
-
-				}
-				else{
-					ABB_ADC_PV_Cal("C1",&WL_PV_Sensor,CalType);
-					ABB_ADC_CalStatus("C1", &pcal_status, &pcal_status_C1,CalType, &pCOMP_CAL_CODE_A1, &pCOMP_CAL_CODE_A2, &pCOMP_CAL_CODE_A3, &pCOMP_CAL_CODE);
-					ABB_ADC_CapCal_DC("C1",RF_Test_Data.tyABBTest.dABBSampleRate,&pWL_ADC_CAP_STS,CalType);
-				}
-		}
+//
+//		}
+//		else if(CalType == calType_Nocal){
+//
+//			if(RF_Test_Data.tyABBTest.dABBSampleRate==160e6){
+//				d2s::d2s_LABEL_BEGIN( "ssi", d2s_WorkMode);
+//				d2sProtocolSSI d2s_test;
+//				d2s_test.SSI_write(0x200,0x2000,false);
+//				d2s_test.SSI_write(0x202,0x40,false);
+//				d2s_test.SSI_write(0x33C,0x19B);
+//				d2s::d2s_LABEL_END();
+//			}
+//			else{
+//				d2s::d2s_LABEL_BEGIN( "ssi", d2s_WorkMode);
+//				d2sProtocolSSI d2s_test;
+//				d2s_test.SSI_write(0x200,0x2000,false);
+//				d2s_test.SSI_write(0x202,0x40,false);
+//				d2s_test.SSI_write(0x33C,0x1B6);
+//				d2s::d2s_LABEL_END();
+//			}
+//
+//		}
+//		else {
+//			  //resetDevice();
+//			  PHY_ABB_RF_Reset_Module();
+//			  if(strstr(testname.c_str(),"C0")!=NULL){
+//					ABB_ADC_PV_Cal("C0",&WL_PV_Sensor,CalType);
+//					ABB_ADC_CalStatus("C0", &pcal_status, &pcal_status_C1,CalType, &pCOMP_CAL_CODE_A1, &pCOMP_CAL_CODE_A2, &pCOMP_CAL_CODE_A3, &pCOMP_CAL_CODE);
+//					ABB_ADC_CapCal_DC("C0",RF_Test_Data.tyABBTest.dABBSampleRate,&pWL_ADC_CAP_STS,CalType);
+//
+//				}
+//				else{
+//					ABB_ADC_PV_Cal("C1",&WL_PV_Sensor,CalType);
+//					ABB_ADC_CalStatus("C1", &pcal_status, &pcal_status_C1,CalType, &pCOMP_CAL_CODE_A1, &pCOMP_CAL_CODE_A2, &pCOMP_CAL_CODE_A3, &pCOMP_CAL_CODE);
+//					ABB_ADC_CapCal_DC("C1",RF_Test_Data.tyABBTest.dABBSampleRate,&pWL_ADC_CAP_STS,CalType);
+//				}
+//		}
 
 	//    if (strstr(testname.c_str(), "C0") != NULL) {
 	//        WL_ADC_C0_BeforeCap_Module();
@@ -208,17 +208,17 @@ public:
 	//    }
 
 		//3  Load source signal
-		CCRFTester.SelectSites("site0,site2");
-		SrcUtilitySites0();
-		CCRFTester.MIXSRC(Ana_SrcPin).SIGNAL(Ana_Src_Signal).Configure();
-		CCRFTester.MIXSRC(Ana_SrcPin).SIGNAL(Ana_Src_Signal).Start();
-
-
-
-		vector<int> Site_ac;
-		Site_ac.push_back(0);
-		Site_ac.push_back(2);
-		TheSoft.Sites().Active().SetActive(Site_ac);
+//		CCRFTester.SelectSites("site0,site2");
+//		SrcUtilitySites0();
+//		CCRFTester.MIXSRC(Ana_SrcPin).SIGNAL(Ana_Src_Signal).Configure();
+//		CCRFTester.MIXSRC(Ana_SrcPin).SIGNAL(Ana_Src_Signal).Start();
+//
+//
+//
+//		vector<int> Site_ac;
+//		Site_ac.push_back(0);
+//		Site_ac.push_back(2);
+//		TheSoft.Sites().Active().SetActive(Site_ac);
 
 	//    sites[0]=0;
 	//    sites[1]=2;
@@ -226,74 +226,74 @@ public:
 	//    sites[3]=0;
 	//    api->Set_active_sites(sites,2);
 		//3.1 DUT register setting: just set before capture & wait for capture module, not capture
-		if (strstr(testname.c_str(), "C0") != NULL) {
-			WL_ADC_C0_Cap_Module( &myWave);
-		}
-		else {
-			WL_ADC_C1_Cap_Module( &myWave);
-		}
+//		if (strstr(testname.c_str(), "C0") != NULL) {
+//			WL_ADC_C0_Cap_Module( &myWave);
+//		}
+//		else {
+//			WL_ADC_C1_Cap_Module( &myWave);
+//		}
 
-		CCRFTester.MIXSRC(Ana_SrcPin).SIGNAL(Ana_Src_Signal).Stop();
-
-		Sites_Init.clear();
-		for(unsigned int i=0;i<active_sites_size;i++)
-		{
-			sites[i]=sitestmp[i];
-			Sites_Init.push_back(sitestmp[i]);
-		}
-//        vec_Site.clear();
-//        vec_Site.push_back(0);
-		TheSoft.Sites().Active().SetActive(Sites_Init);                         //recover the sites information for Mutest
-		CCRFTester.ActiveSites(sites,active_sites_size);                        //recover the sites information for RF
-#ifdef semi_parallel_en
-		CCRFTester.SelectSites("site1,site3");
-		SrcUtilitySites1();
-		CCRFTester.MIXSRC(Ana_SrcPin).SIGNAL(Ana_Src_Signal).Configure();
-		CCRFTester.MIXSRC(Ana_SrcPin).SIGNAL(Ana_Src_Signal).Start();
-
-
-		Site_ac.clear();
-		Site_ac.push_back(1);
-		Site_ac.push_back(3);
-		TheSoft.Sites().Active().SetActive(Site_ac);
-	//    sites[0]=1;
+//		CCRFTester.MIXSRC(Ana_SrcPin).SIGNAL(Ana_Src_Signal).Stop();
+//
+//		Sites_Init.clear();
+//		for(unsigned int i=0;i<active_sites_size;i++)
+//		{
+//			sites[i]=sitestmp[i];
+//			Sites_Init.push_back(sitestmp[i]);
+//		}
+////        vec_Site.clear();
+////        vec_Site.push_back(0);
+//		TheSoft.Sites().Active().SetActive(Sites_Init);                         //recover the sites information for Mutest
+//		CCRFTester.ActiveSites(sites,active_sites_size);                        //recover the sites information for RF
+//#ifdef semi_parallel_en
+//		CCRFTester.SelectSites("site1,site3");
+//		SrcUtilitySites1();
+//		CCRFTester.MIXSRC(Ana_SrcPin).SIGNAL(Ana_Src_Signal).Configure();
+//		CCRFTester.MIXSRC(Ana_SrcPin).SIGNAL(Ana_Src_Signal).Start();
+//
+//
+//		Site_ac.clear();
+//		Site_ac.push_back(1);
+//		Site_ac.push_back(3);
+//		TheSoft.Sites().Active().SetActive(Site_ac);
+//	//    sites[0]=1;
 	//    sites[1]=3;
 	//    sites[2]=0;
 	//    sites[3]=0;
 	//    api->Set_active_sites(sites,2);
 		//3.1 DUT register setting: just set before capture & wait for capture module, not capture
-		if (strstr(testname.c_str(), "C0") != NULL) {
-			WL_ADC_C0_Cap_Module( &myWave);
-		}
-		else {
-			WL_ADC_C1_Cap_Module( &myWave);
-		}
-		CCRFTester.MIXSRC(Ana_SrcPin).SIGNAL(Ana_Src_Signal).Stop();
-
-		Sites_Init.clear();
-		for(unsigned int i=0;i<active_sites_size;i++)
-		{
-			sites[i]=sitestmp[i];
-			Sites_Init.push_back(sitestmp[i]);
-		}
-//        vec_Site.clear();
-//        vec_Site.push_back(0);
-		TheSoft.Sites().Active().SetActive(Sites_Init);                         //recover the sites information for Mutest
-		CCRFTester.ActiveSites(sites,active_sites_size);                        //recover the sites information for RF
-		SrcUtilitySites0();                                                      //recover Relay state
-#endif
-
-		//4  capture for all active site
-		if (strstr(testname.c_str(), "C0") != NULL) {
-			WL_ADC_C0_Cap_Module_read( &myWave);
-		}
-		else {
-			WL_ADC_C1_Cap_Module_read( &myWave);
-		}
+//		if (strstr(testname.c_str(), "C0") != NULL) {
+//			WL_ADC_C0_Cap_Module( &myWave);
+//		}
+//		else {
+//			WL_ADC_C1_Cap_Module( &myWave);
+//		}
+//		CCRFTester.MIXSRC(Ana_SrcPin).SIGNAL(Ana_Src_Signal).Stop();
+//
+//		Sites_Init.clear();
+//		for(unsigned int i=0;i<active_sites_size;i++)
+//		{
+//			sites[i]=sitestmp[i];
+//			Sites_Init.push_back(sitestmp[i]);
+//		}
+////        vec_Site.clear();
+////        vec_Site.push_back(0);
+//		TheSoft.Sites().Active().SetActive(Sites_Init);                         //recover the sites information for Mutest
+//		CCRFTester.ActiveSites(sites,active_sites_size);                        //recover the sites information for RF
+//		SrcUtilitySites0();                                                      //recover Relay state
+//#endif
+//
+//		//4  capture for all active site
+//		if (strstr(testname.c_str(), "C0") != NULL) {
+//			WL_ADC_C0_Cap_Module_read( &myWave);
+//		}
+//		else {
+//			WL_ADC_C1_Cap_Module_read( &myWave);
+//		}
 
 		//5 calculator dynamic parameter
-		FunBin=RF_Test_Data.tyABBTest.dSigFreq / (2*RF_Test_Data.tyABBTest.dABBSampleRate/RF_Test_Data.tySrcSigSet.dAnaSrcSampleSize);
-		SpurBin=40e6 / (2*RF_Test_Data.tyABBTest.dABBSampleRate/RF_Test_Data.tySrcSigSet.dAnaSrcSampleSize);
+//		FunBin=RF_Test_Data.tyABBTest.dSigFreq / (2*RF_Test_Data.tyABBTest.dABBSampleRate/RF_Test_Data.tySrcSigSet.dAnaSrcSampleSize);
+//		SpurBin=40e6 / (2*RF_Test_Data.tyABBTest.dABBSampleRate/RF_Test_Data.tySrcSigSet.dAnaSrcSampleSize);
 		FOREACH_ACTIVESITE_BEGIN(site_id, bInterrupt)
 			//int site_id = api->Get_active_site();
 				for(int i=0;i<RF_Test_Data.tySrcSigSet.dAnaSrcSampleSize;i++){

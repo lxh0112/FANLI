@@ -46,8 +46,8 @@ public:
 		int Test_number[30];
 		int Soft_Bin[30];
 		int Hard_Bin[30];
-//		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,
-//				Hard_Bin);
+		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,
+				Hard_Bin);
 
 		map<int, double> preTrimMeas;
 		map<int, long long> TrimData;

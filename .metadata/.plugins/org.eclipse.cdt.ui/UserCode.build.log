@@ -1,1 +1,43 @@
-Info: Nothing to build for UserCode
+11:16:51 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\BOOST_RC_250K_TRIM.o" "..\\src\\DC\\BOOST_RC_250K_TRIM.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\BOOST_RC_250K_TRIM.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\BOOST_RC_250K_TRIM.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\BOOST_OSC_TRIM.o" "..\\src\\DC\\BOOST_OSC_TRIM.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\BOOST_OSC_TRIM.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\BOOST_OSC_TRIM.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ "-L..\\lib" "-LC:\\PhoenixSys\\bin" -shared -o libtestp_share2.dll "src\\ABB\\ADC_DAC_IDD.o" "src\\Common\\Basic_00_PowerShort.o" "src\\Common\\Basic_01_Functional.o" "src\\Common\\Basic_02_OS_VDD_VSS_PPMU.o" "src\\Common\\CBBLimits.o" "src\\Common\\CCWaveformsData.o" "src\\Common\\CPP_Utility.o" "src\\Common\\Globle_Var.o" "src\\Common\\Hbin_Check.o" "src\\DC\\BOOST_BOOTUP.o" "src\\DC\\BOOST_IDD_IDLE.o" "src\\DC\\BOOST_IDD_OFF.o" "src\\DC\\BOOST_OSC_TRIM.o" "src\\DC\\BOOST_POWERON.o" "src\\DC\\BOOST_PWRTHRU.o" "src\\DC\\BOOST_RC_250K_TRIM.o" "src\\DC\\BOOST_VOUTH.o" "src\\DC\\BOOST_VOUTHP.o" "src\\DC\\BOOST_VOUTL.o" "src\\DC\\BOOST_VOUT_TRIM.o" "src\\DC\\BOOT_UP.o" "src\\DC\\Basic_04_DC_IDDQ_Measure.o" "src\\DC\\CMU_TCXO_SSI.o" "src\\DC\\CMU_TEST.o" "src\\DC\\DC_IIHL_VDDH.o" "src\\DC\\DC_IOZHL_3V3_VDDH.o" "src\\DC\\DFT_MODE.o" "src\\DC\\EFUSE_IRC_BST.o" "src\\DC\\MEMORY_TEST MODE.o" "src\\DC\\NFC_limiter.o" "src\\DC\\PMU_BUCK_LOAD.o" "src\\DC\\PMU_BUCK_TRIM.o" "src\\DC\\PMU_CAPLESSLDO_TEST.o" "src\\DC\\PMU_CLK20M_TRIM.o" "src\\DC\\PMU_CLK32K_TRIM.o" "src\\DC\\PMU_IDD_EC0.o" "src\\DC\\PMU_IDD_ECO.o" "src\\DC\\PMU_IDD_OFF.o" "src\\DC\\PMU_IDD_OFF_VDDH.o" "src\\DC\\PMU_IDD_SLEEP.o" "src\\DC\\PMU_IREF_TRIM.o" "src\\DC\\PMU_LDO_VDDH.o" "src\\DC\\PMU_LDO_VDDL.o" "src\\DC\\PMU_POWERON.o" "src\\DC\\PMU_SIMVCC_RON.o" "src\\DC\\PMU_VREF_TRIM.o" "src\\DC\\PowerOFF.o" "src\\DC\\Power_OSD.o" "src\\DC\\SSI_IO_TEST.o" "src\\DC\\SSI_MODE.o" "src\\DC\\TSENSOR_TEST.o" "src\\Device_Setup\\D2S_PMU_Module.o" "src\\Device_Setup\\DSP_test_ABB.o" "src\\d2s\\MD5.o" "src\\d2s\\PatternManager.o" "src\\d2s\\d2s.o" -lTestClass -lExcel -lExcelOprt -llibCCTimer -lAPIDLL -llibCCVSTDriver -llibCCDSPALG 
+xcopy libtestp_share2.dll "..\\..\\lib\\/y" 
+E:libtestp_share2.dll
+复制了 1 个文件
+
+11:16:57 Build Finished. 0 errors, 2 warnings. (took 6s.545ms)
+

@@ -70,7 +70,7 @@
     <test name="NFC_limiter" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
         <testclass name="libtestp_share2.NFC_limiter">
             <propvalues>
-                <propvalue name="Measure_pinlist" value="" />
+                <propvalue name="Measure_pinlist" value="RXN_D,RXP_D," />
                 <propvalue name="WaitTime" value="10e-3" />
                 <propvalue name="SampleSize" value="3" />
             </propvalues>
@@ -668,28 +668,28 @@
         </testclass>
     </test>
     <test name="DC_IIHL_PU_VDDH" type="Test" timing="IOZ_TIM6_V1" level="VIHLR_VOHLR_IOHLR" pattern="VIHL_R01_HI1122_PULL_DOWN" power="DC_VDDH_VIHLR_VOHLR_IOHLR" comment="">
-        <testclass name="libtestp_share2.DC_IIHL_3V3_PU_VDDH">
+        <testclass name="libtestp_share2.DC_IIHL_VDDH">
             <propvalues />
         </testclass>
     </test>
     <test name="DC_IIHLPD_VDDH" type="Test" timing="DC_TIM6_V1" level="VIHLR_VOHLR_IOHLR" pattern="VIHL_R01_HI1122_PULL_DOWN" power="DC_VDDH_VIHLR_VOHLR_IOHLR" comment="">
-        <testclass name="libtestp_share2.DC_IIHL_3V3_PD_VDDH">
+        <testclass name="libtestp_share2.DC_IIHL_VDDH">
             <propvalues />
         </testclass>
     </test>
     <test name="DC_IOZ_VDDH" type="Test" timing="IOZ_TIM6_V1" level="VIHLR_VOHLR_IOHLS" pattern="IOZ_R01_HI1122" power="IOZ_VDDN_VIHLR_VOHLR_IOHLS" comment="">
         <testclass name="libtestp_share2.DC_IOZHL_3V3_VDDH">
             <propvalues>
-                <propvalue name="Measure_pinlist" value="" />
-                <propvalue name="IOZH_VForce" value="" />
-                <propvalue name="RangeH" value="" />
-                <propvalue name="IOZH_IClampL" value="" />
-                <propvalue name="IOZH_IClampH" value="" />
+                <propvalue name="Measure_pinlist" value="gDFTPINS," />
+                <propvalue name="IOZH_VForce" value="1.98" />
+                <propvalue name="RangeH" value="10e-6" />
+                <propvalue name="IOZH_IClampL" value="-10e-6" />
+                <propvalue name="IOZH_IClampH" value="10e-6" />
                 <propvalue name="IOZL_VForce" value="0" />
-                <propvalue name="RangeL" value="" />
-                <propvalue name="IOZL_IClampL" value="" />
-                <propvalue name="IOZL_IClampH" value="" />
-                <propvalue name="SampleSize" value="16" />
+                <propvalue name="RangeL" value="10e-6" />
+                <propvalue name="IOZL_IClampL" value="-10e-6" />
+                <propvalue name="IOZL_IClampH" value="10e-6" />
+                <propvalue name="SampleSize" value="4" />
             </propvalues>
         </testclass>
     </test>

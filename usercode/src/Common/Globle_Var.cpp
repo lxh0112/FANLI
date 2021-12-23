@@ -2,11 +2,13 @@
 #include "d2sProtocolSSI.h"
 #include "Globle_Var.h"
 #include "string.h"
+#include"UserAPI.h"
+#include <iostream>
 
 d2sWorkModeType d2s_WorkMode;
 
 //bool semi_parallel_en;
-
+map<string, tyLimitsData> mapLimits;
 map<int,long long> pmu_v_trimData;
 map<int,long long> buck_v_trimData;
 map<int,long long> pb_i_TrimData;
@@ -113,3 +115,154 @@ int TRIM_DATA_LIST_C1[10][4];
 double RX_GAIN_MAX_I_C0[10][4];
 double RX_GAIN_MAX_I_C1[10][4];
 
+
+#if 1
+void Read_Limit(double *Lowlimit,double *Highlimit,vector<string> &Test_name,int *Test_number,vector<string> &Units,int *Fail_Soft,int *Fail_Hard)
+{
+    string name = TheSoft.Flow().Test().GetCurrentTestName();
+    map<string, tyLimitsData>::iterator iter;
+    tyLimitsData tempLimitsData;
+    vector<string> test_name;
+    vector<double> lowlimit;
+    vector<double> highlimit;
+    vector<string> units;
+    vector<ViUInt64> test_number;
+    vector<ViUInt32> fail_sort;
+    vector<ViUInt8> fail_bin;
+
+    iter = mapLimits.find(name);
+    if(iter != mapLimits.end())
+    {
+        tempLimitsData = iter->second;
+//        flowtable = tempLimitsData.flowtable;
+
+        if(strcmp("Default",CurrentLimitSet) == 0){
+			lowlimit = tempLimitsData.Default_lolim;
+			highlimit = tempLimitsData.Default_hilim;
+        }
+        else if(strcmp("Golden",CurrentLimitSet) == 0){
+			lowlimit = tempLimitsData.Golden_lolim;
+			highlimit = tempLimitsData.Golden_hilim;
+        }
+//        else if(CurrentLimitSet=="L40C_QA"){
+//        lowlimit = tempLimitsData.L40C_QA_lolim;
+//        highlimit = tempLimitsData.L40C_QA_hilim;
+//        }
+//        else if(CurrentLimitSet=="L40C"){
+//        lowlimit = tempLimitsData.L40C_lolim;
+//        highlimit = tempLimitsData.L40C_hilim;
+//        }
+        else if(strcmp("QA",CurrentLimitSet) == 0){
+			lowlimit = tempLimitsData.QA_lolim;
+			highlimit = tempLimitsData.QA_hilim;
+        }
+//        else if(CurrentLimitSet=="_105C_QA"){
+//        lowlimit = tempLimitsData._105C_QA_lolim;
+//        highlimit = tempLimitsData._105C_QA_hilim;
+//        }
+//        else if(CurrentLimitSet=="_105C"){
+//        lowlimit = tempLimitsData._105C_lolim;
+//        highlimit = tempLimitsData._105C_hilim;
+//        }
+        fail_sort = tempLimitsData.failsort;
+        fail_bin = tempLimitsData.failbin;
+
+        test_name = tempLimitsData.testname;
+        test_number = tempLimitsData.testnumber;
+        units = tempLimitsData.units;
+
+    }
+
+    Test_name = test_name;
+    Units = units;
+
+    for(unsigned int i = 0; i < lowlimit.size(); i++)
+    {
+       Lowlimit[i] = lowlimit[i];
+       Highlimit[i] = highlimit[i];
+       Test_number[i] = test_number[i];
+       Fail_Soft[i]=fail_sort[i];
+       Fail_Hard[i] = fail_bin[i];
+
+//       Test_name[i] = test_name[i];
+//       Units[i] = units[i];
+
+//       printf(".................... Test_name:%s --- Units:%s \n",Test_name[i],Units[i]);
+    }
+
+}
+#endif
+
+
+
+void Read_Limit(double *Lowlimit,double *Highlimit,char *Test_name[],int *Test_number,char *Units[],int *Fail_Soft,int *Fail_Hard)
+{
+    string name = TheSoft.Flow().Test().GetCurrentTestName();
+    map<string, tyLimitsData>::iterator iter;
+    tyLimitsData tempLimitsData;
+    vector<string> test_name;
+    vector<double> lowlimit;
+    vector<double> highlimit;
+    vector<string> units;
+    vector<ViUInt64> test_number;
+    vector<ViUInt32> fail_sort;
+    vector<ViUInt8> fail_bin;
+
+    iter = mapLimits.find(name);
+    if(iter != mapLimits.end())
+    {
+        tempLimitsData = iter->second;
+//        flowtable = tempLimitsData.flowtable;
+
+        if(strcmp("Default",CurrentLimitSet) == 0){
+			lowlimit = tempLimitsData.Default_lolim;
+			highlimit = tempLimitsData.Default_hilim;
+        }
+        else if(strcmp("Golden",CurrentLimitSet) == 0){
+			lowlimit = tempLimitsData.Golden_lolim;
+			highlimit = tempLimitsData.Golden_hilim;
+        }
+//        else if(CurrentLimitSet=="L40C_QA"){
+//        lowlimit = tempLimitsData.L40C_QA_lolim;
+//        highlimit = tempLimitsData.L40C_QA_hilim;
+//        }
+//        else if(CurrentLimitSet=="L40C"){
+//        lowlimit = tempLimitsData.L40C_lolim;
+//        highlimit = tempLimitsData.L40C_hilim;
+//        }
+        else if(strcmp("QA",CurrentLimitSet) == 0){
+			lowlimit = tempLimitsData.QA_lolim;
+			highlimit = tempLimitsData.QA_hilim;
+        }
+//        else if(CurrentLimitSet=="_105C_QA"){
+//        lowlimit = tempLimitsData._105C_QA_lolim;
+//        highlimit = tempLimitsData._105C_QA_hilim;
+//        }
+//        else if(CurrentLimitSet=="_105C"){
+//        lowlimit = tempLimitsData._105C_lolim;
+//        highlimit = tempLimitsData._105C_hilim;
+//        }
+        fail_sort = tempLimitsData.failsort;
+        fail_bin = tempLimitsData.failbin;
+
+        test_name = tempLimitsData.testname;
+        test_number = tempLimitsData.testnumber;
+        units = tempLimitsData.units;
+
+    }
+
+    for(unsigned int i = 0; i < lowlimit.size(); i++)
+    {
+       Lowlimit[i] = lowlimit[i];
+       Highlimit[i] = highlimit[i];
+       Test_number[i] = test_number[i];
+       Fail_Soft[i]=fail_sort[i];
+       Fail_Hard[i] = fail_bin[i];
+
+       Test_name[i] = (char*)test_name[i].c_str();
+       Units[i] = (char*)units[i].c_str();
+
+       printf(".................... Test_name:%s --- Units:%s \n",Test_name[i],Units[i]);
+    }
+
+}
