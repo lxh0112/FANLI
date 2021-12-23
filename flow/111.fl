@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <flow name="111">
     <flowtable>
+        <row opcode="Test" operand="OSD" test="" testnumber="">
+            <limit lowlimit="" highlimit="" />
+            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <action pass="" fail="" />
+            <device sense="" condition="" name="" />
+        </row>
         <row opcode="Test" operand="OS_VSS_FUNC" test="" testnumber="22000000">
             <limit lowlimit="" highlimit="" />
             <bin hpassbin="" hfailbin="2" spassbin="" sfailbin="2200" result="Fail" />
@@ -763,7 +769,7 @@
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
-        <row opcode="Test" operand="" test="" testnumber="">
+        <row opcode="Test" operand="DFT_EXIT_STEP2" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
             <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />

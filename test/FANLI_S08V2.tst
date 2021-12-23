@@ -61,7 +61,7 @@
     <test name="PMU_IDD_OFF_VDDH" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDH_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
         <testclass name="libtestp_share2.PMU_IDD_OFFVDDH">
             <propvalues>
-                <propvalue name="Measure_pinlist" value="" />
+                <propvalue name="Measure_pinlist" value="BOOST_LX,VBAT,VDDIO," />
                 <propvalue name="WaitTime" value="10e-3" />
                 <propvalue name="SampleSize" value="3" />
             </propvalues>
@@ -184,7 +184,11 @@
     </test>
     <test name="PMU_IDD_EC0" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
         <testclass name="libtestp_share2.PMU_IDD_EC0">
-            <propvalues />
+            <propvalues>
+                <propvalue name="Measure_pinlist" value="VBAT,VDDIO," />
+                <propvalue name="WaitTime" value="5e-3" />
+                <propvalue name="SampleSize" value="3" />
+            </propvalues>
         </testclass>
     </test>
     <test name="PMU_CAPLESS_LDO" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
@@ -708,6 +712,11 @@
             <propvalues>
                 <propvalue name="powerpinlist" value="" />
             </propvalues>
+        </testclass>
+    </test>
+    <test name="POWEROFFF" type="Test" timing="" level="" pattern="" power="" comment="">
+        <testclass name="">
+            <propvalues />
         </testclass>
     </test>
 </tests>
