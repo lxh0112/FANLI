@@ -225,7 +225,7 @@
         </row>
         <row opcode="Test" operand="BOOST_PWRTHRU" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <bin hpassbin="" hfailbin="6" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
@@ -285,7 +285,7 @@
         </row>
         <row opcode="Test" operand="ADPLL_TEST" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <bin hpassbin="" hfailbin="6" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
@@ -333,13 +333,13 @@
         </row>
         <row opcode="Test" operand="NFC_TX_IMPEDENCE_MIN" test="" testnumber="63130000">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="6313" result="Fail" />
+            <bin hpassbin="" hfailbin="6" spassbin="" sfailbin="6313" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
         <row opcode="Test" operand="NFC_TX_IMPEDENCE_MAX" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <bin hpassbin="" hfailbin="6" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
@@ -477,13 +477,13 @@
         </row>
         <row opcode="Test" operand="NFC_RESET_MODE" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <bin hpassbin="" hfailbin="6" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
         <row opcode="Test" operand="NFC_TAG_MODE" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <bin hpassbin="" hfailbin="6" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
@@ -513,13 +513,13 @@
         </row>
         <row opcode="Test" operand="NFC_FIELD_DET_NP" test="" testnumber="62190001">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="6" spassbin="" sfailbin="6219.0001" result="Fail" />
+            <bin hpassbin="" hfailbin="6" spassbin="" sfailbin="6219" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
         <row opcode="Test" operand="NFC_FIELD_DET_LP" test="" testnumber="62190002">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="6" spassbin="" sfailbin="6219.0002" result="Fail" />
+            <bin hpassbin="" hfailbin="6" spassbin="" sfailbin="6219" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
@@ -567,25 +567,25 @@
         </row>
         <row opcode="Test" operand="PMU_IDD_OFF_VDDN_STA" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <bin hpassbin="" hfailbin="6" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
         <row opcode="Test" operand="DFT_MODE" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <bin hpassbin="" hfailbin="4" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
         <row opcode="Test" operand="DFT_MODE_STEP1" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <bin hpassbin="" hfailbin="4" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
         <row opcode="Test" operand="DFT_MODE_STEP2" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <bin hpassbin="" hfailbin="4" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
@@ -645,19 +645,19 @@
         </row>
         <row opcode="Test" operand="FC_MBIST_RAM_VDDL" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <bin hpassbin="" hfailbin="4" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
         <row opcode="Test" operand="FC_MBIST_RAM_MINOR1_VDDH" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <bin hpassbin="" hfailbin="4" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
         <row opcode="Test" operand="FC_MBIST_RAM_MINOR1_VDDL" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <bin hpassbin="" hfailbin="4" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
@@ -765,13 +765,13 @@
         </row>
         <row opcode="Test" operand="DFT_EXIT_STEP1" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <bin hpassbin="" hfailbin="3" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
         <row opcode="Test" operand="DFT_EXIT_STEP2" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
-            <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="Fail" />
+            <bin hpassbin="" hfailbin="3" spassbin="" sfailbin="" result="Fail" />
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>

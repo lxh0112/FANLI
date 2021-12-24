@@ -114,14 +114,13 @@
     <test name="PMU_IREF_TRIM" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
         <testclass name="libtestp_share2.PMU_IrefTrim">
             <propvalues>
-                <propvalue name="Measure_pinlist" value="NFC_GPIO0" />
-                <propvalue name="WaitTime" value="0.001" />
-                <propvalue name="SampleSize" value="3" />
-                <propvalue name="VForce" value="1.275" />
-                <propvalue name="IRange" value="100e-6" />
-                <propvalue name="IClampL" value="-100e-6" />
-                <propvalue name="IClampH" value="100e-6" />
-                <propvalue name="Waittime" value="0.001" />
+                <propvalue name="Measure_pinlist" value="" />
+                <propvalue name="WaitTime" value="" />
+                <propvalue name="SampleSize" value="" />
+                <propvalue name="VForce" value="" />
+                <propvalue name="IRange" value="" />
+                <propvalue name="IClampL" value="" />
+                <propvalue name="IClampH" value="" />
             </propvalues>
         </testclass>
     </test>
@@ -190,7 +189,11 @@
     </test>
     <test name="BOOST_VOUT_TRIM" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
         <testclass name="libtestp_share2.BOOST_VOUT_TRIM">
-            <propvalues />
+            <propvalues>
+                <propvalue name="Measure_pinlist" value="" />
+                <propvalue name="WaitTime" value="" />
+                <propvalue name="SampleSize" value="" />
+            </propvalues>
         </testclass>
     </test>
     <test name="PMU_LDO_VDDH" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDH_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
@@ -232,12 +235,29 @@
     </test>
     <test name="PMU_SIMVCC_RON" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
         <testclass name="libtestp_share2.PMU_SIMVCC_RON">
-            <propvalues />
+            <propvalues>
+                <propvalue name="Measure_pinlist" value="" />
+                <propvalue name="WaitTime" value="" />
+                <propvalue name="SampleSize" value="" />
+                <propvalue name="IForce" value="" />
+                <propvalue name="IRange" value="" />
+                <propvalue name="IClampL" value="" />
+                <propvalue name="IClampH" value="" />
+            </propvalues>
         </testclass>
     </test>
     <test name="BOOST_RC_250K_TRIM" type="Test" timing="BOOST_RC250K" level="VIHLR_VOHLR_IOHLR" pattern="BOOST_RC250K" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
         <testclass name="libtestp_share2.BOOST_RC_250K_TRIM">
-            <propvalues />
+            <propvalues>
+                <propvalue name="Measure_pinlist" value="" />
+                <propvalue name="WaitTime" value="" />
+                <propvalue name="SampleSize" value="" />
+                <propvalue name="VForce" value="" />
+                <propvalue name="IRange" value="" />
+                <propvalue name="IClampL" value="" />
+                <propvalue name="IClampH" value="" />
+                <propvalue name="Waittime" value="" />
+            </propvalues>
         </testclass>
     </test>
     <test name="BOOST_OSC_TRIM" type="Test" timing="BOOST_OSC" level="VIHLR_VOHLR_IOHLR" pattern="BOOST_OSC" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
@@ -282,7 +302,15 @@
     </test>
     <test name="BOOST_VOUTL" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDL_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
         <testclass name="libtestp_share2.BOOST_VOUTL">
-            <propvalues />
+            <propvalues>
+                <propvalue name="Measure_pinlist" value="" />
+                <propvalue name="WaitTime" value="" />
+                <propvalue name="SampleSize" value="" />
+                <propvalue name="IForce" value="" />
+                <propvalue name="IRange" value="" />
+                <propvalue name="IClampL" value="" />
+                <propvalue name="IClampH" value="" />
+            </propvalues>
         </testclass>
     </test>
     <test name="BOOST_PWRTHRU" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
