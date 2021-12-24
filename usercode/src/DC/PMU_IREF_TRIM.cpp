@@ -36,7 +36,6 @@ public:
 		add_param("IRange","double",&irange).set_default("100e-6");
 		add_param("IClampL","double",&iClampl).set_default("-100e-6");
 		add_param("IClampH","double",&iClamph).set_default("100e-6");
-		add_param("Waittime","double",&waittime).set_default("0.001");
 	}
 
 	void execute() {

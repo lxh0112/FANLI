@@ -128,22 +128,6 @@
         <power pin="VDDIO" order="0" state="On" clamplow="-200mA" clamphigh="200mA" clampdelay="0ms" range="BestFit" force="1.8V*Vcoef" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
         <power pin="VDDPA" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
     </powerblock>
-    <powerblock name="LEV_FUNC_PMU_NFC" comment="">
-        <power pin="BOOST_LX" order="0" state="On" clamplow="-800mA" clamphigh="800mA" clampdelay="0ms" range="BestFit" force="BOOST_LX*Vcoef" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="PMU_REFBP" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="PMUVCC12" order="0" state="On" clamplow="-200mA" clamphigh="200mA" clampdelay="0ms" range="BestFit" force="PMUVCC12*Vcoef" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="PMUVCC3" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="SIMVCC1" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="SIMVCC2" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="SIMVCC3" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="VBAT" order="0" state="On" clamplow="-200mA" clamphigh="200mA" clampdelay="0ms" range="BestFit" force="VBAT*Vcoef" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="VDD_PMU_AIOLDO" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="VDD_PMU_CLDO" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="VDD_PMU_SYSLDO" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="VDDBOOST" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="VDDBOOST" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="VDDIO" order="0" state="On" clamplow="-200mA" clamphigh="200mA" clampdelay="0ms" range="BestFit" force="VDDIO*Vcoef" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-        <power pin="VDDPA" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
-    </powerblock>
     <powerblock name="JTAG_VDDH_VIHLR_VOHLR_IOHLR" comment="">
         <power pin="BOOST_LX" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />
         <power pin="PMU_REFBP" order="0" state="Off" clamplow="-25mA" clamphigh="25mA" clampdelay="0ms" range="25mA" force="0V" vbump="" delay="5ms" compensation="0nF" resistance="0Ohm" mode="DFV" trise="200us" />

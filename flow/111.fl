@@ -775,7 +775,7 @@
             <action pass="" fail="" />
             <device sense="" condition="" name="" />
         </row>
-        <row opcode="Test" operand="DFT_EXIT_STEP2" test="" testnumber="">
+        <row opcode="Test" operand="POWEROFFF" test="" testnumber="">
             <limit lowlimit="" highlimit="" />
             <bin hpassbin="" hfailbin="" spassbin="" sfailbin="" result="" />
             <action pass="" fail="" />

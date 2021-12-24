@@ -29,16 +29,22 @@ public:
 //	void TSENSOR_Module(){
 //	}
     void execute(){
-        TheInst.DCVI().Power().Apply();
-        TheInst.Digital().Level().Apply();
-
-        double hil[30],lowl[30];
-        vector<string> Test_Item;
+    	 double hil[30],lowl[30];
+		vector<string> Test_Item;
 		vector<string> Units;
-        int  Test_number[30];
-        int Soft_Bin[30];
+		int  Test_number[30];
+		int Soft_Bin[30];
 		int Hard_Bin[30];
 		Read_Limit(lowl,hil,Test_Item,Test_number,Units,Soft_Bin,Hard_Bin);
+
+        TheInst.DCVI().Power().Apply();
+        TheInst.Digital().Level().Apply();
+		TheInst.Digital().Timing().Apply();
+		TheInst.Digital().PatEng().SetupMCFData();
+		TheInst.Digital().PatEng().SetFailMode(PhxAPI::E_SET_HIL_MODE);
+		//TheInst.Digital().Pattern().Run(); //执行pattern，并判定bin 信息
+		TheInst.Digital().Pattern().Start();
+
 
 
 
