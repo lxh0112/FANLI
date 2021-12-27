@@ -16,11 +16,13 @@
 #include "Capture_Function.h"
 #include <math.h>
 #include <fstream>
+#include "UserDef.h"
+
 
 using namespace std;
 using namespace PinTool;
 
-#define ORG 1
+#define ORG 0
 
 //static void WriteData(const char* pszFileName,int dData[],long lDataSize)
 //{
@@ -46,7 +48,7 @@ public:
 	    	add_param( "FREQ_pinlist",  "string", &freq_pinlist);
 	    }
 
-#if 0
+#if 1
 		int Frequency_Counter(string strPinList, double dIntervalTime, map<uint32_t, map<string, double> >& Result)
 		{
 			using namespace PhxAPI;
@@ -109,11 +111,16 @@ public:
 		}
 #endif
 	    void execute() {
-#if 0
-		double hil[30],lowl[30];
-		char *Test_Item[30],*Units[30];
-		int  Test_number[30];
-		Read_Limit(lowl,hil,Test_Item,Test_number,Units);
+#if 1
+//		double hil[30],lowl[30];
+//		char *Test_Item[30],*Units[30];
+//		int  Test_number[30];
+//		Read_Limit(lowl, hil, Test_Item,Test_number,Units);
+	    double hil[30], lowl[30];
+	    vector<string> Test_Item;
+	    vector<string> Units;
+	    int Test_number[30],Soft_Bin[30],Hard_Bin[30];
+	    Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
 
 		TheInst.DCVI().Power().Apply(); //下发执行  DCVI  power pin上电
 		TheInst.Digital().Level().Apply();//下发执行 DIO  pattern pin  level

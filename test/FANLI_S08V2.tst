@@ -127,9 +127,9 @@
     <test name="PMU_CLK32K_TRIM" type="Test" timing="RF_ADPLL_TEST" level="VIHLR_VOHLR_IOHLR" pattern="RF_ADPLL_TEST" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
         <testclass name="libtestp_share2.PMU_CLK32K_TRIM">
             <propvalues>
-                <propvalue name="Measure_pinlist" value="" />
-                <propvalue name="WaitTime" value="" />
-                <propvalue name="SampleSize" value="" />
+                <propvalue name="Measure_pinlist" value="PMU_REFBP" />
+                <propvalue name="WaitTime" value="0.005" />
+                <propvalue name="SampleSize" value="4" />
             </propvalues>
         </testclass>
     </test>
@@ -226,20 +226,20 @@
         <testclass name="libtestp_share2.PMU_CAPLESS_LDO_TEST">
             <propvalues>
                 <propvalue name="Measure_pinlist" value="NFC_GPIO1," />
-                <propvalue name="SampleSize" value="" />
+                <propvalue name="SampleSize" value="3" />
                 <propvalue name="IForce" value="0" />
                 <propvalue name="IRange" value="1e-9" />
-                <propvalue name="Waittime" value="" />
+                <propvalue name="Waittime" value="5e-3" />
             </propvalues>
         </testclass>
     </test>
     <test name="PMU_SIMVCC_RON" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
         <testclass name="libtestp_share2.PMU_SIMVCC_RON">
             <propvalues>
-                <propvalue name="Measure_pinlist" value="" />
-                <propvalue name="WaitTime" value="" />
-                <propvalue name="SampleSize" value="" />
-                <propvalue name="IForce" value="" />
+                <propvalue name="Measure_pinlist" value="SIMVCC1,SIMVCC2,SIMVCC3," />
+                <propvalue name="WaitTime" value="0.001" />
+                <propvalue name="SampleSize" value="3" />
+                <propvalue name="IForce" value="100e-3" />
                 <propvalue name="IRange" value="" />
                 <propvalue name="IClampL" value="" />
                 <propvalue name="IClampH" value="" />

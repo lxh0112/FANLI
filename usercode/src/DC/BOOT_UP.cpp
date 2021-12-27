@@ -29,7 +29,7 @@ public:
     void execute(){
 					TheInst.DCVI().Power().Apply();
 					TheInst.Digital().Level().Apply();
-					TheInst.Digital().Timing().Apply();
+	//				TheInst.Digital().Timing().Apply();
 
 			        double hil[30],lowl[30];
 			        vector<string> Test_Item;

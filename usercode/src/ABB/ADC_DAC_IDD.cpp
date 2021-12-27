@@ -69,7 +69,7 @@ public:
 		int Test_number[30],Soft_Bin[30],Hard_Bin[30];
 //		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
 
-		TheInst.DCVS().Power().Apply(); //下发执行  DCVS  power pin上电
+		TheInst.DCVI().Power().Apply(); //下发执行  DCVI  power pin上电
 		TheInst.Digital().Level().Apply();//下发执行 DIO  pattern pin  level
 
     	vector<string> pinlist_tmp = split(pinlist,',');
@@ -80,26 +80,26 @@ public:
 
     	for(unsigned int i=0;i< pinlist_tmp.size();i++)
     	{
-			TheInst.DCVS().Pins(pinlist_tmp[i]).SetIRange(rangeSuite(irange_tmp[i]))
+			TheInst.DCVI().Pins(pinlist_tmp[i]).SetIRange(rangeSuite(irange_tmp[i]))
 													.SetIClampL(atof(iClampL_tmp[i].c_str()))
 													.SetIClampH(atof(iClampH_tmp[i].c_str()))
 													.Apply();
 
     	}
 
-		TheInst.DCVS().Pins(pinlist).SetMeasureMode(E_DC_MODE_MI)
+		TheInst.DCVI().Pins(pinlist).SetMeasureMode(E_DC_MODE_MI)
 											  .SetMeasureMethod(E_DC_METHOD_STATIC)
 											  .SetReadMode(E_DC_MODE_MEASURE)
 											  .SetMeasureOrder(E_DC_ORDER_SINGLE)
 											  .SetWaitTime(waittime)//chuanru
 											  .Measure();
 
-		PinArrayDouble Result1= TheInst.DCVS().Pins(pinlist).GetMeasureResults();
+		PinArrayDouble Result1= TheInst.DCVI().Pins(pinlist).GetMeasureResults();
 		for(unsigned int i=0;i< pinlist_tmp.size();i++){
 			TheSoft.Flow().TestLimit(pinlist_tmp[i],Result1,lowl[i], hil[i],Hard_Bin[i],Soft_Bin[i], Units[i], Test_Item[i], Test_number[i]);
 		}
 
-		TheInst.DCVS().Power().Apply();
+		TheInst.DCVI().Power().Apply();
     }
 };
 REGISTER_TESTCLASS("ADC_DAC_IDD",ADC_DAC_IDD)
