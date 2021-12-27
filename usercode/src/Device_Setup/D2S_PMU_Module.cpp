@@ -9,6 +9,13 @@
 
 using namespace PhxAPI;
 
+void BOOT_UP_PAmodule(){
+
+}
+void sleep_PAmodule(){
+
+}
+
 void bootUp_module() {
 
     //From SSI manual AON&CLDO Power Up sheet  version 1.3

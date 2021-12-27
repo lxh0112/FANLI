@@ -492,37 +492,57 @@
         </testclass>
     </test>
     <test name="NFC_SWP_S2_SWIO1" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="">
-            <propvalues />
+        <testclass name="libtestp_share2.NFC_SWP_S2SWIO1">
+            <propvalues>
+                <propvalue name="Measure_pinlist" value="NFC_SIM_SWIO2" />
+                <propvalue name="WaitTime" value="10e-3" />
+                <propvalue name="SampleSize" value="3" />
+                <propvalue name="VForce" value="" />
+            </propvalues>
         </testclass>
     </test>
     <test name="NFC_SWP_SWIO2" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="">
-            <propvalues />
+        <testclass name="libtestp_share2.NFC_SWP_SWIO2">
+            <propvalues>
+                <propvalue name="Measure_pinlist" value="NFC_SIM_SWIO2" />
+                <propvalue name="WaitTime" value="10e-3" />
+                <propvalue name="SampleSize" value="3" />
+                <propvalue name="VForce" value="" />
+            </propvalues>
         </testclass>
     </test>
     <test name="NFC_SWP_S1_SWIO3" type="Test" timing="SWIO1_S1_CAP" level="VIHLR_VOHLR_IOHLR" pattern="SWIO3_S1_CAP" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="">
-            <propvalues />
+        <testclass name="libtestp_share2.NFC_SWP_S1SWIO3">
+            <propvalues>
+                <propvalue name="Measure_pinlist" value="NFC_SIM_SWIO3" />
+                <propvalue name="WaitTime" value="10e-3" />
+                <propvalue name="SampleSize" value="3" />
+                <propvalue name="IForce" value="" />
+            </propvalues>
         </testclass>
     </test>
     <test name="NFC_SWP_S2_SWIO3" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="">
-            <propvalues />
+        <testclass name="libtestp_share2.NFC_SWP_S2SWIO3">
+            <propvalues>
+                <propvalue name="Measure_pinlist" value="NFC_SIM_SWIO2" />
+                <propvalue name="WaitTime" value="10e-3" />
+                <propvalue name="SampleSize" value="3" />
+                <propvalue name="VForce" value="" />
+            </propvalues>
         </testclass>
     </test>
     <test name="CMU_TEST_19p2M" type="Test" timing="RF_ADPLL_TEST" level="VIHLR_VOHLR_IOHLR" pattern="RF_ADPLL_TEST" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="libtestp_share2.BOOT_UP">
+        <testclass name="libtestp_share2.CMU_TEST_19p2M">
             <propvalues />
         </testclass>
     </test>
     <test name="ADPLL_TEST_27p12M" type="Test" timing="RF_ADPLL_TEST" level="VIHLR_VOHLR_IOHLR" pattern="RF_ADPLL_TEST" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="libtestp_share2.BOOT_UP">
+        <testclass name="libtestp_share2.ADPLL_TEST_27p12M">
             <propvalues />
         </testclass>
     </test>
     <test name="CMU_TEST_27p12M" type="Test" timing="RF_ADPLL_TEST" level="VIHLR_VOHLR_IOHLR" pattern="RF_ADPLL_TEST" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="libtestp_share2.BOOT_UP">
+        <testclass name="">
             <propvalues />
         </testclass>
     </test>
@@ -577,12 +597,12 @@
         </testclass>
     </test>
     <test name="BOOST_REG_SCAN" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="libtestp_share2.BOOT_UP">
+        <testclass name="libtestp_share2.BOOST_REG_SCAN">
             <propvalues />
         </testclass>
     </test>
     <test name="BOOST_REG_SCAN_ZERO" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="libtestp_share2.BOOT_UP">
+        <testclass name="libtestp_share2.BOOST_REG_SCAN_ZERO">
             <propvalues />
         </testclass>
     </test>
@@ -603,20 +623,25 @@
     </test>
     <test name="PMU_VBAT2VDDIO" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
         <testclass name="libtestp_share2.PMU_VBAT2VDDIO">
-            <propvalues />
+            <propvalues>
+                <propvalue name="Measure_pinlist" value="" />
+                <propvalue name="WaitTime" value="" />
+                <propvalue name="SampleSize" value="" />
+                <propvalue name="IForce" value="" />
+            </propvalues>
         </testclass>
     </test>
     <test name="XO_CMU_TEST" type="Test" timing="TCXO_CTRL_OFF" level="VIHLR_VOHLR_IOHLR" pattern="TCXO_CTRL_OFF" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="">
+        <testclass name="libtestp_share2.XO_CMU_TEST">
             <propvalues />
         </testclass>
     </test>
     <test name="PMU_IDD_OFF_VDDN_STA" type="Test" timing="TCXO_CTRL_OFF" level="VIHLR_VOHLR_IOHLR" pattern="TCXO_CTRL_OFF" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="libtestp_share2.PMU_IDD_OFF">
+        <testclass name="libtestp_share2.PMU_IDDOFFVDDNSTA">
             <propvalues>
-                <propvalue name="Measure_pinlist" value="gIDD_OFF" />
-                <propvalue name="WaitTime" value="0.08" />
-                <propvalue name="SampleSize" value="2" />
+                <propvalue name="Measure_pinlist" value="VDDIO,VBAT,BOOST_LX" />
+                <propvalue name="WaitTime" value="30e-3" />
+                <propvalue name="SampleSize" value="3" />
             </propvalues>
         </testclass>
     </test>

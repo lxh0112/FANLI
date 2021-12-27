@@ -1,1 +1,1057 @@
-Info: Nothing to build for UserCode
+20:08:03 **** Incremental Build of configuration Debug for project UserCode ****
+Info: Internal Builder is used for build
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\BOOST_POWERON.o" "..\\src\\DC\\BOOST_POWERON.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\BOOST_POWERON.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\BOOST_POWERON.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\DC\BOOST_POWERON.cpp: In member function 'virtual void BOOST_POWERON::execute()':
+..\src\DC\BOOST_POWERON.cpp:34:19: warning: unused variable 'hil' [-Wunused-variable]
+            double hil[30],lowl[30];
+                   ^~~
+..\src\DC\BOOST_POWERON.cpp:34:27: warning: unused variable 'lowl' [-Wunused-variable]
+            double hil[30],lowl[30];
+                           ^~~~
+..\src\DC\BOOST_POWERON.cpp:37:17: warning: unused variable 'Test_number' [-Wunused-variable]
+            int  Test_number[30];
+                 ^~~~~~~~~~~
+..\src\DC\BOOST_POWERON.cpp:38:16: warning: unused variable 'Soft_Bin' [-Wunused-variable]
+            int Soft_Bin[30];
+                ^~~~~~~~
+..\src\DC\BOOST_POWERON.cpp:39:10: warning: unused variable 'Hard_Bin' [-Wunused-variable]
+      int Hard_Bin[30];
+          ^~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\CMU_TCXO_SSI.o" "..\\src\\DC\\CMU_TCXO_SSI.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\TypeDef/CCRfsgTypeDef.h:12,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCSIGNAL.h:11,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCRFMIX.h:10,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08FAPI.h:11,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08F.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/D2S_PMU_Module.h:12,
+                 from ..\src\DC\CMU_TCXO_SSI.cpp:13:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\CMU_TCXO_SSI.cpp:12:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\DC\CMU_TCXO_SSI.cpp: In member function 'virtual void CMU_TCXO_SSI::execute()':
+..\src\DC\CMU_TCXO_SSI.cpp:132:14: warning: unused variable 'GetValue1' [-Wunused-variable]
+      double *GetValue1;
+              ^~~~~~~~~
+..\src\DC\CMU_TCXO_SSI.cpp:133:14: warning: unused variable 'GetValue2' [-Wunused-variable]
+      double *GetValue2;
+              ^~~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_TX_TYPEB_212kbps_MI_12.o" "..\\src\\AD16\\NFC_TX_TYPEB_212kbps_MI_12.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_TX_TYPEB_212kbps_MI_12.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_TX_TYPEB_212kbps_MI_12.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\AD16\NFC_TX_TYPEB_212kbps_MI_12.cpp: In member function 'virtual void NFC_TX_TYPEB_212kbps_MI_12::execute()':
+..\src\AD16\NFC_TX_TYPEB_212kbps_MI_12.cpp:34:19: warning: unused variable 'hil' [-Wunused-variable]
+            double hil[30],lowl[30];
+                   ^~~
+..\src\AD16\NFC_TX_TYPEB_212kbps_MI_12.cpp:34:27: warning: unused variable 'lowl' [-Wunused-variable]
+            double hil[30],lowl[30];
+                           ^~~~
+..\src\AD16\NFC_TX_TYPEB_212kbps_MI_12.cpp:37:17: warning: unused variable 'Test_number' [-Wunused-variable]
+            int  Test_number[30];
+                 ^~~~~~~~~~~
+..\src\AD16\NFC_TX_TYPEB_212kbps_MI_12.cpp:38:16: warning: unused variable 'Soft_Bin' [-Wunused-variable]
+            int Soft_Bin[30];
+                ^~~~~~~~
+..\src\AD16\NFC_TX_TYPEB_212kbps_MI_12.cpp:39:10: warning: unused variable 'Hard_Bin' [-Wunused-variable]
+      int Hard_Bin[30];
+          ^~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_SWP_S1_SWIO.o" "..\\src\\AD16\\NFC_SWP_S1_SWIO.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_SWP_S1_SWIO.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_SWP_S1_SWIO.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\MEMORY_TEST MODE.o" "..\\src\\DC\\MEMORY_TEST MODE.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\MEMORY_TEST MODE.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\MEMORY_TEST MODE.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_RX_COURSE_GAIN.o" "..\\src\\AD16\\NFC_RX_COURSE_GAIN.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_RX_COURSE_GAIN.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_RX_COURSE_GAIN.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\AD16\NFC_RX_COURSE_GAIN.cpp: In member function 'virtual void NFC_RX_COURSE_GAIN::execute()':
+..\src\AD16\NFC_RX_COURSE_GAIN.cpp:34:19: warning: unused variable 'hil' [-Wunused-variable]
+            double hil[30],lowl[30];
+                   ^~~
+..\src\AD16\NFC_RX_COURSE_GAIN.cpp:34:27: warning: unused variable 'lowl' [-Wunused-variable]
+            double hil[30],lowl[30];
+                           ^~~~
+..\src\AD16\NFC_RX_COURSE_GAIN.cpp:37:17: warning: unused variable 'Test_number' [-Wunused-variable]
+            int  Test_number[30];
+                 ^~~~~~~~~~~
+..\src\AD16\NFC_RX_COURSE_GAIN.cpp:38:16: warning: unused variable 'Soft_Bin' [-Wunused-variable]
+            int Soft_Bin[30];
+                ^~~~~~~~
+..\src\AD16\NFC_RX_COURSE_GAIN.cpp:39:10: warning: unused variable 'Hard_Bin' [-Wunused-variable]
+      int Hard_Bin[30];
+          ^~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\TSENSOR_TEST.o" "..\\src\\DC\\TSENSOR_TEST.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\TSENSOR_TEST.cpp:8:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
+                 from ..\src\DC\TSENSOR_TEST.cpp:8:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_TX_TYPEF_424kbps_MI12.o" "..\\src\\AD16\\NFC_TX_TYPEF_424kbps_MI12.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_TX_TYPEF_424kbps_MI12.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_TX_TYPEF_424kbps_MI12.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\AD16\NFC_TX_TYPEF_424kbps_MI12.cpp: In member function 'virtual void NFC_TX_TYPEF_424kbps_MI12::execute()':
+..\src\AD16\NFC_TX_TYPEF_424kbps_MI12.cpp:34:19: warning: unused variable 'hil' [-Wunused-variable]
+            double hil[30],lowl[30];
+                   ^~~
+..\src\AD16\NFC_TX_TYPEF_424kbps_MI12.cpp:34:27: warning: unused variable 'lowl' [-Wunused-variable]
+            double hil[30],lowl[30];
+                           ^~~~
+..\src\AD16\NFC_TX_TYPEF_424kbps_MI12.cpp:37:17: warning: unused variable 'Test_number' [-Wunused-variable]
+            int  Test_number[30];
+                 ^~~~~~~~~~~
+..\src\AD16\NFC_TX_TYPEF_424kbps_MI12.cpp:38:16: warning: unused variable 'Soft_Bin' [-Wunused-variable]
+            int Soft_Bin[30];
+                ^~~~~~~~
+..\src\AD16\NFC_TX_TYPEF_424kbps_MI12.cpp:39:10: warning: unused variable 'Hard_Bin' [-Wunused-variable]
+      int Hard_Bin[30];
+          ^~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_TX_TYPEA_106kbps_MI_100.o" "..\\src\\AD16\\NFC_TX_TYPEA_106kbps_MI_100.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_TX_TYPEA_106kbps_MI_100.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_TX_TYPEA_106kbps_MI_100.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\AD16\NFC_TX_TYPEA_106kbps_MI_100.cpp: In member function 'virtual void NFC_TX_TYPEA_106kbps_MI_100::execute()':
+..\src\AD16\NFC_TX_TYPEA_106kbps_MI_100.cpp:34:19: warning: unused variable 'hil' [-Wunused-variable]
+            double hil[30],lowl[30];
+                   ^~~
+..\src\AD16\NFC_TX_TYPEA_106kbps_MI_100.cpp:34:27: warning: unused variable 'lowl' [-Wunused-variable]
+            double hil[30],lowl[30];
+                           ^~~~
+..\src\AD16\NFC_TX_TYPEA_106kbps_MI_100.cpp:37:17: warning: unused variable 'Test_number' [-Wunused-variable]
+            int  Test_number[30];
+                 ^~~~~~~~~~~
+..\src\AD16\NFC_TX_TYPEA_106kbps_MI_100.cpp:38:16: warning: unused variable 'Soft_Bin' [-Wunused-variable]
+            int Soft_Bin[30];
+                ^~~~~~~~
+..\src\AD16\NFC_TX_TYPEA_106kbps_MI_100.cpp:39:10: warning: unused variable 'Hard_Bin' [-Wunused-variable]
+      int Hard_Bin[30];
+          ^~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\Reader_Init.o" "..\\src\\AD16\\Reader_Init.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\Reader_Init.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\Reader_Init.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\AD16\Reader_Init.cpp: In member function 'virtual void Reader_Init::execute()':
+..\src\AD16\Reader_Init.cpp:34:19: warning: unused variable 'hil' [-Wunused-variable]
+            double hil[30],lowl[30];
+                   ^~~
+..\src\AD16\Reader_Init.cpp:34:27: warning: unused variable 'lowl' [-Wunused-variable]
+            double hil[30],lowl[30];
+                           ^~~~
+..\src\AD16\Reader_Init.cpp:37:17: warning: unused variable 'Test_number' [-Wunused-variable]
+            int  Test_number[30];
+                 ^~~~~~~~~~~
+..\src\AD16\Reader_Init.cpp:38:16: warning: unused variable 'Soft_Bin' [-Wunused-variable]
+            int Soft_Bin[30];
+                ^~~~~~~~
+..\src\AD16\Reader_Init.cpp:39:10: warning: unused variable 'Hard_Bin' [-Wunused-variable]
+      int Hard_Bin[30];
+          ^~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_FIELD_CLK_EXTRA.o" "..\\src\\AD16\\NFC_FIELD_CLK_EXTRA.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_FIELD_CLK_EXTRA.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_FIELD_CLK_EXTRA.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\AD16\NFC_FIELD_CLK_EXTRA.cpp: In member function 'virtual void NFC_FIELD_CLK_EXTRA::execute()':
+..\src\AD16\NFC_FIELD_CLK_EXTRA.cpp:34:19: warning: unused variable 'hil' [-Wunused-variable]
+            double hil[30],lowl[30];
+                   ^~~
+..\src\AD16\NFC_FIELD_CLK_EXTRA.cpp:34:27: warning: unused variable 'lowl' [-Wunused-variable]
+            double hil[30],lowl[30];
+                           ^~~~
+..\src\AD16\NFC_FIELD_CLK_EXTRA.cpp:37:17: warning: unused variable 'Test_number' [-Wunused-variable]
+            int  Test_number[30];
+                 ^~~~~~~~~~~
+..\src\AD16\NFC_FIELD_CLK_EXTRA.cpp:38:16: warning: unused variable 'Soft_Bin' [-Wunused-variable]
+            int Soft_Bin[30];
+                ^~~~~~~~
+..\src\AD16\NFC_FIELD_CLK_EXTRA.cpp:39:10: warning: unused variable 'Hard_Bin' [-Wunused-variable]
+      int Hard_Bin[30];
+          ^~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_TX_MODE.o" "..\\src\\AD16\\NFC_TX_MODE.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_TX_MODE.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_TX_MODE.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_TX_TYPEB_848kbps_MI12.o" "..\\src\\AD16\\NFC_TX_TYPEB_848kbps_MI12.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_TX_TYPEB_848kbps_MI12.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_TX_TYPEB_848kbps_MI12.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\AD16\NFC_TX_TYPEB_848kbps_MI12.cpp: In member function 'virtual void NFC_TX_TYPEB_848kbps_MI12::execute()':
+..\src\AD16\NFC_TX_TYPEB_848kbps_MI12.cpp:34:19: warning: unused variable 'hil' [-Wunused-variable]
+            double hil[30],lowl[30];
+                   ^~~
+..\src\AD16\NFC_TX_TYPEB_848kbps_MI12.cpp:34:27: warning: unused variable 'lowl' [-Wunused-variable]
+            double hil[30],lowl[30];
+                           ^~~~
+..\src\AD16\NFC_TX_TYPEB_848kbps_MI12.cpp:37:17: warning: unused variable 'Test_number' [-Wunused-variable]
+            int  Test_number[30];
+                 ^~~~~~~~~~~
+..\src\AD16\NFC_TX_TYPEB_848kbps_MI12.cpp:38:16: warning: unused variable 'Soft_Bin' [-Wunused-variable]
+            int Soft_Bin[30];
+                ^~~~~~~~
+..\src\AD16\NFC_TX_TYPEB_848kbps_MI12.cpp:39:10: warning: unused variable 'Hard_Bin' [-Wunused-variable]
+      int Hard_Bin[30];
+          ^~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_TX_IMPEDENCE_MIN.o" "..\\src\\AD16\\NFC_TX_IMPEDENCE_MIN.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_TX_IMPEDENCE_MIN.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_TX_IMPEDENCE_MIN.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\BOOST_BOOTUP.o" "..\\src\\DC\\BOOST_BOOTUP.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\BOOST_BOOTUP.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\BOOST_BOOTUP.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\BOOST_VOUTL.o" "..\\src\\DC\\BOOST_VOUTL.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\BOOST_VOUTL.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\BOOST_VOUTL.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_SWP_S2_SWIO1.o" "..\\src\\AD16\\NFC_SWP_S2_SWIO1.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_SWP_S2_SWIO1.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_SWP_S2_SWIO1.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_SIMVCC_RON.o" "..\\src\\DC\\PMU_SIMVCC_RON.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\PMU_SIMVCC_RON.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\PMU_SIMVCC_RON.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_SWP_S1_SWIO3.o" "..\\src\\AD16\\NFC_SWP_S1_SWIO3.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_SWP_S1_SWIO3.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_SWP_S1_SWIO3.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_TX_IMPEDENCE_MAX.o" "..\\src\\AD16\\NFC_TX_IMPEDENCE_MAX.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_TX_IMPEDENCE_MAX.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_TX_IMPEDENCE_MAX.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\BOOST_VOUT_TRIM.o" "..\\src\\DC\\BOOST_VOUT_TRIM.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\BOOST_VOUT_TRIM.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\BOOST_VOUT_TRIM.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\BOOST_RC_250K_TRIM.o" "..\\src\\DC\\BOOST_RC_250K_TRIM.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\BOOST_RC_250K_TRIM.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\BOOST_RC_250K_TRIM.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\CMU_TEST.o" "..\\src\\DC\\CMU_TEST.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\TypeDef/CCRfsgTypeDef.h:12,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCSIGNAL.h:11,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCRFMIX.h:10,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08FAPI.h:11,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08F.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/D2S_PMU_Module.h:12,
+                 from ..\src\DC\CMU_TEST.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\CMU_TEST.cpp:16:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\DC\CMU_TEST.cpp: In member function 'virtual void CMU_TEST::execute()':
+..\src\DC\CMU_TEST.cpp:136:15: warning: unused variable 'GetValue1' [-Wunused-variable]
+       double *GetValue1;
+               ^~~~~~~~~
+..\src\DC\CMU_TEST.cpp:137:15: warning: unused variable 'GetValue2' [-Wunused-variable]
+       double *GetValue2;
+               ^~~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_SWP_SWIO2.o" "..\\src\\AD16\\NFC_SWP_SWIO2.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_SWP_SWIO2.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_SWP_SWIO2.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\Device_Setup\\D2S_PMU_Module.o" "..\\src\\Device_Setup\\D2S_PMU_Module.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\TypeDef/CCRfsgTypeDef.h:12,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCSIGNAL.h:11,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCRFMIX.h:10,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08FAPI.h:11,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCS08F.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/D2S_PMU_Module.h:12,
+                 from ..\src\Device_Setup\D2S_PMU_Module.cpp:3:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\Device_Setup\D2S_PMU_Module.cpp:2:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\BOOST_REG_SCAN_ZERO.o" "..\\src\\AD16\\BOOST_REG_SCAN_ZERO.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\BOOST_REG_SCAN_ZERO.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\BOOST_REG_SCAN_ZERO.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\PMU_IDD_OFF_VDDN_STA.o" "..\\src\\AD16\\PMU_IDD_OFF_VDDN_STA.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\PMU_IDD_OFF_VDDN_STA.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\PMU_IDD_OFF_VDDN_STA.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\SSI_IO_TEST.o" "..\\src\\DC\\SSI_IO_TEST.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\SSI_IO_TEST.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\SSI_IO_TEST.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\BOOST_IDD_IDLE.o" "..\\src\\DC\\BOOST_IDD_IDLE.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\BOOST_IDD_IDLE.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\BOOST_IDD_IDLE.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\BOOST_REG_SCAN.o" "..\\src\\AD16\\BOOST_REG_SCAN.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\BOOST_REG_SCAN.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\BOOST_REG_SCAN.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_RX_SNR_THD3.o" "..\\src\\AD16\\NFC_RX_SNR_THD3.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_RX_SNR_THD3.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_RX_SNR_THD3.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\AD16\NFC_RX_SNR_THD3.cpp: In member function 'virtual void NFC_RX_SNR_THD3::execute()':
+..\src\AD16\NFC_RX_SNR_THD3.cpp:34:19: warning: unused variable 'hil' [-Wunused-variable]
+            double hil[30],lowl[30];
+                   ^~~
+..\src\AD16\NFC_RX_SNR_THD3.cpp:34:27: warning: unused variable 'lowl' [-Wunused-variable]
+            double hil[30],lowl[30];
+                           ^~~~
+..\src\AD16\NFC_RX_SNR_THD3.cpp:37:17: warning: unused variable 'Test_number' [-Wunused-variable]
+            int  Test_number[30];
+                 ^~~~~~~~~~~
+..\src\AD16\NFC_RX_SNR_THD3.cpp:38:16: warning: unused variable 'Soft_Bin' [-Wunused-variable]
+            int Soft_Bin[30];
+                ^~~~~~~~
+..\src\AD16\NFC_RX_SNR_THD3.cpp:39:10: warning: unused variable 'Hard_Bin' [-Wunused-variable]
+      int Hard_Bin[30];
+          ^~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_RESET_MODE.o" "..\\src\\AD16\\NFC_RESET_MODE.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_RESET_MODE.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_RESET_MODE.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_TX_IDD_POWER.o" "..\\src\\AD16\\NFC_TX_IDD_POWER.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_TX_IDD_POWER.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_TX_IDD_POWER.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\BOOST_PWRTHRU.o" "..\\src\\DC\\BOOST_PWRTHRU.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\BOOST_PWRTHRU.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\BOOST_PWRTHRU.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_TAG_NCDR.o" "..\\src\\AD16\\NFC_TAG_NCDR.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_TAG_NCDR.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_TAG_NCDR.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\AD16\NFC_TAG_NCDR.cpp: In member function 'virtual void NFC_TAG_NCDR::execute()':
+..\src\AD16\NFC_TAG_NCDR.cpp:34:19: warning: unused variable 'hil' [-Wunused-variable]
+            double hil[30],lowl[30];
+                   ^~~
+..\src\AD16\NFC_TAG_NCDR.cpp:34:27: warning: unused variable 'lowl' [-Wunused-variable]
+            double hil[30],lowl[30];
+                           ^~~~
+..\src\AD16\NFC_TAG_NCDR.cpp:37:17: warning: unused variable 'Test_number' [-Wunused-variable]
+            int  Test_number[30];
+                 ^~~~~~~~~~~
+..\src\AD16\NFC_TAG_NCDR.cpp:38:16: warning: unused variable 'Soft_Bin' [-Wunused-variable]
+            int Soft_Bin[30];
+                ^~~~~~~~
+..\src\AD16\NFC_TAG_NCDR.cpp:39:10: warning: unused variable 'Hard_Bin' [-Wunused-variable]
+      int Hard_Bin[30];
+          ^~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\BOOT_UP.o" "..\\src\\DC\\BOOT_UP.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\BOOT_UP.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\BOOT_UP.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_TX_TYPEF_212kbps_MI12.o" "..\\src\\AD16\\NFC_TX_TYPEF_212kbps_MI12.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_TX_TYPEF_212kbps_MI12.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_TX_TYPEF_212kbps_MI12.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\AD16\NFC_TX_TYPEF_212kbps_MI12.cpp: In member function 'virtual void NFC_TX_TYPEF_212kbps_MI12::execute()':
+..\src\AD16\NFC_TX_TYPEF_212kbps_MI12.cpp:34:19: warning: unused variable 'hil' [-Wunused-variable]
+            double hil[30],lowl[30];
+                   ^~~
+..\src\AD16\NFC_TX_TYPEF_212kbps_MI12.cpp:34:27: warning: unused variable 'lowl' [-Wunused-variable]
+            double hil[30],lowl[30];
+                           ^~~~
+..\src\AD16\NFC_TX_TYPEF_212kbps_MI12.cpp:37:17: warning: unused variable 'Test_number' [-Wunused-variable]
+            int  Test_number[30];
+                 ^~~~~~~~~~~
+..\src\AD16\NFC_TX_TYPEF_212kbps_MI12.cpp:38:16: warning: unused variable 'Soft_Bin' [-Wunused-variable]
+            int Soft_Bin[30];
+                ^~~~~~~~
+..\src\AD16\NFC_TX_TYPEF_212kbps_MI12.cpp:39:10: warning: unused variable 'Hard_Bin' [-Wunused-variable]
+      int Hard_Bin[30];
+          ^~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_IREF_TRIM.o" "..\\src\\DC\\PMU_IREF_TRIM.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\PMU_IREF_TRIM.cpp:8:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
+                 from ..\src\DC\PMU_IREF_TRIM.cpp:8:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_RX_FINE_GAIN.o" "..\\src\\AD16\\NFC_RX_FINE_GAIN.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_RX_FINE_GAIN.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_RX_FINE_GAIN.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\AD16\NFC_RX_FINE_GAIN.cpp: In member function 'virtual void NFC_RX_FINE_GAIN::execute()':
+..\src\AD16\NFC_RX_FINE_GAIN.cpp:34:19: warning: unused variable 'hil' [-Wunused-variable]
+            double hil[30],lowl[30];
+                   ^~~
+..\src\AD16\NFC_RX_FINE_GAIN.cpp:34:27: warning: unused variable 'lowl' [-Wunused-variable]
+            double hil[30],lowl[30];
+                           ^~~~
+..\src\AD16\NFC_RX_FINE_GAIN.cpp:37:17: warning: unused variable 'Test_number' [-Wunused-variable]
+            int  Test_number[30];
+                 ^~~~~~~~~~~
+..\src\AD16\NFC_RX_FINE_GAIN.cpp:38:16: warning: unused variable 'Soft_Bin' [-Wunused-variable]
+            int Soft_Bin[30];
+                ^~~~~~~~
+..\src\AD16\NFC_RX_FINE_GAIN.cpp:39:10: warning: unused variable 'Hard_Bin' [-Wunused-variable]
+      int Hard_Bin[30];
+          ^~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_VREF_TRIM.o" "..\\src\\DC\\PMU_VREF_TRIM.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\PMU_VREF_TRIM.cpp:8:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
+                 from ..\src\DC\PMU_VREF_TRIM.cpp:8:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_SWP_S2_SWIO3.o" "..\\src\\AD16\\NFC_SWP_S2_SWIO3.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_SWP_S2_SWIO3.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_SWP_S2_SWIO3.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\PMU_VBAT2VDDIO.o" "..\\src\\AD16\\PMU_VBAT2VDDIO.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\PMU_VBAT2VDDIO.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\PMU_VBAT2VDDIO.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_CAPLESSLDO_TEST.o" "..\\src\\DC\\PMU_CAPLESSLDO_TEST.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\PMU_CAPLESSLDO_TEST.cpp:7:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:9,
+                 from ..\src\DC\PMU_CAPLESSLDO_TEST.cpp:7:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_TAG_MODE.o" "..\\src\\AD16\\NFC_TAG_MODE.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_TAG_MODE.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_TAG_MODE.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\AD16\NFC_TAG_MODE.cpp: In member function 'virtual void NFC_TAG_MODE::execute()':
+..\src\AD16\NFC_TAG_MODE.cpp:34:19: warning: unused variable 'hil' [-Wunused-variable]
+            double hil[30],lowl[30];
+                   ^~~
+..\src\AD16\NFC_TAG_MODE.cpp:34:27: warning: unused variable 'lowl' [-Wunused-variable]
+            double hil[30],lowl[30];
+                           ^~~~
+..\src\AD16\NFC_TAG_MODE.cpp:37:17: warning: unused variable 'Test_number' [-Wunused-variable]
+            int  Test_number[30];
+                 ^~~~~~~~~~~
+..\src\AD16\NFC_TAG_MODE.cpp:38:16: warning: unused variable 'Soft_Bin' [-Wunused-variable]
+            int Soft_Bin[30];
+                ^~~~~~~~
+..\src\AD16\NFC_TAG_MODE.cpp:39:10: warning: unused variable 'Hard_Bin' [-Wunused-variable]
+      int Hard_Bin[30];
+          ^~~~~~~~
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\PMU_POWERON.o" "..\\src\\DC\\PMU_POWERON.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\PMU_POWERON.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\PMU_POWERON.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+..\src\DC\PMU_POWERON.cpp: In member function 'virtual void PMU_POWERON::execute()':
+..\src\DC\PMU_POWERON.cpp:46:134: warning: 'Test_number[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit("SSI_DATA", capture_data, lowl[0], hil[0],Hard_Bin[0] ,Soft_Bin[0],Units[0], Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                                                                         ~~~~~~~~~~~~~^
+..\src\DC\PMU_POWERON.cpp:46:96: warning: 'Soft_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit("SSI_DATA", capture_data, lowl[0], hil[0],Hard_Bin[0] ,Soft_Bin[0],Units[0], Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                                      ~~~~~~~~~~^
+..\src\DC\PMU_POWERON.cpp:46:83: warning: 'Hard_Bin[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit("SSI_DATA", capture_data, lowl[0], hil[0],Hard_Bin[0] ,Soft_Bin[0],Units[0], Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+                                                                         ~~~~~~~~~~^
+..\src\DC\PMU_POWERON.cpp:46:30: warning: 'hil[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+      TheSoft.Flow().TestLimit("SSI_DATA", capture_data, lowl[0], hil[0],Hard_Bin[0] ,Soft_Bin[0],Units[0], Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
+      ~~~~~~~~~~~~~~~~~~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+..\src\DC\PMU_POWERON.cpp:46:30: warning: 'lowl[0]' may be used uninitialized in this function [-Wmaybe-uninitialized]
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\DC\\BOOST_IDD_OFF.o" "..\\src\\DC\\BOOST_IDD_OFF.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\DC\BOOST_IDD_OFF.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\DC\BOOST_IDD_OFF.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ -std=c++17 "-IC:\\PhoenixSys\\bin\\include" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\d2s" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\efuse" "-IE:\\hisilicon program\\FANLI_TOTAL\\FANLI\\UserCode\\include\\test" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\GIFA" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\TypeDef" "-IC:\\PhoenixSys\\bin\\include\\TheInst\\RF\\VISA" -O0 -g3 -Wall -c -fmessage-length=0 -o "src\\AD16\\NFC_FIELD_DET.o" "..\\src\\AD16\\NFC_FIELD_DET.cpp" 
+In file included from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccvisa.h:34,
+                 from C:\PhoenixSys\bin\include\TheInst\RF\VISA/ccivi.h:19,
+                 from C:\PhoenixSys\bin\include\TheInst\RF/CCTesterDef.h:12,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCSiteType_Org.h:7,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/CCWaveformsData.h:6,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\test/Globle_Var.h:10,
+                 from ..\src\AD16\NFC_FIELD_DET.cpp:17:
+C:\PhoenixSys\bin\include\TheInst\RF\VISA/cctype.h:22: warning: "DLLAPI" redefined
+ #define DLLAPI
+ 
+In file included from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2s.h:11,
+                 from E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sProtocolSSI.h:10,
+                 from ..\src\AD16\NFC_FIELD_DET.cpp:15:
+E:\hisilicon program\FANLI_TOTAL\FANLI\UserCode\include\d2s/d2sStructDef.h:7: note: this is the location of the previous definition
+ #define DLLAPI __declspec(dllexport)
+ 
+g++ "-L..\\lib" "-LC:\\PhoenixSys\\bin" -shared -o libtestp_share2.dll "src\\ABB\\ADC_DAC_IDD.o" "src\\AD16\\ADPLL_TEST.o" "src\\AD16\\ADPLL_TEST_27p12M.o" "src\\AD16\\BOOST_REG_SCAN.o" "src\\AD16\\BOOST_REG_SCAN_ZERO.o" "src\\AD16\\CMU_TEST_19p2M.o" "src\\AD16\\EFUSE_FRC_BST.o" "src\\AD16\\NFC_ADC_108M.o" "src\\AD16\\NFC_DAC_216M.o" "src\\AD16\\NFC_FIELD_CLK_EXTRA.o" "src\\AD16\\NFC_FIELD_DET.o" "src\\AD16\\NFC_RESET_MODE.o" "src\\AD16\\NFC_RX_COURSE_GAIN.o" "src\\AD16\\NFC_RX_Driv_Invcom.o" "src\\AD16\\NFC_RX_FINE_GAIN.o" "src\\AD16\\NFC_RX_SNR_THD3.o" "src\\AD16\\NFC_SWP_S1_SWIO.o" "src\\AD16\\NFC_SWP_S1_SWIO3.o" "src\\AD16\\NFC_SWP_S2_SWIO1.o" "src\\AD16\\NFC_SWP_S2_SWIO3.o" "src\\AD16\\NFC_SWP_SWIO2.o" "src\\AD16\\NFC_TAG_CDR.o" "src\\AD16\\NFC_TAG_MODE.o" "src\\AD16\\NFC_TAG_NCDR.o" "src\\AD16\\NFC_TX_IDD_POWER.o" "src\\AD16\\NFC_TX_IMPEDENCE_MAX.o" "src\\AD16\\NFC_TX_IMPEDENCE_MIN.o" "src\\AD16\\NFC_TX_MODE.o" "src\\AD16\\NFC_TX_TYPEA_106kbps_MI_100.o" "src\\AD16\\NFC_TX_TYPEB_212kbps_MI_12.o" "src\\AD16\\NFC_TX_TYPEB_848kbps_MI12.o" "src\\AD16\\NFC_TX_TYPEF_212kbps_MI12.o" "src\\AD16\\NFC_TX_TYPEF_424kbps_MI12.o" "src\\AD16\\PMU_IDD_OFF_VDDN_STA.o" "src\\AD16\\PMU_VBAT2VDDIO.o" "src\\AD16\\Reader_Init.o" "src\\AD16\\Reader_RX_IDD.o" "src\\AD16\\Reader_RX_Init.o" "src\\AD16\\XO_CMU_TEST.o" "src\\AD16\\loadFW.o" "src\\Common\\Basic_00_PowerShort.o" "src\\Common\\Basic_01_Functional.o" "src\\Common\\Basic_02_OS_VDD_VSS_PPMU.o" "src\\Common\\CBBLimits.o" "src\\Common\\CCWaveformsData.o" "src\\Common\\CPP_Utility.o" "src\\Common\\Globle_Var.o" "src\\Common\\Hbin_Check.o" "src\\DC\\BOOST_BOOTUP.o" "src\\DC\\BOOST_IDD_IDLE.o" "src\\DC\\BOOST_IDD_OFF.o" "src\\DC\\BOOST_OSC_TRIM.o" "src\\DC\\BOOST_POWERON.o" "src\\DC\\BOOST_PWRTHRU.o" "src\\DC\\BOOST_RC_250K_TRIM.o" "src\\DC\\BOOST_VOUTH.o" "src\\DC\\BOOST_VOUTHP.o" "src\\DC\\BOOST_VOUTL.o" "src\\DC\\BOOST_VOUT_TRIM.o" "src\\DC\\BOOT_UP.o" "src\\DC\\Basic_04_DC_IDDQ_Measure.o" "src\\DC\\CMU_TCXO_SSI.o" "src\\DC\\CMU_TEST.o" "src\\DC\\DC_IIHL_VDDH.o" "src\\DC\\DC_IOZHL_3V3_VDDH.o" "src\\DC\\DFT_MODE.o" "src\\DC\\EFUSE_IRC_BST.o" "src\\DC\\MEMORY_TEST MODE.o" "src\\DC\\NFC_limiter.o" "src\\DC\\PMU_CAPLESSLDO_TEST.o" "src\\DC\\PMU_CLK20M_TRIM.o" "src\\DC\\PMU_CLK32K_TRIM.o" "src\\DC\\PMU_IDD_EC0.o" "src\\DC\\PMU_IDD_OFF_VDDH.o" "src\\DC\\PMU_IDD_SLEEP.o" "src\\DC\\PMU_IREF_TRIM.o" "src\\DC\\PMU_LDO_VDDH.o" "src\\DC\\PMU_LDO_VDDL.o" "src\\DC\\PMU_POWERON.o" "src\\DC\\PMU_SIMVCC_RON.o" "src\\DC\\PMU_VREF_TRIM.o" "src\\DC\\PowerOFF.o" "src\\DC\\Power_OSD.o" "src\\DC\\SSI_IO_TEST.o" "src\\DC\\SSI_MODE.o" "src\\DC\\TSENSOR_TEST.o" "src\\Device_Setup\\D2S_PMU_Module.o" "src\\Device_Setup\\DSP_test_ABB.o" "src\\d2s\\MD5.o" "src\\d2s\\PatternManager.o" "src\\d2s\\d2s.o" -lTestClass -lExcel -lExcelOprt -llibCCTimer -lAPIDLL -llibCCVSTDriver -llibCCDSPALG 
+xcopy libtestp_share2.dll "..\\..\\lib\\/y" 
+E:libtestp_share2.dll
+复制了 1 个文件
+
+20:09:13 Build Finished. 0 errors, 121 warnings. (took 1m:9s.876ms)
+
