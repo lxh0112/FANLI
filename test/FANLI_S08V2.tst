@@ -539,8 +539,13 @@
         </testclass>
     </test>
     <test name="NFC_SWP_S1_SWIO1" type="Test" timing="SWIO1_S1_CAP" level="VIHLR_VOHLR_IOHLR" pattern="SWIO1_S1_CAP" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="libtestp_share2.NFC_SWP_S1_SWIO">
-            <propvalues />
+        <testclass name="libtestp_share2.NFC_SWP_S1SWIO">
+            <propvalues>
+                <propvalue name="Measure_pinlist" value="NFC_SIM_SWIO1" />
+                <propvalue name="WaitTime" value="10e-3" />
+                <propvalue name="SampleSize" value="3" />
+                <propvalue name="IForce" value="" />
+            </propvalues>
         </testclass>
     </test>
     <test name="NFC_SWP_S2_SWIO1" type="Test" timing="" level="VIHLR_VOHLR_IOHLR" pattern="" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
@@ -594,17 +599,17 @@
         </testclass>
     </test>
     <test name="CMU_TEST_27p12M" type="Test" timing="RF_ADPLL_TEST" level="VIHLR_VOHLR_IOHLR" pattern="RF_ADPLL_TEST" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="">
+        <testclass name="libtestp_share2.CMU_TEST_27p12M">
             <propvalues />
         </testclass>
     </test>
     <test name="ADPLL_TEST_19p2M" type="Test" timing="RF_ADPLL_TEST" level="VIHLR_VOHLR_IOHLR" pattern="RF_ADPLL_TEST" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="libtestp_share2.BOOT_UP">
+        <testclass name="libtestp_share2.ADPLL_TEST_19p2M">
             <propvalues />
         </testclass>
     </test>
     <test name="CMU_TEST_38p4M" type="Test" timing="RF_ADPLL_TEST" level="VIHLR_VOHLR_IOHLR" pattern="RF_ADPLL_TEST" power="VDDN_VIHLR_VOHLR_IOHLR_TIM_NFC" comment="">
-        <testclass name="libtestp_share2.BOOT_UP">
+        <testclass name="libtestp_share2.CMU_TEST_38p4M">
             <propvalues />
         </testclass>
     </test>
