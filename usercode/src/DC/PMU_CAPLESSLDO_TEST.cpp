@@ -70,7 +70,7 @@ public:
 			TheInst.PPMU().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_FI_MV)
 											.SetIForce(iforce)
 											.SetIForce(irange)
-											  .SetMeasureOrder(E_MEASURE_ODER_GROUP)
+											  .SetMeasureOrder(E_MEASURE_ODER_SINGLE)
 											  .SetMeasureType(E_MEASURE)
 											  .SetSampleSize(samplesize)
 											  .SetWaitTime(waittime)
