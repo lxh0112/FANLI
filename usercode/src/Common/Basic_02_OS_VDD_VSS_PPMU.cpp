@@ -41,6 +41,12 @@ public:
 		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
 
 		TheInst.DCVI().Power().Apply();
+		TheInst.Digital().Level().Apply();
+		TheInst.Digital().Timing().Apply();
+		TheInst.Digital().PatEng().SetupMCFData();
+		TheInst.Digital().PatEng().SetFailMode(PhxAPI::E_SET_HIL_MODE);
+		TheInst.Digital().Pattern().Run();
+
 		TheInst.PPMU().Pins(pinlist).SetClear();
 		TheInst.PPMU().Pins(pinlist).SetMeasureType(PhxAPI::E_MEASURE)
 									.SetVClampL(vclampl)

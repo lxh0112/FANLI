@@ -9,8 +9,8 @@
         <testclass name="libtestp_share2.Basic_02_OS_VDD_VSS_PPMU">
             <propvalues>
                 <propvalue name="Measure_pinlist" value="gOS,gOS_M," />
-                <propvalue name="IForce" value="" />
-                <propvalue name="Range" value="" />
+                <propvalue name="IForce" value="0.0001" />
+                <propvalue name="Range" value="0.0005" />
                 <propvalue name="VClampL" value="-2" />
                 <propvalue name="VClampH" value="2" />
                 <propvalue name="WaitTime" value="0.005" />
@@ -27,8 +27,8 @@
         <testclass name="libtestp_share2.Basic_02_OS_VDD_VSS_PPMU">
             <propvalues>
                 <propvalue name="Measure_pinlist" value="gOS,gOS_M," />
-                <propvalue name="IForce" value="" />
-                <propvalue name="Range" value="" />
+                <propvalue name="IForce" value="-0.0002" />
+                <propvalue name="Range" value="0.005" />
                 <propvalue name="VClampL" value="-2" />
                 <propvalue name="VClampH" value="2" />
                 <propvalue name="WaitTime" value="0.005" />
@@ -46,12 +46,12 @@
             <propvalues />
         </testclass>
     </test>
-    <test name="OS_PS" type="Test" timing="" level="" pattern="" power="OS_PS" comment="">
+    <test name="OS_PS" type="Test" timing="TIMING_OS" level="VIHLR_VOHLR_IOHLR" pattern="" power="OS_PS" comment="">
         <testclass name="libtestp_share2.Basic_00_PowerShort">
             <propvalues>
-                <propvalue name="powerpinlist" value="" />
-                <propvalue name="WaitTime" value="" />
-                <propvalue name="SampleSize" value="" />
+                <propvalue name="powerpinlist" value="gOS_PS,gOS_PS_gP,gOS_PS_PPMU_D," />
+                <propvalue name="WaitTime" value="10e-3" />
+                <propvalue name="SampleSize" value="4" />
             </propvalues>
         </testclass>
     </test>
@@ -863,7 +863,7 @@
     <test name="DC_IOZ_VDDH" type="Test" timing="IOZ_TIM6_V1" level="VIHLR_VOHLR_IOHLS" pattern="IOZ_R01_HI1122" power="IOZ_VDDN_VIHLR_VOHLR_IOHLS" comment="">
         <testclass name="libtestp_share2.DC_IOZHL_3V3_VDDH">
             <propvalues>
-                <propvalue name="Measure_pinlist" value="gDFTPINS," />
+                <propvalue name="Measure_pinlist" value="gDFTPINS" />
                 <propvalue name="IOZH_VForce" value="1.98" />
                 <propvalue name="RangeH" value="10e-6" />
                 <propvalue name="IOZH_IClampL" value="-10e-6" />

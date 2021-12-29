@@ -42,8 +42,8 @@ public:
 		TheInst.Digital().Timing().Apply();
 		TheInst.Digital().PatEng().SetupMCFData();
 		TheInst.Digital().PatEng().SetFailMode(PhxAPI::E_SET_HIL_MODE);
-		//TheInst.Digital().Pattern().Run(); //执行pattern，并判定bin 信息
-		TheInst.Digital().Pattern().Start();
+		TheInst.Digital().Pattern().Run(); //执行pattern，并判定bin 信息
+//		TheInst.Digital().Pattern().Start();
 
 
 

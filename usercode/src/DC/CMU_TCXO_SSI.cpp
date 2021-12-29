@@ -304,8 +304,6 @@ public:
 			//TheInst.Digital().Timing().Apply();
 #endif
 		}
-
-
 		d2s::d2s_LABEL_BEGIN("ssi", d2s_WorkMode);
 		d2sProtocolSSI d2s_test;
 		d2s_test.SSI_write(0x200,0x2000,false);
