@@ -32,6 +32,7 @@
     <spec name="VDD_PMU_CLDO" value="(0.1+0.002*9)*1.0V" comment="" />
     <spec name="VDD_PMU_SYSLDO" value="(0.1+0.002*8)*1.0V" comment="" />
     <spec name="VDD_XLDO" value="(0.1+0.002*10)*1.0V" comment="" />
-    <spec name="SSI_CLK" value="50MHz" comment="" />
+    <spec name="SSI_CLK50" value="50MHz" comment="" />
+    <spec name="SSI_CLK25" value="25MHz" comment="" />
     <spec name="CLK_CAP" value="100MHz" comment="" />
 </specs>

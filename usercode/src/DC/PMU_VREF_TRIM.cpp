@@ -24,7 +24,7 @@ public:
 		add_param("Measure_pinlist", "PinString", &pinlist).set_default(
 				"PMU_REFBP"); //PMU_REFBP
 		add_param("WaitTime", "double", &waittime).set_default("0.005");
-		add_param("SampleSize", "int", &samplesize).set_default("4");
+		add_param("SampleSize", "int", &samplesize).set_default("16");
 	}
 
 	void execute() {
