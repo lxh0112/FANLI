@@ -57,8 +57,8 @@ public:
 //										.Measure();
 //		TheInst.PPMU().Pins(pinlist).Connect(false).Apply();
 
-		TheInst.Util().SetUserPower(PhxAPI::E_USERPW_P5V , 1  );
-		TheInst.Wait(5*ms);
+//		TheInst.Util().SetUserPower(PhxAPI::E_USERPW_P5V , 1  );
+//		TheInst.Wait(5*ms);
 
 		TheInst.DCVI().Power().Apply();
 

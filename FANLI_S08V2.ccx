@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <program name="FANLI_S08V2">
     <items>
-        <pin>FANLI_S08V2_Pin_pin.pin</pin>
+        <pin>FANLI_S08V200.pin</pin>
         <specs>
-            <spec>111.spec</spec>
+            <spec>FANLI_S08V200.spec</spec>
         </specs>
         <setting />
         <global />
-        <channelmap>FANLI.pm</channelmap>
-        <power>111.pwr</power>
-        <level>111.lvl</level>
-        <timing>111.tmg</timing>
-        <patternburst>111.bst</patternburst>
+        <channelmap>FANLI_S08V200.pm</channelmap>
+        <power>FANLI_S08V200.pwr</power>
+        <level>FANLI_S08V200.lvl</level>
+        <timing>FANLI_S08V200.tmg</timing>
+        <patternburst>FANLI_S08V200.bst</patternburst>
         <tests>
-            <test>FANLI_S08V2.tst</test>
+            <test>FANLI_S08V200.tst</test>
         </tests>
         <flows>
-            <flow>111.fl</flow>
+            <flow>FANLI_S08V200.fl</flow>
         </flows>
         <proberhandler />
     </items>

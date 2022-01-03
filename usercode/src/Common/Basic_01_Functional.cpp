@@ -36,16 +36,9 @@ public:
 						cout<<dec;
 
 //						std::string testname = TheSoft.Flow().Test().GetCurrentTestName();
-//
-//						if(testname == "PCIE_PREEM_EXT_5G")
-//						{
-//							TheInst.Digital().Timing("").StopFreeRunningClock();
-//							TheInst.Digital().Timing("").Apply();
-//
-//						}
+
+
 					}
 
 };
-
-
 REGISTER_TESTCLASS("Basic_01_Functional", Basic_01_Functional)

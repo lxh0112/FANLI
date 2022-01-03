@@ -30,7 +30,7 @@ public:
     std::string getWriteTemplatePatternName(){return "Hi1151A_DR2W_template_test";}
     std::string getWritePinName() {return "DBB_GPIO7";}
     int getWriteAddressVectorNumberLSB(){return 22;}
-    int getWriteAddressVectorNumberMSB(){return 13;}
+    int getWriteAddressVectorNumberMSB(){return 7;}
     int getWriteDataVectorNumberLSB(){return 38;}
     int getWriteDataVectorNumberMSB(){return 23;}
     int getWritePatternVectors(){return 51;}

@@ -5,7 +5,7 @@
 #include"UserAPI.h"
 #include <iostream>
 
-d2sWorkModeType d2s_WorkMode;
+d2sWorkModeType d2s_WorkMode = LearningMode;
 
 //bool semi_parallel_en;
 map<string, tyLimitsData> mapLimits;

@@ -31,14 +31,13 @@ public:
 		TheInst.DCVI().Power().Apply();
 		TheInst.Digital().Level().Apply();
 
-		double hil[30], lowl[30];
+		double hil[30] = {0.0}, lowl[30] = {0.0};
 		vector<string> Test_Item;
 		vector<string> Units;
-		int Test_number[30];
-		int Soft_Bin[30];
-		int Hard_Bin[30];
-		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,
-				Hard_Bin);
+		Test_Item.clear();
+		Units.clear();
+		int Test_number[30] = {0},Soft_Bin[30],Hard_Bin[30];
+		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
 
 		d2s::d2s_LABEL_BEGIN("ssi", d2s_WorkMode);
 		d2sProtocolSSI d2s_test;

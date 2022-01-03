@@ -36,13 +36,13 @@ public:
 
     void execute(){
 
-    	double hil[30],lowl[30];
-		vector<string> Test_Item;
-		vector<string> Units;
-		int Test_number[30];
-		int Soft_Bin[30];
-		int Hard_Bin[30];
-		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
+    	double hil[30] = {0.0}, lowl[30] = {0.0};
+    	vector<string> Test_Item;
+    	vector<string> Units;
+    	Test_Item.clear();
+    	Units.clear();
+    	int Test_number[30] = {0},Soft_Bin[30],Hard_Bin[30];
+    	Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
 
 		TheInst.DCVI().Power().Apply();
 		TheInst.Digital().Level().Apply();
@@ -67,17 +67,17 @@ public:
 			d2s::d2s_LABEL_END();
 
 			TheInst.PPMU().Pins(pinlist).SetClear();
-			TheInst.PPMU().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_FI_MV)
-											.SetIForce(iforce)
-											.SetIForce(irange)
-											  .SetMeasureOrder(E_MEASURE_ODER_SINGLE)
-											  .SetMeasureType(E_MEASURE)
-											  .SetSampleSize(samplesize)
-											  .SetWaitTime(waittime)
-											  .Connect(true)
-											  .Measure();
+			TheInst.PPMU().Pins(pinlist).SetIRange(irange)
+										.SetMeasureType(E_MEASURE)
+										.SetMeasureMode(PhxAPI::E_DC_FI_MV)
+										.Connect(true)
+										.SetSampleSize(samplesize)
+										.SetIForce(iforce)
+										.SetWaitTime(waittime)
+										.Measure();
 
 			PinArrayDouble result = TheInst.PPMU().Pins(pinlist).GetMeasureResults();
+			TheInst.PPMU().Pins(pinlist).Connect(false).Apply();
 //			vector<string> pinname2 = SplitPinList(pinlist);
 			TheSoft.Flow().TestLimit(pinlist,result,lowl[i], hil[i],Hard_Bin[i],Soft_Bin[i], Units[i], Test_Item[i], Test_number[i]);
 		  }

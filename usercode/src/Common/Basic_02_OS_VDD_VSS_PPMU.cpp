@@ -22,9 +22,9 @@ public:
 	double waittime;
 
     void init(){
-					add_param( "Measure_pinlist",  "PinString", &pinlist).set_default("");
-					add_param("IForce","double",&iforce).set_default("");
-					add_param("Range","double",&range).set_default("");
+					add_param( "Measure_pinlist",  "PinString", &pinlist).set_default("gOS");
+					add_param("IForce","double",&iforce).set_default("0.0001");
+					add_param("Range","double",&range).set_default("0.0005");
 					add_param("VClampL","double",&vclampl).set_default("-2");
 					add_param("VClampH","double",&vclamph).set_default("2");
 					add_param("WaitTime","double",&waittime).set_default("0.005");
@@ -34,31 +34,34 @@ public:
 
 
     void execute(){
-		double hil[30], lowl[30];
-		vector<string> Test_Item;
-		vector<string> Units;
-		int Test_number[30],Soft_Bin[30],Hard_Bin[30];
-		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
+    	double hil[30] = {0.0}, lowl[30] = {0.0};
+    	vector<string> Test_Item;
+    	vector<string> Units;
+    	Test_Item.clear();
+    	Units.clear();
+    	int Test_number[30] = {0},Soft_Bin[30],Hard_Bin[30];
+    	Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
 
 		TheInst.DCVI().Power().Apply();
-		TheInst.Digital().Level().Apply();
-		TheInst.Digital().Timing().Apply();
-		TheInst.Digital().PatEng().SetupMCFData();
-		TheInst.Digital().PatEng().SetFailMode(PhxAPI::E_SET_HIL_MODE);
-		TheInst.Digital().Pattern().Run();
+//		TheInst.Digital().Level().Apply();
+//		TheInst.Digital().Timing().Apply();
+//		TheInst.Digital().PatEng().SetupMCFData();
+//		TheInst.Digital().PatEng().SetFailMode(PhxAPI::E_SET_HIL_MODE);
+//		TheInst.Digital().Pattern().Run();
 
 		TheInst.PPMU().Pins(pinlist).SetClear();
-		TheInst.PPMU().Pins(pinlist).SetMeasureType(PhxAPI::E_MEASURE)
-									.SetVClampL(vclampl)
+		TheInst.PPMU().Pins(pinlist).SetVClampL(vclampl)
 									.SetVClampH(vclamph)
 									.SetIRange(range)
-									.SetIForce(iforce)
+									.SetMeasureType(PhxAPI::E_MEASURE)
 									.SetMeasureMode(PhxAPI::E_DC_FI_MV)
 									.Connect(true)
 									.SetSampleSize(samplesize)
+									.SetIForce(iforce)
 									.SetWaitTime(waittime)//5ms
 									.Measure();
 		PinArrayDouble result = TheInst.PPMU().Pins(pinlist).GetMeasureResults();
+		result.ShowPinArrayData();
 		TheInst.PPMU().Pins(pinlist).Connect(false).Apply();
 		vector<string> pinname = GetGroupPinItems(pinlist);
 

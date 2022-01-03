@@ -39,14 +39,13 @@ public:
 	}
 
 	void execute() {
-		double hil[30], lowl[30];
+		double hil[30] = {0.0}, lowl[30] = {0.0};
 		vector<string> Test_Item;
 		vector<string> Units;
-		int Test_number[30];
-		int Soft_Bin[30];
-		int Hard_Bin[30];
-		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,
-				Hard_Bin);
+		Test_Item.clear();
+		Units.clear();
+		int Test_number[30] = {0},Soft_Bin[30],Hard_Bin[30];
+		Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
 
 		map<int, double> preTrimMeas;
 		map<int, long long> TrimData;
@@ -57,18 +56,19 @@ public:
 		TheInst.Digital().Level().Apply();
 
 		TheInst.PPMU().Pins(pinlist).SetClear();
-		TheInst.PPMU().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_FV_MV)
-									.SetVForce(vforce)
-									.SetIRange(irange)
-									.SetIClampL(iClampl)
+		TheInst.PPMU().Pins(pinlist).SetMeasureType(PhxAPI::E_MEASURE)
 									.SetIClampH(iClamph)
-									.SetMeasureOrder(PhxAPI::E_MEASURE_ODER_GROUP)
-									.SetMeasureType(PhxAPI::E_MEASURE)
+									.SetIClampL(iClampl)
+									.SetIRange(irange)
+									.SetVForce(vforce)
+									.SetMeasureMode(PhxAPI::E_DC_FV_MV)
+									.Connect(true)
 									.SetSampleSize(samplesize)
 									.SetWaitTime(waittime)
-									.Connect(true)
 									.Measure();
-		PinArrayDouble res = TheInst.DCVI().Pins(pinlist).GetMeasureResults();
+		PinArrayDouble res = TheInst.PPMU().Pins(pinlist).GetMeasureResults();
+		res.ShowPinArrayData();
+		TheInst.PPMU().Pins(pinlist).Connect(false).Apply();
 
 		FOREACH_ACTIVESITE_BEGIN(site_id, bInterrupt)double GetValue = res.GetData(pinlist, site_id);
 		Testsoftbin[site_id] = 1;
@@ -125,18 +125,19 @@ public:
 		TheInst.Wait(10 * ms);
 
 		TheInst.PPMU().Pins(pinlist).SetClear();
-		TheInst.PPMU().Pins(pinlist).SetMeasureMode(PhxAPI::E_DC_FV_MV)
-									.SetVForce(vforce)
-									.SetIRange(irange)
-									.SetIClampL(iClampl)
-									.SetIClampH(iClamph)
-									.SetMeasureOrder(PhxAPI::E_MEASURE_ODER_GROUP)
-									.SetMeasureType(PhxAPI::E_MEASURE)
-									.SetSampleSize(samplesize)
-									.SetWaitTime(waittime)
-									.Connect(true)
-									.Measure();
-		PinArrayDouble res2 = TheInst.DCVI().Pins(pinlist).GetMeasureResults();
+		TheInst.PPMU().Pins(pinlist).SetMeasureType(PhxAPI::E_MEASURE)
+											.SetIClampH(iClamph)
+											.SetIClampL(iClampl)
+											.SetIRange(irange)
+											.SetVForce(vforce)
+											.SetMeasureMode(PhxAPI::E_DC_FV_MV)
+											.Connect(true)
+											.SetSampleSize(samplesize)
+											.SetWaitTime(waittime)
+											.Measure();
+		PinArrayDouble res2 = TheInst.PPMU().Pins(pinlist).GetMeasureResults();
+		res2.ShowPinArrayData();
+		TheInst.PPMU().Pins(pinlist).Connect(false).Apply();
 
 		FOREACH_ACTIVESITE_BEGIN(site_id, bInterrupt)double GetValue2 = res2.GetData(pinlist, site_id);
 			postTrimMeas[site_id] = GetValue2;

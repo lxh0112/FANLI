@@ -31,13 +31,13 @@ public:
 					TheInst.Digital().Level().Apply();
 	//				TheInst.Digital().Timing().Apply();
 
-			        double hil[30],lowl[30];
-			        vector<string> Test_Item;
+					double hil[30] = {0.0}, lowl[30] = {0.0};
+					vector<string> Test_Item;
 					vector<string> Units;
-			        int  Test_number[30];
-			        int Soft_Bin[30];
-					int Hard_Bin[30];
-					Read_Limit(lowl,hil,Test_Item,Test_number,Units,Soft_Bin,Hard_Bin);
+					Test_Item.clear();
+					Units.clear();
+					int Test_number[30] = {0},Soft_Bin[30],Hard_Bin[30];
+					Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
 
 
 					d2sProtocolSSI d2s_test;

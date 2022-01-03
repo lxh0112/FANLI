@@ -112,14 +112,13 @@ public:
 #endif
 	    void execute() {
 #if 1
-//		double hil[30],lowl[30];
-//		char *Test_Item[30],*Units[30];
-//		int  Test_number[30];
-//		Read_Limit(lowl, hil, Test_Item,Test_number,Units);
-	    double hil[30], lowl[30];
+
+	    double hil[30] = {0.0}, lowl[30] = {0.0};
 	    vector<string> Test_Item;
 	    vector<string> Units;
-	    int Test_number[30],Soft_Bin[30],Hard_Bin[30];
+	    Test_Item.clear();
+	    Units.clear();
+	    int Test_number[30] = {0},Soft_Bin[30],Hard_Bin[30];
 	    Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
 
 		TheInst.DCVI().Power().Apply(); //下发执行  DCVI  power pin上电
