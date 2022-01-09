@@ -46,6 +46,7 @@ public:
 
 		TheInst.DCVI().Power().Apply();
 		TheInst.Digital().Level().Apply();
+		TheInst.Digital().Timing().Apply();
 
 		d2s::d2s_LABEL_BEGIN("ssi", d2s_WorkMode);
 		d2sProtocolSSI d2s_test;

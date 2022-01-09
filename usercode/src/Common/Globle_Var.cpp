@@ -34,23 +34,23 @@ long PRE_2G_C1_GAIN[4];
 //map<int,long long> R_CAL_CODE_C0;
 //map<int,long long> C_CAL_CODE_C0;
 
-CSiteLong RC_CAL_CODE_C0;
-CSiteLong R_CAL_CODE_C0;
-CSiteLong C_CAL_CODE_C0;
+//CSiteLong RC_CAL_CODE_C0;
+//CSiteLong R_CAL_CODE_C0;
+//CSiteLong C_CAL_CODE_C0;
+//
+//CSiteLong RC_CAL_CODE_C1;
+//CSiteLong R_CAL_CODE_C1;
+//CSiteLong C_CAL_CODE_C1;
 
-CSiteLong RC_CAL_CODE_C1;
-CSiteLong R_CAL_CODE_C1;
-CSiteLong C_CAL_CODE_C1;
-
-CSiteLong PV_SENSOR_C0_CODE;
-CSiteLong PV_SENSOR_C1_CODE;
-
-CSiteLong ADC_C0_COMP_CAL_CODE_A1;
-CSiteLong ADC_C0_COMP_CAL_CODE_A2;
-CSiteLong ADC_C0_COMP_CAL_CODE_A3;
-CSiteLong ADC_C1_COMP_CAL_CODE_A1;
-CSiteLong ADC_C1_COMP_CAL_CODE_A2;
-CSiteLong ADC_C1_COMP_CAL_CODE_A3;
+//CSiteLong PV_SENSOR_C0_CODE;
+//CSiteLong PV_SENSOR_C1_CODE;
+//
+//CSiteLong ADC_C0_COMP_CAL_CODE_A1;
+//CSiteLong ADC_C0_COMP_CAL_CODE_A2;
+//CSiteLong ADC_C0_COMP_CAL_CODE_A3;
+//CSiteLong ADC_C1_COMP_CAL_CODE_A1;
+//CSiteLong ADC_C1_COMP_CAL_CODE_A2;
+//CSiteLong ADC_C1_COMP_CAL_CODE_A3;
 
 map<int,long long> TEST_COUNT;//globle
 
@@ -66,9 +66,9 @@ map<int,double> PreVrefAve;//globle
 map<int,double> PreBuckAve;
 map<int,double> PreIrefAve;
 
-CSiteDouble PRE_VREF_ARRAY;//globle
-CSiteDouble PRE_BUCK_ARRAY;//globle
-CSiteDouble PRE_IREF_ARRAY;//globle
+//CSiteDouble PRE_VREF_ARRAY;//globle
+//CSiteDouble PRE_BUCK_ARRAY;//globle
+//CSiteDouble PRE_IREF_ARRAY;//globle
 
 
 long WL5G_B1_PPF[64];
@@ -77,8 +77,10 @@ long WL5G_B4_PPF[64];
 long WL5G_B5_PPF[64];
 long WL5G_B7_PPF[64];
 
-CSiteLong WL_C0_PPF_CODE;
-CSiteLong WL_C1_PPF_CODE;
+
+
+//CSiteLong WL_C0_PPF_CODE;
+//CSiteLong WL_C1_PPF_CODE;
 
 //WL_C0_PPF_CODE->InitDataArray(0,36);
 

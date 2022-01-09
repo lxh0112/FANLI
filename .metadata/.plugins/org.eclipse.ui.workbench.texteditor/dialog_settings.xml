@@ -1,30 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="DCVI"/>
+		<item key="selection" value="MEMORY"/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
-			<item value="DCVS"/>
-			<item value="S"/>
-			<item value="PMU_REFBP"/>
-			<item value="RXN"/>
-			<item value="IOZL_iClamph"/>
-			<item value="IOZL_iClampl"/>
-			<item value="IOZH_iClamph"/>
-			<item value="IOZH_iClampl"/>
-			<item value="BOOST_LX_D"/>
-			<item value="NFC_GPIO0"/>
-			<item value="DCVI"/>
-			<item value="dig"/>
-			<item value="j"/>
-			<item value="pinlist"/>
-			<item value="BOOT_UP"/>
+			<item value="MEMORY"/>
+			<item value="SIMLDO_"/>
+			<item value="SIMLDO_VDD_PAmodule()"/>
+			<item value="void Poweron_PAModule();"/>
+			<item value="Poweron_PAmodule()"/>
+			<item value="T"/>
+			<item value="TSENSOR_Module"/>
+			<item value="Poweron_PAmodule"/>
+			<item value="BOOST_BOOTUP"/>
+			<item value="Sleep_PAmodule()"/>
+			<item value="sleep_PAmodule()"/>
+			<item value="NFC_limiter"/>
+			<item value="BOOST_BOOTUP_PAliB();"/>
+			<item value="void REG_CAPLDO_TRIM()"/>
+			<item value="&quot;0x3200&quot;"/>
 		</list>
 		<list key="replacehistory">
+			<item value="0x3200"/>
+			<item value="0x3202"/>
+			<item value="0x3206"/>
+			<item value="0x3204"/>
+			<item value="0x0"/>
+			<item value="0xF014"/>
+			<item value="wait"/>
 			<item value="DCVI"/>
 			<item value="RXP"/>
 			<item value="RXN"/>
@@ -33,13 +40,6 @@
 			<item value="iClamphh"/>
 			<item value="iClamphl"/>
 			<item value="SIM_IO_PDN_2"/>
-			<item value="BOOST_LX_D"/>
-			<item value="PPMU"/>
-			<item value="VDDBOOST"/>
-			<item value="dio"/>
-			<item value="n"/>
-			<item value="dpsPinlist"/>
-			<item value="ADPLL_TEST_27p12M"/>
 		</list>
 	</section>
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog_dialogBounds">

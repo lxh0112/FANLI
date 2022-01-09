@@ -31,7 +31,7 @@ public:
 		TheInst.DCVI().Power().Apply();
 		//string PowerName = TheSoft.Flow().Power().GetCurrentPowerBlockName();
 
-		std::string pin = "PMU_RBIAS,PMU_REFBP,DBB_VDDIO_3V3,DBB_VDDIO_3V3_1V8,VDD_PMU_CLDO,VDD_PMU_3V3_O,VPTX_VP,VDD_PMU_SYSLDO,VDD_PMU_3V3_IN3,VDD_PMU_1V5_IN,VDD_BUCK_1V5_IN,VDD_PMU_3V3_IN1,VDD_PMU_3V3_IN2,RF_VDD_TX2G_3P3_0,RF_VDD_TX2G_3P3_1,RF_VDD_TX5G_3P3_0,RF_VDD_TX5G_3P3_1";
+		std::string pin = "BOOST_LX,PMU_REFBP,PMUVCC12,PMUVCC3,SIMVCC1,SIMVCC2,SIMVCC3,VBAT,VDD_PMU_AIOLDO,VDD_PMU_CLDO,VDD_PMU_SYSLDO,VDDBOOST,VDDIO,VDDPA";
 		PinArrayUInt result = TheInst.DCVI().Pins(pin).OpenKelDetect(0.5,0.5);//检测OSD
 
 		vector<string> pinname = SplitPinList(pin);

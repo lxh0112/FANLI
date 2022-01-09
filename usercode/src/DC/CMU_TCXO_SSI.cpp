@@ -126,7 +126,7 @@ public:
 		TheInst.Digital().Timing().Apply();//下发执行 DIO  pattern pin  timing
 //		TheInst.Digital().Pattern().Start();
 
-		CMU_Module();
+//		CMU_Module();
 
 	    double *GetValue1;
 	    double *GetValue2;

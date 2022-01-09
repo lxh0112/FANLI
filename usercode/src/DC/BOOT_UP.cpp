@@ -26,28 +26,13 @@ public:
 
 	void init(){
 	            }
+
     void execute(){
 					TheInst.DCVI().Power().Apply();
 					TheInst.Digital().Level().Apply();
-	//				TheInst.Digital().Timing().Apply();
+					TheInst.Digital().Timing().Apply();
 
-					double hil[30] = {0.0}, lowl[30] = {0.0};
-					vector<string> Test_Item;
-					vector<string> Units;
-					Test_Item.clear();
-					Units.clear();
-					int Test_number[30] = {0},Soft_Bin[30],Hard_Bin[30];
-					Read_Limit(lowl, hil, Test_Item, Test_number, Units, Soft_Bin,Hard_Bin);
-
-
-					d2sProtocolSSI d2s_test;
 					BOOT_UP_PAmodule();
-
-
-
-					map<int, long long> capture_data = d2s_test.getReadValue("readdata");
-
-					TheSoft.Flow().TestLimit("SSI_DATA", capture_data, lowl[0], hil[0],Hard_Bin[0] ,Soft_Bin[0],Units[0], Test_Item[0],Test_number[0],PhxAPI::E_Fail,PhxAPI::E_LEFTCLOSE_RIGHTCLOSE,PhxAPI::E_RS_DEC);
 
 				}
 

@@ -16,7 +16,7 @@
 enum emADCCalType{calType_Normal=0,calType_LV,cal_Type_SS,calType_Nocal,calType_LV1};
 
 void WL_ADC_C0_DC_Module();
-void WL_ADC_C1_DC_Module();
+//void WL_ADC_C1_DC_Module();
 //void WL_ADC_C0_Cap_Module();
 //void WL_ADC_C0_Cap_Module(CSiteLong *pReadValue);
 

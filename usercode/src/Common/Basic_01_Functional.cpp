@@ -35,9 +35,6 @@ public:
 						uint64_t executedcount=TheInst.Digital().PatEng().GetExecutedCyclesCount();
 						cout<<dec;
 
-//						std::string testname = TheSoft.Flow().Test().GetCurrentTestName();
-
-
 					}
 
 };

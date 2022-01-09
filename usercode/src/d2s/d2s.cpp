@@ -1,8 +1,9 @@
 /*
  * d2s.cpp
  *
- *  Created on: 2021��5��19��
+ *  Created on: 2022/1/4
  *      Author: dongyuqing
+ *      Modified: w00600447
  */
 #include <d2s.h>
 #include <windows.h>

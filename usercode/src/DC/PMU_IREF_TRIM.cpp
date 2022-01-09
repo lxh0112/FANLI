@@ -13,8 +13,8 @@
 #include "d2sProtocolSSI.h"
 #include "D2S_PMU_Module.h"
 #include <math.h>
-#include"Getlog.h"
 #include "UserDef.h"
+
 
 class PMU_IrefTrim: public TestClass {
 public:
@@ -54,6 +54,7 @@ public:
 
 		TheInst.DCVI().Power().Apply();
 		TheInst.Digital().Level().Apply();
+		TheInst.Digital().Timing().Apply();
 
 		TheInst.PPMU().Pins(pinlist).SetClear();
 		TheInst.PPMU().Pins(pinlist).SetMeasureType(PhxAPI::E_MEASURE)
@@ -61,7 +62,7 @@ public:
 									.SetIClampL(iClampl)
 									.SetIRange(irange)
 									.SetVForce(vforce)
-									.SetMeasureMode(PhxAPI::E_DC_FV_MV)
+									.SetMeasureMode(PhxAPI::E_DC_FV_MI)
 									.Connect(true)
 									.SetSampleSize(samplesize)
 									.SetWaitTime(waittime)
@@ -69,6 +70,9 @@ public:
 		PinArrayDouble res = TheInst.PPMU().Pins(pinlist).GetMeasureResults();
 		res.ShowPinArrayData();
 		TheInst.PPMU().Pins(pinlist).Connect(false).Apply();
+
+
+
 
 		FOREACH_ACTIVESITE_BEGIN(site_id, bInterrupt)double GetValue = res.GetData(pinlist, site_id);
 		Testsoftbin[site_id] = 1;
@@ -130,7 +134,7 @@ public:
 											.SetIClampL(iClampl)
 											.SetIRange(irange)
 											.SetVForce(vforce)
-											.SetMeasureMode(PhxAPI::E_DC_FV_MV)
+											.SetMeasureMode(PhxAPI::E_DC_FV_MI)
 											.Connect(true)
 											.SetSampleSize(samplesize)
 											.SetWaitTime(waittime)
@@ -151,6 +155,71 @@ public:
 
 	}
 
+private:
+	vector<double> CurrentTrim(vector<double> value, int baseTrimCode) {
+	    vector<double> trimCode = {0, 0};
+	    trimCode[0] = 0;
+	    trimCode[1] = 0;
+
+	    vector<double> current = value;
+	    int orgTrimCode = baseTrimCode;
+
+	    for (int i = 0; i < current.size(); i++) {
+
+	        int calcTrimCode = 0;
+
+	        // 可以考虑重构
+	        if (current[i] > 24.75 and current[i] < 25.25) {
+	            calcTrimCode = 13;
+	        }
+	        else if (current[i] <= 24.75) {
+	            try {
+	                calcTrimCode = current[i] / 25 * 47 - 40.5;
+	                calcTrimCode = round(2 * calcTrimCode);
+	            }
+	            catch (exception &e) {
+	                cout << "Error!" << endl;
+	            }
+
+	            if (calcTrimCode < 0) {
+	                calcTrimCode = 0;
+	            }
+
+	        }
+	        else if (current[i] >= 25.25) {
+	            try {
+	                calcTrimCode = current[i] / 25 * 47 -40.5;
+	                calcTrimCode = round(2 * calcTrimCode);
+	            }
+	            catch (exception &e) {
+	                cout << "Error!" << endl;
+	            }
+
+	            if (calcTrimCode > 31) {
+	                calcTrimCode = 31;
+	            }
+	        }
+	        else {
+	            calcTrimCode = 13;
+	        }
+
+	        bool effuseIRC_FTPASS = true;
+	        double pmu_iref_trimdata = 0;
+	        if (effuseIRC_FTPASS) {
+	            calcTrimCode = pmu_iref_trimdata;
+	        }
+
+	        trimCode[0] = calcTrimCode;
+	        double tmp1 = baseTrimCode & 0xfc1f;
+	        double tmp2 = calcTrimCode << 5;
+	        double tmp3 = tmp1 + tmp2;
+
+	        trimCode[1] = tmp3;
+
+	    }
+
+	    return trimCode;
+	};
 };
 REGISTER_TESTCLASS("PMU_IrefTrim", PMU_IrefTrim)
 
