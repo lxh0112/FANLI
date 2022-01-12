@@ -14,7 +14,8 @@ class d2sProtocolSSI:public d2s{
 public:
     d2sProtocolSSI():d2s(){}
 
-    std::string DR2R_template;
+//    std::string DR2R_template;
+    std::string FANLI_DR2R_template_test_offset7;
     int ReadAddressVectorNumberLSB;
     int ReadAddressVectorNumberMSB;
     int ReadDataVectorNumberLSB;
@@ -64,21 +65,21 @@ public:
 
 
     /*read parameters*/
-    std::string getReadTemplatePatternName(){ return DR2R_template;}
+    std::string getReadTemplatePatternName(){ return FANLI_DR2R_template_test_offset7;}
     std::string getReadAddressPinName() { return "NFC_DEV_WKUP_HOST";} // DBB_GPIO7 = SSI_DATA; DBB_GPIO6 = SSI_CLK
      std::string getReadPinName() { return "NFC_DEV_WKUP_HOST";}//NFC_DEV_WKUP_HOST=SSI_DATA;NFC_HOST_WKUP_DEV=SSI_CLK
-     int getReadAddressVectorNumberLSB(){return ReadAddressVectorNumberLSB;}
-    int getReadAddressVectorNumberMSB(){return ReadAddressVectorNumberMSB;}
-    int getReadDataVectorNumberLSB(){ return ReadDataVectorNumberLSB;}
-    int getReadDataVectorNumberMSB(){ return ReadDataVectorNumberMSB;}
-    int getReadPatternVectors(){return ReadPatternVectors;}
+//     int getReadAddressVectorNumberLSB(){return ReadAddressVectorNumberLSB;}
+//    int getReadAddressVectorNumberMSB(){return ReadAddressVectorNumberMSB;}
+//    int getReadDataVectorNumberLSB(){ return ReadDataVectorNumberLSB;}
+//    int getReadDataVectorNumberMSB(){ return ReadDataVectorNumberMSB;}
+//    int getReadPatternVectors(){return ReadPatternVectors;}
 
-//    int getReadAddressVectorNumberLSB(){return 22;}
-//    int getReadAddressVectorNumberMSB(){return 7;}
-//    int getReadDataVectorNumberLSB(){ return 41;}
-//    int getReadDataVectorNumberMSB(){ return 26;}
-//    int getReadPatternVectors(){return 51;}
-	void SSI_readLong(long addr,long Data,int div2=0){};
+    int getReadAddressVectorNumberLSB(){return 22;}
+    int getReadAddressVectorNumberMSB(){return 7;}
+    int getReadDataVectorNumberLSB(){ return 41;}
+    int getReadDataVectorNumberMSB(){ return 26;}//buduiying
+    int getReadPatternVectors(){return 51;}
+	void SSI_readLong(long addr,long Data,int div2=0){addr=addr/2;};
 
 	void SSI_read(long regAddr, string regData, bool flag = true){};
 

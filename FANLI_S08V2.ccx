@@ -5,7 +5,7 @@
         <specs>
             <spec>FANLI_S08V200_SPEC_202216.spec</spec>
         </specs>
-        <setting />
+        <setting>FANLI_S08V200_DATALOG_202216.dl</setting>
         <global />
         <channelmap>FANLI_S08V200_CHANNELMAP_202216.pm</channelmap>
         <power>FANLI_S08V200_POWER_202216.pwr</power>

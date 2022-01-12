@@ -54,7 +54,7 @@ void d2s::d2s_LABEL_CLEAR(bool isBegin) {
 	if(patterns_path[patterns_path.size() - 1] != '/' && patterns_path[patterns_path.size() - 1] != '\\') {
 		patterns_path += "\\";
 	}
-	patterns_path += "pattern\\";
+	patterns_path += "pattern\\";//d2s pattern生成位置
 }
 /**
  * @brief   This function is used to set begin label of d2s

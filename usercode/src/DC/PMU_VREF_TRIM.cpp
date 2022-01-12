@@ -71,6 +71,12 @@ public:
 		FOREACH_ACTIVESITE_BEGIN(site_id, bInterrupt)double GetValue = res.GetData(pinlist, site_id);
 		Testsoftbin[site_id] = 1;
 		preTrimMeas[site_id] = GetValue + Voffset;
+
+
+
+
+
+
 		if(FT_PASSFLAG[site_id]==0) {
 			pmu_v_trimData[site_id] = floor((1-(1.2/preTrimMeas[site_id]))*219.2+0.5);
 			if(pmu_v_trimData[site_id]>15) {
@@ -89,6 +95,10 @@ public:
 		} else {
 			pmu_v_trimData[site_id] = pmu_v_pretrimData[site_id];
 		}
+
+
+
+
 		TrimData[site_id]=pmu_v_trimData[site_id]<<10;
 		cout << "preTrimMeas:" << preTrimMeas[site_id] << endl;
 		cout << "pmu_v_trimData:" << pmu_v_trimData[site_id] << endl;

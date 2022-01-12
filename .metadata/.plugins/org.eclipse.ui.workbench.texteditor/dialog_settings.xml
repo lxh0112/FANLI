@@ -1,28 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
 	<section name="org.eclipse.ui.texteditor.FindReplaceDialog">
-		<item key="selection" value="MEMORY"/>
+		<item key="selection" value=""/>
 		<item key="wrap" value="true"/>
 		<item key="casesensitive" value="false"/>
 		<item key="wholeword" value="false"/>
 		<item key="incremental" value="false"/>
 		<item key="isRegEx" value="false"/>
 		<list key="findhistory">
+			<item value="capless"/>
+			<item value="NFC_TXP_IMPEDENCE_MIN()"/>
+			<item value="NFC"/>
+			<item value="NFC_Tx_"/>
+			<item value="NFC_Tx_mode"/>
+			<item value="NFC_Tx_MOD();"/>
+			<item value="NFC_TXP_IMPEDENCE_MIN"/>
 			<item value="MEMORY"/>
+			<item value="EFUSE"/>
 			<item value="SIMLDO_"/>
 			<item value="SIMLDO_VDD_PAmodule()"/>
 			<item value="void Poweron_PAModule();"/>
 			<item value="Poweron_PAmodule()"/>
 			<item value="T"/>
 			<item value="TSENSOR_Module"/>
-			<item value="Poweron_PAmodule"/>
-			<item value="BOOST_BOOTUP"/>
-			<item value="Sleep_PAmodule()"/>
-			<item value="sleep_PAmodule()"/>
-			<item value="NFC_limiter"/>
-			<item value="BOOST_BOOTUP_PAliB();"/>
-			<item value="void REG_CAPLDO_TRIM()"/>
-			<item value="&quot;0x3200&quot;"/>
 		</list>
 		<list key="replacehistory">
 			<item value="0x3200"/>

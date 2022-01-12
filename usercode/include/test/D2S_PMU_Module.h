@@ -13,11 +13,8 @@
 #include "Globle_Var.h"
 
 
-void LDO_Module();
+
 void CMU_Module();
-void PCIE_EP_LB_Module();
-void WL_2G_PLL_Sweep_Module(CSiteLong* pReadValue);
-void WL_5G_PLL_Sweep_Module(CSiteLong* pReadValue);
 void TSENSOR_PAmodule();
 void BOOST_OFF();
 void BOOST_BOOTUP_PAlib();
@@ -26,16 +23,18 @@ void BOOT_UP_PAmodule();
 void TSENSOR_PAmodule();
 void Poweron_PAModule();
 void BOOST_IDLE();
-void BOOST_OFF();
 void BOOST_Efuse_RD_const_PAlib_reg_module();
 void BOOST_POWERON_PAlib();
 void BOOST_W5_PAlib();
 void SIMLDO_VCC_PAmodule();
 void PMUVCC_SIM_PAmodule();
 void BOOST_WR3_const_PAlib();
-void BOOST_W5_PAlib();
 void Boost_Pwrdown_PAmodule();
 void MEMORY_Mode1_PAmodule();
+void MEMORY_Mode2_PAmodule();
+void MEMORY_Mode3_PAmodule();
+void MEMORY_Mode4_PAmodule();
+void MEMORY_Mode5_PAmodule();
 void DC_IO_VOL_PAmodule();
 void DC_IO_VOH_PAmodule();
 void DC_IO_VIHL_PAmodule();
@@ -77,6 +76,35 @@ void NFC_VddiotoVbat();
 void EFUSE_BOOT_UP_PAmodule();
 void EFUSE_READ();
 void EFUSE_PGM_WRITE();
+
+
+void PMU_CAPLESS_LDO();
+void CMU_TEST();
+void ADPLL_TEST_1();
+void ADPLL_TEST_2();
+void ADPLL_TEST_3();
+void CMU_TEST_19p2M_1();
+void CMU_TEST_19p2M_2();
+void CMU_TEST_19p2M_3();
+void CMU_TEST_19p2M_4();
+void ADPLL_TEST_27p12M_1();
+void ADPLL_TEST_27p12M_2();
+void ADPLL_TEST_27p12M_3();
+void CMU_TEST_27p12M_1();
+void CMU_TEST_27p12M_2();
+void CMU_TEST_27p12M_3();
+void CMU_TEST_27p12M_4();
+void ADPLL_TEST_19p2M_1();
+void ADPLL_TEST_19p2M_2();
+void ADPLL_TEST_19p2M_3();
+void CMU_TEST_38p4M_1();
+void CMU_TEST_38p4M_2();
+void CMU_TEST_38p4M_3();
+void EFUSE_FRC_BST();
+void NFC_ADC_108M();
+void XO_CMU_TEST_1();
+void XO_CMU_TEST_2();
+void XO_CMU_TEST_3();
 
 
 #endif	/* D2S_PMU_MODULE_H */

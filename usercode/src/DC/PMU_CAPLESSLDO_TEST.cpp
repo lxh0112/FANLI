@@ -28,10 +28,10 @@ public:
 
     void init(){
 		add_param( "Measure_pinlist",  "PinString", &pinlist);
-		add_param("SampleSize","int",&samplesize);
-		add_param("IForce","double",&iforce);
-		add_param("IRange","double",&irange);
-		add_param("Waittime","double",&waittime);
+		add_param("SampleSize","int",&samplesize).set_default("4");
+		add_param("IForce","double",&iforce).set_default("0");
+		add_param("IRange","double",&irange).set_default("1e-9");
+//		add_param("Waittime","double",&waittime);
                }
 
     void execute(){
@@ -48,24 +48,7 @@ public:
 		TheInst.Digital().Level().Apply();
 		TheInst.Digital().Timing().Apply();
 
-		d2s::d2s_LABEL_BEGIN("ssi", d2s_WorkMode);
-		d2sProtocolSSI d2s_test;
-		d2s_test.SSI_write(0x200,0x2000,false);
-		d2s_test.SSI_write(0x202,0x40,false);
-		d2s_test.SSI_write(0x124,0x10);
-		d2s::d2s_LABEL_END();
-
-		long muxRegs[9]={0x0,0x0,0x40,0x800,0x0,0x80,0x0,0x800,0x80};
-
-		for(int i=0;i<3;i++){
-			d2s::d2s_LABEL_BEGIN( "ssi", d2s_WorkMode);
-			d2sProtocolSSI d2s_test;
-			d2s_test.SSI_write(0x202,0x94,false);
-			d2s_test.SSI_write(0x37C,muxRegs[i*3]);
-			d2s_test.SSI_write(0x384,muxRegs[i*3+1]);
-			d2s_test.SSI_write(0x202,0x40,false);
-			d2s_test.SSI_write(0x148,muxRegs[i*3+2]);
-			d2s::d2s_LABEL_END();
+//		PMU_CAPLESS_LDO();
 
 			TheInst.PPMU().Pins(pinlist).SetClear();
 			TheInst.PPMU().Pins(pinlist).SetIRange(irange)
@@ -80,8 +63,8 @@ public:
 			PinArrayDouble result = TheInst.PPMU().Pins(pinlist).GetMeasureResults();
 			TheInst.PPMU().Pins(pinlist).Connect(false).Apply();
 //			vector<string> pinname2 = SplitPinList(pinlist);
-			TheSoft.Flow().TestLimit(pinlist,result,lowl[i], hil[i],Hard_Bin[i],Soft_Bin[i], Units[i], Test_Item[i], Test_number[i]);
+			TheSoft.Flow().TestLimit(pinlist,result,lowl[0], hil[0],Hard_Bin[0],Soft_Bin[0], Units[0], Test_Item[0], Test_number[0]);
 		  }
-	}
+
 };
  REGISTER_TESTCLASS("PMU_CAPLESS_LDO_TEST",PMU_CAPLESS_LDO_TEST)
